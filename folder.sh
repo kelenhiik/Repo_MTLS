@@ -1,7 +1,9 @@
 #usage: bash folder.sh filename_of_project_main_directory
 
-mkdir "$1"
-cd "$1" 
+echo "Enter the name for your project's main directory:"
+read name
+mkdir "$name"
+cd "$name" 
 echo "This directory organizes a project that trains a SVM.
 It creates folders for:
 bin - scripts/binaries
