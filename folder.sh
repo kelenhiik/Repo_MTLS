@@ -1,4 +1,4 @@
-#usage: bash folder.sh filename_of_project_main_directory
+#usage: bash folder.sh and follow instructions
 
 echo "Enter the name for your project's main directory:"
 read name
