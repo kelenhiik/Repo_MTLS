@@ -1,5 +1,5 @@
 def fasta_parser(filename):
-    list1=[]
+    
     list1=[line.rstrip() for line in (open(filename,'r')) if len(line.strip()) != 0]
     dict1=dict(zip(list1[::3],  zip(list1[1::3],list1[2::3])))
     
