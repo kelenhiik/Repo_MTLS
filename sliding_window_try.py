@@ -1,5 +1,10 @@
 import numpy as np
 
+def fasta_parser(filename):
+    list1=[line.rstrip() for line in (open (filename, 'r')) if len (line.strip()) != 0]
+    dict1=dict(zip(list1[::3], zip (list1[1::3], list1[2::3])))
+    return (dict1)
+
 def slidw1(seq,sw):
     #sw1-sliding window positions after element in view
     #sw2-sliding window positions before element in view
@@ -11,7 +16,8 @@ def slidw1(seq,sw):
     all_windows=[]
     pos_in_window=list(range(0,len(seq)))
     #print(pos_in_window)#---[0, 1, 2, 3, 4, 5]
-    for element in seq:
+    seqkeys= seq.values()
+    for element in seqkeys:
         #for positions in
         window.append(element)
     #print(window) #['A', 'D', 'E', 'R', 'R', 'G']
@@ -69,4 +75,4 @@ def empty_vec(seq):
 
 
 if __name__ == "__main__":
-    print (slidw1("ADERRG",3))
+    print (slidw1(fasta_parser("8_state_smallerset.3line.txt") ,3))
