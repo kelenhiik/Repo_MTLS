@@ -14,12 +14,29 @@ def slidw1(seq,sw):
     #sw=int(sw)
     window=[]
     all_windows=[]
-    pos_in_window=list(range(0,len(seq)))
-    #print(pos_in_window)#---[0, 1, 2, 3, 4, 5]
-    seqkeys= seq.values()
-    for element in seqkeys:
+    aa_list=[]
+    aa_=[]
+   # print (seq)
+    #prints dictionary
+   # print ("-----")
+    for ID in seq:
+       # print (ID)
+        #prints the dictionary keys aka ID
+       # print("llllllll")
+        aa_list.append((seq[ID])[0])
+    print(aa_list)    
+    #prints the dictionary's first values, so ID value in position 0 
+   # for aa_element in aa_list:
+           # print (aa_value)
+           # aa_list.append(aa_value)
+   
+    pos_in_window=list(range(0,len(aa_list)))
+    #print(pos_in_window)#---[0, 1,] position of sequences in list
+    #seqkeys= seq.values[1]   
+    for element in aa_list:
         #for positions in
-        window.append(element)
+        print (element) #this just prints the sequences, because I guess it takes the element as the thing that fills the positions 0 and 1 that i have.... 
+       # window.append(element)
     #print(window) #['A', 'D', 'E', 'R', 'R', 'G']
 
     
@@ -75,4 +92,4 @@ def empty_vec(seq):
 
 
 if __name__ == "__main__":
-    print (slidw1(fasta_parser("8_state_smallerset.3line.txt") ,3))
+    print (slidw1(fasta_parser("shortseq.txt"),3) )
