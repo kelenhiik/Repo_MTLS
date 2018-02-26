@@ -8,7 +8,7 @@ def fasta_parser(filename):
 def slidw1(seq,sw):
     
     
-    window=[]
+    seq_list_w_zeros=[]
     seqpos=[]
     all_windows=[]
     aa_list=[]
@@ -17,28 +17,52 @@ def slidw1(seq,sw):
    # print (seq)
     #prints dictionary
    # print ("-----")
+   
     for ID in seq:
         
        # print (ID)
         #prints the dictionary keys aka ID
        # print("llllllll")
+       
         aa_list.append((seq[ID])[0])
 
-    for aa in aa_list:
+    for sequences in aa_list:
+    
        # print (aa)
-        seq_ws.append('0'*(sw//2)+aa+('0'*(sw//2)))
+       
+        seq_ws.append('0'*(sw//2)+sequences+('0'*(sw//2)))
+        
    # print (seq_ws) #prints out the seqs with 0 added to the end and the beginning.
    # print(aa_list)    
-   
-    for seqs in seq_ws:
+    #print (seq_ws)
+    
+    for non_list_seqs in seq_ws:
+    
        # print (len( seqs)) # -prints lengths of sequences under each other. 
-        for position, aminoa in enumerate( seqs):
+        #print (seqs)
+        
+        for aminoacids in non_list_seqs:
+            seq_list_w_zeros.append(aminoacids)
+        
+    
+    for positionnr in list(range(0,len(seq_list_w_zeros))):
+        #print (positionnr)
+        if sw+positionnr <= len(seq_list_w_zeros):
+            all_windows.extend (seq_list_w_zeros
+        
+        
+        
+        
+        
+        #for position, aminoa in enumerate( seqs):
            # print (position,aminoa)
-            seqpos.append( position) #I don't think this is a necessary thing here
-            window.append (aminoa)
-            if position+sw <= len(seqs):
-                all_windows.extend(window[position:(position+sw)])
-    print (all_windows)
+            #seqpos.append( position) #I don't think this is a necessary thing here
+            #window.append (aminoa)
+            #if position+sw <= len(seqs):
+                #print (position, sw)
+                #print (window[position])
+                #all_windows.extend(window[position:(position+sw)])
+    #print (all_windows)
    # print (seqpos)
     #pos_in_window=list(range(0,len(seq_ws)))
    # print(pos_in_window)#---[0, 1,] position of sequences in list
@@ -65,7 +89,7 @@ def slidw1(seq,sw):
             #adds all the values in window list that correspond to the positions from and between number and sw+number (where it starts the value and goes one by one, so does the sliding window shift as much) into one continous list.
          
     
-    print (all_windows) #----['A', 'D', 'E', 'D', 'E', 'R', 'E', 'R', 'R', 'R', 'R', 'G'] this maybe works, but might be too complicated and mby does not work for larger data??
+    #print (all_windows) #----['A', 'D', 'E', 'D', 'E', 'R', 'E', 'R', 'R', 'R', 'R', 'G'] this maybe works, but might be too complicated and mby does not work for larger data??
         
         
         
