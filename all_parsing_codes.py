@@ -1,12 +1,14 @@
 import numpy as np
 
+
+#### This function takes a filename and a sliding window and returns all sequences in binary with appropriate sliding windows. The format for SVM training.###############
+
 def parse_with_all_codes(filename, sliding_window):
     all_training_set = []
     all_topologies = []
     dictionary=fasta_parser(filename)
-    
-    for ID in dictionary:
-                   
+
+    for ID in dictionary:                  
         training_set = encode_protein((dictionary[ID][0]), sliding_window)
         all_training_set.extend(training_set)
         topology_set=topology_in_numbers((dictionary[ID])[1])
@@ -15,8 +17,45 @@ def parse_with_all_codes(filename, sliding_window):
     all_topologies = np.array(all_topologies)
     all_training_set = np.array(all_training_set)
     return all_training_set, all_topologies
+    
+#### This function takes a filename and a sliding window. Then it calls the parser function and makes a dictionary out of the filename. Afterwards it splits the dictionary keys so I could have a separate training and testing set. Complicated with a dictionary, bias is minimized by sorting the dictionary keys by the positions in the name of the key that have been assigned randomly in pdb. The out of this key list it takes 70% for training and results in 30% for testing sets that it encodes for proteins and topology using custom functions, returns results as numpy arrays.####
+def parse_with_train_test(filename, sliding_window):
+    all_training_set = []
+    train_topologies = []
+    
+    all_test_set = []
+    test_topologies = []
+    
+    dictionary=fasta_parser(filename)
 
-#the method list.index(obj) returns the lowest index in list that obj appears.
+    # TODO: explain in a comment : 
+    #sorts keys in my dictionary based on the values from 3:end and saves them in a variable sorted_keys so I can specify from that list the 70% i wanna use for testing. lambda is a small function, so insead of defining a function (x) you put lambda. 
+      
+    sorted_keys = sorted(dictionary.keys(), key=lambda x: x[3:])
+    keys_train = sorted_keys[:int(0.7 * len(dictionary))]
+    
+    # Train set:
+    for ID in keys_train:      
+        training_set = encode_protein((dictionary[ID][0]), sliding_window)
+        all_training_set.extend(training_set)
+        topology_set=topology_in_numbers((dictionary[ID])[1])
+        train_topologies.extend(topology_set)
+    
+    # Test set:
+    for ID in set(dictionary) - set(keys_train):      
+        test_set = encode_protein((dictionary[ID][0]), sliding_window)
+        all_test_set.extend(test_set)
+        topology_set=topology_in_numbers((dictionary[ID])[1])
+        test_topologies.extend(topology_set)
+    
+    all_training_set = np.array(all_training_set)
+    train_topologies = np.array(train_topologies)
+    all_test_set = np.array(all_test_set)
+    test_topologies = np.array(test_topologies)
+    
+    return all_training_set, train_topologies, all_test_set, test_topologies
+
+##### Takes a file with ID, seq, topology and assigns ID as key, seq and topology as values.######
 def fasta_parser(filename):
     list1=[line.upper().rstrip() for line in (open (filename, 'r')) if len (line.strip()) != 0]
     
@@ -29,7 +68,7 @@ def fasta_parser(filename):
 ### Manually made dictionary for the topologies in numerical form###
 topology_dict={'G':1, 'I':2, 'H':3, 'E':4, 'B':5, 'T':6, 'S':7, 'C':8}
 
-### Create a binary dictionary for the amino acid residues###
+### Create a binary dictionary for the amino acid residues and specify what to do with uncommon residues ###
 amino_acid_dict={}
 aminoacids='GALMFWKQESPVICYHRNDT'
 for aa in aminoacids:
@@ -47,7 +86,14 @@ temp_vector= [0]*20
 temp_vector[aminoacids.index('N')]=0.5
 temp_vector[aminoacids.index('D')]=0.5
 amino_acid_dict['B'] = temp_vector
+temp_vector= [0]*20
+temp_vector[aminoacids.index('I')]=0.5
+temp_vector[aminoacids.index('L')]=0.5
+amino_acid_dict['J'] = temp_vector
 
+#FIXME decide what to do with these:
+amino_acid_dict['O'] = amino_acid_dict['S']
+amino_acid_dict['U'] = amino_acid_dict['S']
 
 
 
@@ -92,5 +138,5 @@ def topology_in_numbers(my_topo):
     
     return topologies
 if __name__ == "__main__":
-    print(parse_with_all_codes("shortseq.txt", 3))
+    print(parse_with_all_codes("dssp_8_state.3line.txt", 3))
 
