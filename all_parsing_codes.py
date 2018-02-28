@@ -1,6 +1,21 @@
 import numpy as np
 
 
+#### This function takes a filename and a sliding window and returns all sequences in binary with appropriate sliding windows. The format for SVM predicting?###############
+def parse_unknown_file(filename, sliding_window):
+    all_unknown_topo_seq_set = []
+
+    dictionary=fasta_parser_onlyseq(filename)
+
+    for ID in dictionary:                  
+        sliding_window_of_unknown_topo_seq = encode_protein((dictionary[ID][0]), sliding_window)
+        all_unknown_topo_seq_set.extend(sliding_window_of_unknown_topo_seq)
+
+        
+
+    all_unknown_topo_seq_set = np.array(all_unknown_topo_seq_set)
+    return all_unknown_topo_seq_set
+     
 #### This function takes a filename and a sliding window and returns all sequences in binary with appropriate sliding windows. The format for SVM training.###############
 
 def parse_with_all_codes(filename, sliding_window):
@@ -62,6 +77,12 @@ def fasta_parser(filename):
     dict1=dict(zip(list1[::3], zip (list1[1::3], list1[2::3])))
     return (dict1)
 
+
+def fasta_parser_onlyseq(filename):
+    list1=[line.upper().rstrip() for line in (open (filename, 'r')) if len (line.strip()) != 0]
+    
+    dict2=dict(zip(list1[::2], list1[1::2]))
+    return (dict2)
 
 
 
@@ -138,5 +159,6 @@ def topology_in_numbers(my_topo):
     
     return topologies
 if __name__ == "__main__":
-    print(parse_with_all_codes("dssp_8_state.3line.txt", 3))
+    #print(parse_with_all_codes("dssp_8_state.3line.txt", 3))
+    print(fasta_parser_onlyseq('250_270_set.3line.txt'))
 
