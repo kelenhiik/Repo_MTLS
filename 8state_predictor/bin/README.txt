@@ -1,1 +1,1 @@
-This directory holds all experiments on coding.
+This directory holds all coding experiments.
