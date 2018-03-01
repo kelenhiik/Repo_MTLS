@@ -28,8 +28,10 @@ def parse_with_all_codes(filename, sliding_window):
     all_training_set = []
     all_topologies = []
     dictionary=fasta_parser(filename)
+    #get the keys in the same order, since if i wanna cross-validate, I'd have the same one's when checking dif parameters
+    sorted_keys = sorted(dictionary.keys(), key=lambda x: x[3:])
 
-    for ID in dictionary:                  
+    for ID in sorted_keys:                  
         training_set = encode_protein((dictionary[ID][0]), sliding_window)
         all_training_set.extend(training_set)
         topology_set=topology_in_numbers((dictionary[ID])[1])
