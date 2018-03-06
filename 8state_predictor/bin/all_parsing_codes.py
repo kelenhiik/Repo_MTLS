@@ -1,3 +1,4 @@
+""" Codes necessary for parsing files in FASTA format as inputs for machine learning purposes """
 import numpy as np
 
 ################################################################################
@@ -8,12 +9,19 @@ import numpy as np
 
 def parse_unknown_file(filename, sliding_window):
     """ Parses an unknown file which only has an ID and sequence """
-    
+
     all_unknown_topo_seq_set = []
     dictionary = fasta_parser_onlyseq(filename)
 
     for identification in dictionary:
         sw_of_unknown_topo_seq = encode_protein((dictionary[identification][0]), sliding_window)
+
+#in the end, if i want one protein at a time, this is the place I call my model to predict
+#the thing I have here, the previous line. Maybe I even have to write a new function for this
+
+
+
+
         all_unknown_topo_seq_set.extend(sw_of_unknown_topo_seq)
 
 
@@ -30,7 +38,7 @@ def parse_unknown_file(filename, sliding_window):
 
 def parse_with_all_codes(filename, sliding_window):
     """ Parses the three line txt file and also sorts the headings for easier splitting later """
-    
+
     all_training_set = []
     all_topologies = []
     dictionary = fasta_parser(filename)
@@ -63,7 +71,7 @@ def parse_with_all_codes(filename, sliding_window):
 
 def parse_with_train_test(filename, sliding_window):
     """ Parses the 3line file to 70% and 30% for training and testing """
-    
+
     all_training_set = []
     train_topologies = []
 
@@ -72,7 +80,7 @@ def parse_with_train_test(filename, sliding_window):
 
     dictionary = fasta_parser(filename)
 
-    # TODO: explain in a comment :
+    # EXPLAIN IN A COMMENT:
     # sorts keys in my dictionary based on the values from 3:end and saves them in a variable
     # sorted_keys so I can specify from that list the 70% i wanna use for testing. lambda is a
     # small function, so insead of defining a function (x) you put lambda.
@@ -109,7 +117,7 @@ def parse_with_train_test(filename, sliding_window):
 
 def fasta_parser(filename):
     """ This creates a dictionary of a 3line txt file """
-    
+
     list1 = [line.upper().rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
 
     dict1 = dict(zip(list1[::3], zip(list1[1::3], list1[2::3])))
@@ -117,6 +125,7 @@ def fasta_parser(filename):
 
 
 def fasta_parser_onlyseq(filename):
+    """ Parses a file with only ID and sequence in two lines """
     list1 = [line.upper().rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
 
     dict2 = dict(zip(list1[::2], list1[1::2]))
@@ -128,7 +137,7 @@ def fasta_parser_onlyseq(filename):
 ################################################################################
 
 
-topology_dict = {'G':1, 'I':2, 'H':3, 'E':4, 'B':5, 'T':6, 'S':7, 'C':8}
+TOPOLOGY_DICT = {'G':1, 'I':2, 'H':3, 'E':4, 'B':5, 'T':6, 'S':7, 'C':8}
 
 
 ################################################################################
@@ -136,32 +145,32 @@ topology_dict = {'G':1, 'I':2, 'H':3, 'E':4, 'B':5, 'T':6, 'S':7, 'C':8}
 ################################################################################
 
 
-amino_acid_dict = {}
-aminoacids = 'GALMFWKQESPVICYHRNDT'
+AMINO_ACID_DICT = {}
+AMINOACIDS = 'GALMFWKQESPVICYHRNDT'
 
-for aa in aminoacids:
-    temp_vector = [0]*20
+for aa in AMINOACIDS:
+    TEMP_VECTOR = [0]*20
 
-    temp_vector[aminoacids.index(aa)] = 1
-    amino_acid_dict[aa] = temp_vector
+    TEMP_VECTOR[AMINOACIDS.index(aa)] = 1
+    AMINO_ACID_DICT[aa] = TEMP_VECTOR
 
-amino_acid_dict['X'] = [1/20] * 20
-temp_vector = [0]*20
-temp_vector[aminoacids.index('Q')] = 0.5
-temp_vector[aminoacids.index('E')] = 0.5
-amino_acid_dict['Z'] = temp_vector
-temp_vector = [0]*20
-temp_vector[aminoacids.index('N')] = 0.5
-temp_vector[aminoacids.index('D')] = 0.5
-amino_acid_dict['B'] = temp_vector
-temp_vector = [0]*20
-temp_vector[aminoacids.index('I')] = 0.5
-temp_vector[aminoacids.index('L')] = 0.5
-amino_acid_dict['J'] = temp_vector
+AMINO_ACID_DICT['X'] = [1/20] * 20
+TEMP_VECTOR = [0]*20
+TEMP_VECTOR[AMINOACIDS.index('Q')] = 0.5
+TEMP_VECTOR[AMINOACIDS.index('E')] = 0.5
+AMINO_ACID_DICT['Z'] = TEMP_VECTOR
+TEMP_VECTOR = [0]*20
+TEMP_VECTOR[AMINOACIDS.index('N')] = 0.5
+TEMP_VECTOR[AMINOACIDS.index('D')] = 0.5
+AMINO_ACID_DICT['B'] = TEMP_VECTOR
+TEMP_VECTOR = [0]*20
+TEMP_VECTOR[AMINOACIDS.index('I')] = 0.5
+TEMP_VECTOR[AMINOACIDS.index('L')] = 0.5
+AMINO_ACID_DICT['J'] = TEMP_VECTOR
 
-#FIXME decide what to do with these:
-amino_acid_dict['O'] = amino_acid_dict['S']
-amino_acid_dict['U'] = amino_acid_dict['S']
+# DECIDE WHAT TO DO WITH THESE:
+AMINO_ACID_DICT['O'] = AMINO_ACID_DICT['S']
+AMINO_ACID_DICT['U'] = AMINO_ACID_DICT['S']
 
 
 ################################################################################
@@ -171,7 +180,7 @@ amino_acid_dict['U'] = amino_acid_dict['S']
 
 def encode_protein(seq, windowlength):
     """ This encodes any sequence to sliding windows, all binary """
-    
+
     training_set = []
     pad = int(windowlength//2)
     for i in range(len(seq)): # All full windows
@@ -179,22 +188,22 @@ def encode_protein(seq, windowlength):
 
             number_of_pads = pad-i
             temp_encoded_window = [0]*(20*number_of_pads)
-            for c in seq[:i+pad+1]:       # Go through each AA in sliding window
-                temp_encoded_window.extend(amino_acid_dict[c])  # Extend (not append)
+            for positions in seq[:i+pad+1]:       # Go through each AA in sliding window
+                temp_encoded_window.extend(AMINO_ACID_DICT[positions])  # Extend (not append)
             training_set.append(temp_encoded_window) # Save to training set
         elif i > (len(seq)-pad-1):
             #print(i)
             number_of_pads = pad - (len(seq)- 1 - i)
             temp_encoded_window = [] #[0]*(20*number_of_pads)
-            for c in seq[i-pad:]:       # Go through each AA in sliding window
-                temp_encoded_window.extend(amino_acid_dict[c])  # Extend (not append)
+            for positions in seq[i-pad:]:       # Go through each AA in sliding window
+                temp_encoded_window.extend(AMINO_ACID_DICT[positions])  # Extend (not append)
             temp_encoded_window.extend([0]*(20*number_of_pads))
             training_set.append(temp_encoded_window) # Save to training set
         else:
             temp_window = seq[i-pad:i+pad+1] # Extract sliding window
             temp_encoded_window = []
-            for c in temp_window:       # Go through each AA in sliding window
-                temp_encoded_window.extend(amino_acid_dict[c])  # Extend (not append)
+            for positions in temp_window:       # Go through each AA in sliding window
+                temp_encoded_window.extend(AMINO_ACID_DICT[positions])  # Extend (not append)
             # print(temp_encoded_window)
             training_set.append(temp_encoded_window) # Save to training set
     return training_set
@@ -207,11 +216,11 @@ def encode_protein(seq, windowlength):
 
 def topology_in_numbers(my_topo):
     """ Translates the topology to the right format"""
-    
+
     topologies = []
     for topology in my_topo:
 
-        topologies.append(topology_dict[topology])
+        topologies.append(TOPOLOGY_DICT[topology])
 
     return topologies
 
