@@ -5,17 +5,19 @@ import all_parsing_codes
 import numpy as np
 from sklearn import svm
 from sklearn.model_selection import cross_val_score
-
-tempfile = '../data/train_test_sets/34_proteins.3line.txt'
-
+tempfile = './34_proteins.3line.txt'
+#tempfile = '../data/train_test_sets/34_proteins.3line.txt'
+unknown = './oneseq.txt'
 
 
 ##########################################################################################
 #Split my dataset into 70% and 30%. 70% being the training set and 30% being the test set#
 ##########################################################################################
 #input is the file used , windowsize
+
 X_train, Y_train, X_test, Y_test = all_parsing_codes.parse_with_train_test(tempfile, 11)
 
+#print (X_train,'###', Y_train,'###')
 #####################################
 #fit the model with the training set#
 #####################################
@@ -28,21 +30,7 @@ clf.fit(X_train, Y_train)
 #########################################################################
 #Notice, not using the test set anywhere at the moment, since I want to see how it works for one sequence.#
 
-
-hardcodedseq='KVFERaELARTLKRLGMDGYRGISLANWMbLAKWESQYNTRATNYNAGDRSTDYGIFQINSRYWcNDGKTPGAVNAdHLScSALLQDNIADAVAdAKRVVRDPQGIRAWVAWRNRbQNRDVRQYVQGaGV'
-hardcodedseq_allupper=hardcodedseq.upper()
-Test=[]
-
-#calling the protein encoding function from the other file#
-
-sliding_window_of_unknown_seq = all_parsing_codes.encode_protein(hardcodedseq_allupper,11)
-Test.extend(sliding_window_of_unknown_seq)
-
-
-
-Test = np.array(Test)
-
-
+Test, id_of_test, seq_of_test = all_parsing_codes.parse_unknown_file(unknown, 11)
 
 prediction=clf.predict(Test)
 
@@ -63,12 +51,11 @@ for number in prediction_states:
 
 list_in_string="".join(list_of_ss)
 
-# This is what I get with this hardcoded sequences
-#CCCHHHHHHHHHHHHCCTSCEHHHHHHHHHHHHHHHHHHHHHHHHHCSCCESCTHHEHTHIHEEECSCCCCSCHHHHHHHHHHHHHHHHHHHHHHHHEEEECTTHHEHEEHHHCHCCTHHHHHEEHTCSC
 
-# This is what it should be for >d1b7o
-#CBCCHHHHHHHHHHTTCTTBTTBCHHHHHHHHHHHHSSBTTCEEEETTTTEEEETTTTEETTTTCBCSCSTTCCCTTCCBGGGGGSSSCHHHHHHHHHHTTSTTGGGGSHHHHHHTTTSCCGGGTTTSCC
-# This protein is not in the training set.
+output=open("prediction2.txt",'w')
+output.write(id_of_test + '\n' + seq_of_test + '\n' + list_in_string)
+output.close()
 
 
-print(list_in_string)
+
+
