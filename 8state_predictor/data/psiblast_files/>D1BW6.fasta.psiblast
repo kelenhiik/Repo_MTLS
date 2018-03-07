@@ -1,0 +1,358 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= D1BW6
+
+Length=56
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P27790|CENPB_MOUSE Major centromere autoantigen B OS=Mus mus...  108     9e-28
+  sp|P07199|CENPB_HUMAN Major centromere autoantigen B OS=Homo sa...  108     9e-28
+  sp|P48988|CENPB_CRIGR Major centromere autoantigen B OS=Cricetu...  107     2e-27
+  sp|Q17RP2|TIGD6_HUMAN Tigger transposable element-derived prote...  45.1    1e-05
+
+
+> sp|P27790|CENPB_MOUSE Major centromere autoantigen B OS=Mus musculus 
+OX=10090 GN=Cenpb PE=2 SV=2
+Length=599
+
+ Score = 108 bits (269),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|P07199|CENPB_HUMAN Major centromere autoantigen B OS=Homo 
+sapiens OX=9606 GN=CENPB PE=1 SV=2
+Length=599
+
+ Score = 108 bits (269),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|P48988|CENPB_CRIGR Major centromere autoantigen B OS=Cricetulus 
+griseus OX=10029 GN=CENPB PE=3 SV=1
+Length=606
+
+ Score = 107 bits (267),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|Q17RP2|TIGD6_HUMAN Tigger transposable element-derived protein 
+6 OS=Homo sapiens OX=9606 GN=TIGD6 PE=2 SV=2
+Length=521
+
+ Score = 45.1 bits (105),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 21/46 (46%), Positives = 31/46 (67%), Gaps = 2/46 (4%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNK  49
+           KRRQ +  EK +++  V+     RKG++A+ F I PSTLST LK++
+Sbjct  8   KRRQFSLEEKMKVVGAVDSGK--RKGDVAKEFGITPSTLSTFLKDR  51
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.359    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4954616883
+Results from round 2
+
+
+Query= D1BW6
+
+Length=56
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P27790|CENPB_MOUSE Major centromere autoantigen B OS=Mus mus...  110     9e-29
+  sp|P07199|CENPB_HUMAN Major centromere autoantigen B OS=Homo sa...  110     2e-28
+  sp|P48988|CENPB_CRIGR Major centromere autoantigen B OS=Cricetu...  109     2e-28
+  sp|Q17RP2|TIGD6_HUMAN Tigger transposable element-derived prote...  80.1    7e-18
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q8BUZ3|TIGD4_MOUSE Tigger transposable element-derived prote...  49.7    3e-07
+  sp|Q8IY51|TIGD4_HUMAN Tigger transposable element-derived prote...  49.3    4e-07
+
+
+> sp|P27790|CENPB_MOUSE Major centromere autoantigen B OS=Mus musculus 
+OX=10090 GN=Cenpb PE=2 SV=2
+Length=599
+
+ Score = 110 bits (276),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|P07199|CENPB_HUMAN Major centromere autoantigen B OS=Homo 
+sapiens OX=9606 GN=CENPB PE=1 SV=2
+Length=599
+
+ Score = 110 bits (274),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|P48988|CENPB_CRIGR Major centromere autoantigen B OS=Cricetulus 
+griseus OX=10029 GN=CENPB PE=3 SV=1
+Length=606
+
+ Score = 109 bits (273),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|Q17RP2|TIGD6_HUMAN Tigger transposable element-derived protein 
+6 OS=Homo sapiens OX=9606 GN=TIGD6 PE=2 SV=2
+Length=521
+
+ Score = 80.1 bits (196),  Expect = 7e-18, Method: Composition-based stats.
+ Identities = 21/46 (46%), Positives = 31/46 (67%), Gaps = 2/46 (4%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNK  49
+           KRRQ +  EK +++  V+     RKG++A+ F I PSTLST LK++
+Sbjct  8   KRRQFSLEEKMKVVGAVDSGK--RKGDVAKEFGITPSTLSTFLKDR  51
+
+
+> sp|Q8BUZ3|TIGD4_MOUSE Tigger transposable element-derived protein 
+4 OS=Mus musculus OX=10090 GN=Tigd4 PE=2 SV=1
+Length=513
+
+ Score = 49.7 bits (117),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 20/52 (38%), Positives = 31/52 (60%), Gaps = 2/52 (4%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILAS  55
+           K++ L+  EK  II  VE     +K EIA  + I  ++LS+I+KNK  +L +
+Sbjct  17  KKKSLSIEEKIDIINAVESGK--KKAEIAAEYGIKKNSLSSIMKNKDKVLEA  66
+
+
+> sp|Q8IY51|TIGD4_HUMAN Tigger transposable element-derived protein 
+4 OS=Homo sapiens OX=9606 GN=TIGD4 PE=2 SV=2
+Length=512
+
+ Score = 49.3 bits (116),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 20/52 (38%), Positives = 31/52 (60%), Gaps = 2/52 (4%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILAS  55
+           K++ L+  EK  II  VE     +K EIA  + I  ++LS+I+KNK  +L +
+Sbjct  17  KKKSLSIEEKIDIINAVESGK--KKAEIAAEYGIKKNSLSSIMKNKDKVLEA  66
+
+
+
+Lambda      K        H        a         alpha
+   0.303    0.132    0.336    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0399    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4954616883
+Results from round 3
+
+
+Query= D1BW6
+
+Length=56
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P27790|CENPB_MOUSE Major centromere autoantigen B OS=Mus mus...  96.7    9e-24
+  sp|P07199|CENPB_HUMAN Major centromere autoantigen B OS=Homo sa...  95.9    2e-23
+  sp|P48988|CENPB_CRIGR Major centromere autoantigen B OS=Cricetu...  95.9    2e-23
+  sp|Q17RP2|TIGD6_HUMAN Tigger transposable element-derived prote...  70.9    1e-14
+  sp|Q8BUZ3|TIGD4_MOUSE Tigger transposable element-derived prote...  70.1    2e-14
+  sp|Q8IY51|TIGD4_HUMAN Tigger transposable element-derived prote...  69.7    3e-14
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q7TM95|TIGD3_MOUSE Tigger transposable element-derived prote...  38.1    0.003
+  sp|Q6B0B8|TIGD3_HUMAN Tigger transposable element-derived prote...  37.8    0.004
+  sp|Q6NT04|TIGD7_HUMAN Tigger transposable element-derived prote...  37.0    0.007
+
+
+> sp|P27790|CENPB_MOUSE Major centromere autoantigen B OS=Mus musculus 
+OX=10090 GN=Cenpb PE=2 SV=2
+Length=599
+
+ Score = 96.7 bits (239),  Expect = 9e-24, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|P07199|CENPB_HUMAN Major centromere autoantigen B OS=Homo 
+sapiens OX=9606 GN=CENPB PE=1 SV=2
+Length=599
+
+ Score = 95.9 bits (237),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|P48988|CENPB_CRIGR Major centromere autoantigen B OS=Cricetulus 
+griseus OX=10029 GN=CENPB PE=3 SV=1
+Length=606
+
+ Score = 95.9 bits (237),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 56/56 (100%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+           MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE
+Sbjct  1   MGPKRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASE  56
+
+
+> sp|Q17RP2|TIGD6_HUMAN Tigger transposable element-derived protein 
+6 OS=Homo sapiens OX=9606 GN=TIGD6 PE=2 SV=2
+Length=521
+
+ Score = 70.9 bits (172),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 21/48 (44%), Positives = 31/48 (65%), Gaps = 2/48 (4%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRA  51
+           KRRQ +  EK +++  V+     RKG++A+ F I PSTLST LK++  
+Sbjct  8   KRRQFSLEEKMKVVGAVDSGK--RKGDVAKEFGITPSTLSTFLKDRTK  53
+
+
+> sp|Q8BUZ3|TIGD4_MOUSE Tigger transposable element-derived protein 
+4 OS=Mus musculus OX=10090 GN=Tigd4 PE=2 SV=1
+Length=513
+
+ Score = 70.1 bits (170),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 20/52 (38%), Positives = 31/52 (60%), Gaps = 2/52 (4%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILAS  55
+           K++ L+  EK  II  VE     +K EIA  + I  ++LS+I+KNK  +L +
+Sbjct  17  KKKSLSIEEKIDIINAVESGK--KKAEIAAEYGIKKNSLSSIMKNKDKVLEA  66
+
+
+> sp|Q8IY51|TIGD4_HUMAN Tigger transposable element-derived protein 
+4 OS=Homo sapiens OX=9606 GN=TIGD4 PE=2 SV=2
+Length=512
+
+ Score = 69.7 bits (169),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 20/52 (38%), Positives = 31/52 (60%), Gaps = 2/52 (4%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILAS  55
+           K++ L+  EK  II  VE     +K EIA  + I  ++LS+I+KNK  +L +
+Sbjct  17  KKKSLSIEEKIDIINAVESGK--KKAEIAAEYGIKKNSLSSIMKNKDKVLEA  66
+
+
+> sp|Q7TM95|TIGD3_MOUSE Tigger transposable element-derived protein 
+3 OS=Mus musculus OX=10090 GN=Tigd3 PE=2 SV=1
+Length=470
+
+ Score = 38.1 bits (87),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 17/51 (33%), Positives = 31/51 (61%), Gaps = 1/51 (2%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILA  54
+           K   L+  EK ++++ ++E+  + + E+ARRF +    +S I KNK  +LA
+Sbjct  8   KLHALSLAEKIQVLELLDESK-MSQSEVARRFQVSQPQISRICKNKEKLLA  57
+
+
+> sp|Q6B0B8|TIGD3_HUMAN Tigger transposable element-derived protein 
+3 OS=Homo sapiens OX=9606 GN=TIGD3 PE=2 SV=1
+Length=471
+
+ Score = 37.8 bits (86),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 17/51 (33%), Positives = 31/51 (61%), Gaps = 1/51 (2%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILA  54
+           K   L+  EK ++++ ++E+  + + E+ARRF +    +S I KNK  +LA
+Sbjct  8   KLHALSLAEKIQVLELLDESK-MSQSEVARRFQVSQPQISRICKNKEKLLA  57
+
+
+> sp|Q6NT04|TIGD7_HUMAN Tigger transposable element-derived protein 
+7 OS=Homo sapiens OX=9606 GN=TIGD7 PE=1 SV=1
+Length=549
+
+ Score = 37.0 bits (84),  Expect = 0.007, Method: Composition-based stats.
+ Identities = 16/51 (31%), Positives = 23/51 (45%), Gaps = 2/51 (4%)
+
+Query  4   KRRQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILA  54
+           K   L   EK +++  +E    L+   +   F I  ST   I KNK+ IL 
+Sbjct  6   KYTTLNLEEKMKVLSRIEAGRSLK--SVMDEFGISKSTFYDIKKNKKLILD  54
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.132    0.313    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4954616883
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 6, 2018  6:13 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

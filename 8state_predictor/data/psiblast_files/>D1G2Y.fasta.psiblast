@@ -1,0 +1,1173 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= D1G2Y
+
+Length=120
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P15257|HNF1A_RAT Hepatocyte nuclear factor 1-alpha OS=Rattus...  56.6    8e-09
+  sp|P22361|HNF1A_MOUSE Hepatocyte nuclear factor 1-alpha OS=Mus ...  56.6    8e-09
+  sp|P20823|HNF1A_HUMAN Hepatocyte nuclear factor 1-alpha OS=Homo...  56.6    8e-09
+  sp|Q90867|HNF1A_CHICK Hepatocyte nuclear factor 1-alpha OS=Gall...  43.1    2e-04
+  sp|Q91910|HNF1B_XENLA Hepatocyte nuclear factor 1-beta OS=Xenop...  41.6    6e-04
+  sp|Q8UW00|HN1BB_DANRE Hepatocyte nuclear factor 1-beta-B OS=Dan...  39.7    0.002
+  sp|P27889|HNF1B_MOUSE Hepatocyte nuclear factor 1-beta OS=Mus m...  39.7    0.002
+  sp|P23899|HNF1B_RAT Hepatocyte nuclear factor 1-beta OS=Rattus ...  39.7    0.002
+  sp|A1L1N5|HN1BA_DANRE Hepatocyte nuclear factor 1-beta-A OS=Dan...  39.3    0.004
+  sp|Q03365|HNF1B_PIG Hepatocyte nuclear factor 1-beta OS=Sus scr...  38.9    0.004
+  sp|P35680|HNF1B_HUMAN Hepatocyte nuclear factor 1-beta OS=Homo ...  38.9    0.004
+  sp|Q5RER5|HNF1B_PONAB Hepatocyte nuclear factor 1-beta OS=Pongo...  38.9    0.004
+
+
+> sp|P15257|HNF1A_RAT Hepatocyte nuclear factor 1-alpha OS=Rattus 
+norvegicus OX=10116 GN=Hnf1a PE=1 SV=1
+Length=628
+
+ Score = 56.6 bits (135),  Expect = 8e-09, Method: Compositional matrix adjust.
+ Identities = 30/31 (97%), Positives = 30/31 (97%), Gaps = 0/31 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQALG  31
+           MVSKLSQLQTE LAALLESGLSKEALIQALG
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQALG  31
+
+
+ Score = 53.9 bits (128),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+ Score = 53.9 bits (128),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+ Score = 52.4 bits (124),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 28/30 (93%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  61  LVSKLSQLQTEXLAALLESGLSKEALIQAL  90
+           +VSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+> sp|P22361|HNF1A_MOUSE Hepatocyte nuclear factor 1-alpha OS=Mus 
+musculus OX=10090 GN=Hnf1a PE=1 SV=2
+Length=628
+
+ Score = 56.6 bits (135),  Expect = 8e-09, Method: Compositional matrix adjust.
+ Identities = 30/31 (97%), Positives = 30/31 (97%), Gaps = 0/31 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQALG  31
+           MVSKLSQLQTE LAALLESGLSKEALIQALG
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQALG  31
+
+
+ Score = 53.9 bits (128),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+ Score = 53.9 bits (128),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+ Score = 52.4 bits (124),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 28/30 (93%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  61  LVSKLSQLQTEXLAALLESGLSKEALIQAL  90
+           +VSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+> sp|P20823|HNF1A_HUMAN Hepatocyte nuclear factor 1-alpha OS=Homo 
+sapiens OX=9606 GN=HNF1A PE=1 SV=2
+Length=631
+
+ Score = 56.6 bits (135),  Expect = 8e-09, Method: Compositional matrix adjust.
+ Identities = 30/31 (97%), Positives = 30/31 (97%), Gaps = 0/31 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQALG  31
+           MVSKLSQLQTE LAALLESGLSKEALIQALG
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQALG  31
+
+
+ Score = 53.9 bits (128),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+ Score = 53.9 bits (128),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+ Score = 52.4 bits (124),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 28/30 (93%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  61  LVSKLSQLQTEXLAALLESGLSKEALIQAL  90
+           +VSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1   MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+> sp|Q90867|HNF1A_CHICK Hepatocyte nuclear factor 1-alpha OS=Gallus 
+gallus OX=9031 GN=HNF1A PE=2 SV=1
+Length=634
+
+ Score = 43.1 bits (100),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 43/133 (32%), Positives = 64/133 (48%), Gaps = 15/133 (11%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK----------LSQLQTEXLAALLE-  49
+            MVSKLS LQ E L ALLESGL+KE LI+ L               ++ LQTE   +  E 
+Sbjct  1    MVSKLSHLQVELLGALLESGLTKETLIKGLSEAEPYVLQSESQHAINALQTEKGESCPEI  60
+
+Query  50   ----SGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAA  105
+                +G+ +  L +   S   +  T  +   LE+   +EA  Q  +V +L Q     +A 
+Sbjct  61   PNLPNGMGETRLSEDETSDDGEEFTPPIMKELENLSPEEAAHQKAVVERLLQEDPWRVAK  120
+
+Query  106  LLESGLSKEALIQ  118
+            +++S L +  + Q
+Sbjct  121  MVKSYLQQHNIPQ  133
+
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 22/30 (73%), Positives = 24/30 (80%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLS LQ E L ALLESGL+KE LI+ L
+Sbjct  1    MVSKLSHLQVELLGALLESGLTKETLIKGL  30
+
+
+> sp|Q91910|HNF1B_XENLA Hepatocyte nuclear factor 1-beta OS=Xenopus 
+laevis OX=8355 GN=hnf1b PE=2 SV=1
+Length=561
+
+ Score = 41.6 bits (96),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/30 (73%), Positives = 24/30 (80%), Gaps = 0/30 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQAL  30
+           MVSKLS LQ E L ALL SG++KE LIQAL
+Sbjct  1   MVSKLSPLQQELLNALLNSGVTKEDLIQAL  30
+
+
+ Score = 41.6 bits (96),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/30 (73%), Positives = 24/30 (80%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKLS LQ E L ALL SG++KE LIQAL
+Sbjct  1   MVSKLSPLQQELLNALLNSGVTKEDLIQAL  30
+
+
+ Score = 41.6 bits (96),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 22/30 (73%), Positives = 24/30 (80%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLS LQ E L ALL SG++KE LIQAL
+Sbjct  1    MVSKLSPLQQELLNALLNSGVTKEDLIQAL  30
+
+
+ Score = 40.0 bits (92),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 21/30 (70%), Positives = 24/30 (80%), Gaps = 0/30 (0%)
+
+Query  61  LVSKLSQLQTEXLAALLESGLSKEALIQAL  90
+           +VSKLS LQ E L ALL SG++KE LIQAL
+Sbjct  1   MVSKLSPLQQELLNALLNSGVTKEDLIQAL  30
+
+
+> sp|Q8UW00|HN1BB_DANRE Hepatocyte nuclear factor 1-beta-B OS=Danio 
+rerio OX=7955 GN=hnf1bb PE=2 SV=1
+Length=532
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 19/30 (63%), Positives = 26/30 (87%), Gaps = 0/30 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQAL  30
+           MVSKL+ LQ E L+ALL+SG++K+ L+QAL
+Sbjct  5   MVSKLTSLQQELLSALLDSGVTKDVLVQAL  34
+
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 19/30 (63%), Positives = 26/30 (87%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKL+ LQ E L+ALL+SG++K+ L+QAL
+Sbjct  5   MVSKLTSLQQELLSALLDSGVTKDVLVQAL  34
+
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 19/30 (63%), Positives = 26/30 (87%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKL+ LQ E L+ALL+SG++K+ L+QAL
+Sbjct  5    MVSKLTSLQQELLSALLDSGVTKDVLVQAL  34
+
+
+ Score = 38.5 bits (88),  Expect = 0.006, Method: Compositional matrix adjust.
+ Identities = 18/34 (53%), Positives = 27/34 (79%), Gaps = 0/34 (0%)
+
+Query  57  LIQALVSKLSQLQTEXLAALLESGLSKEALIQAL  90
+           +   +VSKL+ LQ E L+ALL+SG++K+ L+QAL
+Sbjct  1   MFTDMVSKLTSLQQELLSALLDSGVTKDVLVQAL  34
+
+
+> sp|P27889|HNF1B_MOUSE Hepatocyte nuclear factor 1-beta OS=Mus 
+musculus OX=10090 GN=Hnf1b PE=1 SV=2
+Length=558
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 21/30 (70%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQAL  30
+           MVSKL+ LQ E L+ALL SG++KE LIQAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLIQAL  30
+
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 21/30 (70%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKL+ LQ E L+ALL SG++KE LIQAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLIQAL  30
+
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 21/30 (70%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKL+ LQ E L+ALL SG++KE LIQAL
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLIQAL  30
+
+
+ Score = 38.1 bits (87),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  61  LVSKLSQLQTEXLAALLESGLSKEALIQAL  90
+           +VSKL+ LQ E L+ALL SG++KE LIQAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLIQAL  30
+
+
+> sp|P23899|HNF1B_RAT Hepatocyte nuclear factor 1-beta OS=Rattus 
+norvegicus OX=10116 GN=Hnf1b PE=1 SV=1
+Length=557
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 21/30 (70%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQAL  30
+           MVSKL+ LQ E L+ALL SG++KE LIQAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLIQAL  30
+
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 21/30 (70%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKL+ LQ E L+ALL SG++KE LIQAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLIQAL  30
+
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 21/30 (70%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKL+ LQ E L+ALL SG++KE LIQAL
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLIQAL  30
+
+
+ Score = 38.1 bits (87),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  61  LVSKLSQLQTEXLAALLESGLSKEALIQAL  90
+           +VSKL+ LQ E L+ALL SG++KE LIQAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLIQAL  30
+
+
+> sp|A1L1N5|HN1BA_DANRE Hepatocyte nuclear factor 1-beta-A OS=Danio 
+rerio OX=7955 GN=hnf1ba PE=2 SV=2
+Length=559
+
+ Score = 39.3 bits (90),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/32 (63%), Positives = 27/32 (84%), Gaps = 0/32 (0%)
+
+Query  89   ALMVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            A MVSKL+ LQ E L+ALL+SG++K+ L+QAL
+Sbjct  3    ANMVSKLTSLQQELLSALLDSGVTKDVLLQAL  34
+
+
+ Score = 38.9 bits (89),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 31/84 (37%), Positives = 47/84 (56%), Gaps = 10/84 (12%)
+
+Query  31   GMVSKLSQLQTEXLAALLESGLSKEALIQALVSKLSQLQTEXLAALLES-GLSKEALIQA  89
+             MVSKL+ LQ E L+ALL+SG++K+ L+QAL         E L     + G+  ++L  +
+Sbjct  4    NMVSKLTSLQQELLSALLDSGVTKDVLLQAL---------EDLDPSPSAFGVKLDSLQMS  54
+
+Query  90   LMVSKLSQLQTEXLAALLESGLSK  113
+               SKLS   ++ +   L +G SK
+Sbjct  55   PSGSKLSDTDSKPVFHTLTNGHSK  78
+
+
+ Score = 38.1 bits (87),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 19/30 (63%), Positives = 26/30 (87%), Gaps = 0/30 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQAL  30
+           MVSKL+ LQ E L+ALL+SG++K+ L+QAL
+Sbjct  5   MVSKLTSLQQELLSALLDSGVTKDVLLQAL  34
+
+
+> sp|Q03365|HNF1B_PIG Hepatocyte nuclear factor 1-beta OS=Sus scrofa 
+OX=9823 GN=HNF1B PE=1 SV=1
+Length=559
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQAL  30
+           MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+> sp|P35680|HNF1B_HUMAN Hepatocyte nuclear factor 1-beta OS=Homo 
+sapiens OX=9606 GN=HNF1B PE=1 SV=1
+Length=557
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQAL  30
+           MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+> sp|Q5RER5|HNF1B_PONAB Hepatocyte nuclear factor 1-beta OS=Pongo 
+abelii OX=9601 GN=HNF1B PE=2 SV=1
+Length=557
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  1   MVSKLSQLQTEXLAALLESGLSKEALIQAL  30
+           MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  32  MVSKLSQLQTEXLAALLESGLSKEALIQAL  61
+           MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1   MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+ Score = 38.9 bits (89),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 20/30 (67%), Positives = 25/30 (83%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKL+ LQ E L+ALL SG++KE L+QAL
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQAL  30
+
+
+
+Lambda      K        H        a         alpha
+   0.308    0.122    0.277    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4989879807
+Results from round 2
+
+
+Query= D1G2Y
+
+Length=120
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q90867|HNF1A_CHICK Hepatocyte nuclear factor 1-alpha OS=Gall...  147     8e-41
+  sp|P22361|HNF1A_MOUSE Hepatocyte nuclear factor 1-alpha OS=Mus ...  109     3e-27
+  sp|P15257|HNF1A_RAT Hepatocyte nuclear factor 1-alpha OS=Rattus...  109     3e-27
+  sp|P20823|HNF1A_HUMAN Hepatocyte nuclear factor 1-alpha OS=Homo...  109     4e-27
+  sp|Q91910|HNF1B_XENLA Hepatocyte nuclear factor 1-beta OS=Xenop...  94.9    4e-22
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q05041|HNFAA_XENLA Hepatocyte nuclear factor 1-alpha-A OS=Xe...  116     1e-29
+  sp|Q91739|HNFAB_XENLA Hepatocyte nuclear factor 1-alpha-B OS=Xe...  114     3e-29
+  sp|P27889|HNF1B_MOUSE Hepatocyte nuclear factor 1-beta OS=Mus m...  89.5    4e-20
+  sp|P23899|HNF1B_RAT Hepatocyte nuclear factor 1-beta OS=Rattus ...  89.1    4e-20
+  sp|P35680|HNF1B_HUMAN Hepatocyte nuclear factor 1-beta OS=Homo ...  86.4    5e-19
+  sp|A1L1N5|HN1BA_DANRE Hepatocyte nuclear factor 1-beta-A OS=Dan...  86.0    5e-19
+  sp|Q5RER5|HNF1B_PONAB Hepatocyte nuclear factor 1-beta OS=Pongo...  86.0    6e-19
+  sp|Q8UW00|HN1BB_DANRE Hepatocyte nuclear factor 1-beta-B OS=Dan...  84.8    1e-18
+  sp|Q03365|HNF1B_PIG Hepatocyte nuclear factor 1-beta OS=Sus scr...  83.7    4e-18
+  sp|Q91474|HNF1A_SALSA Hepatocyte nuclear factor 1-alpha OS=Salm...  81.4    2e-17
+
+
+> sp|Q90867|HNF1A_CHICK Hepatocyte nuclear factor 1-alpha OS=Gallus 
+gallus OX=9031 GN=HNF1A PE=2 SV=1
+Length=634
+
+ Score = 147 bits (370),  Expect = 8e-41, Method: Composition-based stats.
+ Identities = 43/133 (32%), Positives = 64/133 (48%), Gaps = 15/133 (11%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK----------LSQLQTEXLAALLE-  49
+            MVSKLS LQ E L ALLESGL+KE LI+ L               ++ LQTE   +  E 
+Sbjct  1    MVSKLSHLQVELLGALLESGLTKETLIKGLSEAEPYVLQSESQHAINALQTEKGESCPEI  60
+
+Query  50   ----SGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAA  105
+                +G+ +  L +   S   +  T  +   LE+   +EA  Q  +V +L Q     +A 
+Sbjct  61   PNLPNGMGETRLSEDETSDDGEEFTPPIMKELENLSPEEAAHQKAVVERLLQEDPWRVAK  120
+
+Query  106  LLESGLSKEALIQ  118
+            +++S L +  + Q
+Sbjct  121  MVKSYLQQHNIPQ  133
+
+
+> sp|Q05041|HNFAA_XENLA Hepatocyte nuclear factor 1-alpha-A OS=Xenopus 
+laevis OX=8355 GN=hnf1a-a PE=2 SV=1
+Length=605
+
+ Score = 116 bits (290),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 38/128 (30%), Positives = 62/128 (48%), Gaps = 10/128 (8%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVS-------KLSQLQT-EXLAALLE--S  50
+            M S+LS LQ E L ALLESG++KEAL +AL            L  ++  +     ++  +
+Sbjct  1    MASQLSYLQRELLQALLESGVTKEALKKALADGDDYTYPNVPLDDIRNLDEGENCVQLPN  60
+
+Query  51   GLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLESG  110
+            GL +  + +   S   +  T  +   LE    +EA  Q  +V +L Q  +  +A L++S 
+Sbjct  61   GLGESHISEDESSDDGEDFTPPIMKELERLSPEEAAHQKAVVERLLQEDSWHVAKLVKSY  120
+
+Query  111  LSKEALIQ  118
+            L +  + Q
+Sbjct  121  LQQHNIPQ  128
+
+
+> sp|Q91739|HNFAB_XENLA Hepatocyte nuclear factor 1-alpha-B OS=Xenopus 
+laevis OX=8355 GN=hnf1a-b PE=2 SV=2
+Length=592
+
+ Score = 114 bits (286),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 38/128 (30%), Positives = 60/128 (47%), Gaps = 10/128 (8%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVS-------KLSQLQT-EXLAALLE--S  50
+            M S+LS LQ E L ALLESG++KEAL +AL            L  ++  +     ++  +
+Sbjct  1    MASQLSYLQQELLRALLESGVTKEALKKALADGDNYAYPNVPLDDIRNLDEGDNCVQLPN  60
+
+Query  51   GLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLESG  110
+            GL +  + +   S      T  +   LE    +EA  Q  +V +L Q     +A L++S 
+Sbjct  61   GLGEPQMSEDESSDDGGDFTPPIMKELERLSPEEAAHQKAVVERLLQEDPWHVAKLVKSY  120
+
+Query  111  LSKEALIQ  118
+            L +  + Q
+Sbjct  121  LQQHNIPQ  128
+
+
+> sp|P22361|HNF1A_MOUSE Hepatocyte nuclear factor 1-alpha OS=Mus 
+musculus OX=10090 GN=Hnf1a PE=1 SV=2
+Length=628
+
+ Score = 109 bits (273),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 45/130 (35%), Positives = 63/130 (48%), Gaps = 12/130 (9%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK---LSQLQTEXLAAL---------L  48
+            MVSKLSQLQTE LAALLESGLSKEALIQALG       + +   +   +          L
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQALGEPGPYLMVGEGPLDKGESCGGSRGDLTEL  60
+
+Query  49   ESGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLE  108
+             +GL +    +       +     +   LE+   +EA  Q  +V  L Q     +A +++
+Sbjct  61   PNGLGETRGSEDDTDDDGEDFAPPILKELENLSPEEAAHQKAVVESLLQEDPWRVAKMVK  120
+
+Query  109  SGLSKEALIQ  118
+            S L +  + Q
+Sbjct  121  SYLQQHNIPQ  130
+
+
+ Score = 40.5 bits (93),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+> sp|P15257|HNF1A_RAT Hepatocyte nuclear factor 1-alpha OS=Rattus 
+norvegicus OX=10116 GN=Hnf1a PE=1 SV=1
+Length=628
+
+ Score = 109 bits (273),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 45/130 (35%), Positives = 62/130 (48%), Gaps = 12/130 (9%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK---LSQLQTEXLAAL---------L  48
+            MVSKLSQLQTE LAALLESGLSKEALIQALG       +     +   +          L
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQALGEPGPYLMVGDGPLDKGESCGGTRGDLTEL  60
+
+Query  49   ESGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLE  108
+             +GL +    +       +     +   LE+   +EA  Q  +V  L Q     +A +++
+Sbjct  61   PNGLGETRGSEDDTDDDGEDFAPPILKELENLSPEEAAHQKAVVESLLQEDPWRVAKMVK  120
+
+Query  109  SGLSKEALIQ  118
+            S L +  + Q
+Sbjct  121  SYLQQHNIPQ  130
+
+
+ Score = 40.5 bits (93),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+> sp|P20823|HNF1A_HUMAN Hepatocyte nuclear factor 1-alpha OS=Homo 
+sapiens OX=9606 GN=HNF1A PE=1 SV=2
+Length=631
+
+ Score = 109 bits (272),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 46/130 (35%), Positives = 63/130 (48%), Gaps = 12/130 (9%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSKL---SQLQTEXLAAL---------L  48
+            MVSKLSQLQTE LAALLESGLSKEALIQALG         +   +   +          L
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQALGEPGPYLLAGEGPLDKGESCGGGRGELAEL  60
+
+Query  49   ESGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLE  108
+             +GL +    +       +  T  +   LE+   +EA  Q  +V  L Q     +A +++
+Sbjct  61   PNGLGETRGSEDETDDDGEDFTPPILKELENLSPEEAAHQKAVVETLLQEDPWRVAKMVK  120
+
+Query  109  SGLSKEALIQ  118
+            S L +  + Q
+Sbjct  121  SYLQQHNIPQ  130
+
+
+ Score = 40.2 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/30 (97%), Positives = 29/30 (97%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLSQLQTE LAALLESGLSKEALIQAL
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQAL  30
+
+
+> sp|Q91910|HNF1B_XENLA Hepatocyte nuclear factor 1-beta OS=Xenopus 
+laevis OX=8355 GN=hnf1b PE=2 SV=1
+Length=561
+
+ Score = 94.9 bits (234),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 38/135 (28%), Positives = 56/135 (41%), Gaps = 17/135 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMV--SKLSQLQTEXLAALLESGLS-----  53
+            MVSKLS LQ E L ALL SG++KE LIQAL  +  S    ++ E L    E         
+Sbjct  1    MVSKLSPLQQELLNALLNSGVTKEDLIQALDDMIPSPSFGVKLENLHMSPEHESDNKPVF  60
+
+Query  54   ---------KEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEXL  103
+                     K  L     S+      T  +   L+S  ++EA  Q   V ++        
+Sbjct  61   HTLTNGHHHKGKLSGDEGSEDGDDFDTPPILKELQSLNTEEAAEQRAEVDRMLSEDPWRA  120
+
+Query  104  AALLESGLSKEALIQ  118
+            A +++  + +  + Q
+Sbjct  121  AKMIKGYMQQHNIPQ  135
+
+
+ Score = 42.8 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 22/30 (73%), Positives = 24/30 (80%), Gaps = 0/30 (0%)
+
+Query  91   MVSKLSQLQTEXLAALLESGLSKEALIQAL  120
+            MVSKLS LQ E L ALL SG++KE LIQAL
+Sbjct  1    MVSKLSPLQQELLNALLNSGVTKEDLIQAL  30
+
+
+> sp|P27889|HNF1B_MOUSE Hepatocyte nuclear factor 1-beta OS=Mus 
+musculus OX=10090 GN=Hnf1b PE=1 SV=2
+Length=558
+
+ Score = 89.5 bits (220),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 38/136 (28%), Positives = 61/136 (45%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK------------LSQ-----LQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE LIQAL  +              LS      L T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLIQALEELLPSPNFGVKLETLPLSPGSGADLDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA  Q   V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAAEQRAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|P23899|HNF1B_RAT Hepatocyte nuclear factor 1-beta OS=Rattus 
+norvegicus OX=10116 GN=Hnf1b PE=1 SV=1
+Length=557
+
+ Score = 89.1 bits (219),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 38/136 (28%), Positives = 61/136 (45%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK------------LSQ-----LQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE LIQAL  +              LS      L T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLIQALEELLPSPNFGVKLETLPLSPGSGADLDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA  Q   V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAAEQRAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|P35680|HNF1B_HUMAN Hepatocyte nuclear factor 1-beta OS=Homo 
+sapiens OX=9606 GN=HNF1B PE=1 SV=1
+Length=557
+
+ Score = 86.4 bits (212),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 36/136 (26%), Positives = 60/136 (44%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK------------LSQ-----LQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE L+QAL  +              LS        T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQALEELLPSPNFGVKLETLPLSPGSGAEPDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA  Q   V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAAEQRAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|A1L1N5|HN1BA_DANRE Hepatocyte nuclear factor 1-beta-A OS=Danio 
+rerio OX=7955 GN=hnf1ba PE=2 SV=2
+Length=559
+
+ Score = 86.0 bits (211),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 36/139 (26%), Positives = 60/139 (43%), Gaps = 21/139 (15%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK--------LSQLQTEXLAA------  46
+            MVSKL+ LQ E L+ALL+SG++K+ L+QAL  +          L  LQ     +      
+Sbjct  5    MVSKLTSLQQELLSALLDSGVTKDVLLQALEDLDPSPSAFGVKLDSLQMSPSGSKLSDTD  64
+
+Query  47   ------LLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQ  99
+                   L +G SK  L     S+      T  +   L+S  ++EA  Q   + ++    
+Sbjct  65   SKPVFHTLTNGHSKGKLSGDEGSEDGDDYDTPPILKELQSQNTEEAAEQRAEIERMLAED  124
+
+Query  100  TEXLAALLESGLSKEALIQ  118
+                A +++  + +  + Q
+Sbjct  125  PWRAARMIKGYMQQHNIPQ  143
+
+
+> sp|Q5RER5|HNF1B_PONAB Hepatocyte nuclear factor 1-beta OS=Pongo 
+abelii OX=9601 GN=HNF1B PE=2 SV=1
+Length=557
+
+ Score = 86.0 bits (211),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 36/136 (26%), Positives = 60/136 (44%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK------------LSQ-----LQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE L+QAL  +              LS        T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQALEELLPSPNFGVKLETLPLSPGSGAEPDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA  Q   V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAAEQRAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|Q8UW00|HN1BB_DANRE Hepatocyte nuclear factor 1-beta-B OS=Danio 
+rerio OX=7955 GN=hnf1bb PE=2 SV=1
+Length=532
+
+ Score = 84.8 bits (208),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 34/141 (24%), Positives = 56/141 (40%), Gaps = 23/141 (16%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMV------------SKLSQLQTEXLAAL-  47
+            MVSKL+ LQ E L+ALL+SG++K+ L+QAL  +              LS       +   
+Sbjct  5    MVSKLTSLQQELLSALLDSGVTKDVLVQALEDLCPCPAEFGIKIEKPLSPSSANGGSDCG  64
+
+Query  48   --------LESGLSKE-ALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQ  97
+                    L     K   L     S+      T  +   L+S  ++EA  Q   V ++  
+Sbjct  65   DSKPVFLTLTGAQGKGGKLSGDEGSEDGDDFDTPPILRELQSLNTEEAAEQRAEVDRMLS  124
+
+Query  98   LQTEXLAALLESGLSKEALIQ  118
+                 +A  ++  + +  + Q
+Sbjct  125  EDPWRVARTIKGYMQQHNIPQ  145
+
+
+> sp|Q03365|HNF1B_PIG Hepatocyte nuclear factor 1-beta OS=Sus scrofa 
+OX=9823 GN=HNF1B PE=1 SV=1
+Length=559
+
+ Score = 83.7 bits (205),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 33/136 (24%), Positives = 57/136 (42%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSKLSQL-----------------QTEX  43
+            MVSKL+ LQ E L+ALL SG++KE L+QAL  +                        T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQALEELLPSPSFGVKLETLPLSPGSGTEPDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA      V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAADDGAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|Q91474|HNF1A_SALSA Hepatocyte nuclear factor 1-alpha OS=Salmo 
+salar OX=8030 GN=hnf1a PE=2 SV=1
+Length=559
+
+ Score = 81.4 bits (199),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 32/116 (28%), Positives = 53/116 (46%), Gaps = 11/116 (9%)
+
+Query  4    KLSQLQTEXLAALLESGLSKEALIQALGMVSKLSQLQTEXLAALLESGLSKEALIQALVS  63
+            +LS LQ + + ALL SGLS+E L+ ALG + +            +  G  K        S
+Sbjct  16   RLSALQEQLIWALLGSGLSREVLVHALGELER----------ERVTPGAEKGDRGDGESS  65
+
+Query  64   KLSQL-QTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLESGLSKEALIQ  118
+            +  ++     +   LE+   +EA  Q  +V +L Q     +A L++S + +  L Q
+Sbjct  66   EEGEMDFPPPIFQELEALAPEEAARQRALVDQLLQEDPWRVAKLVKSYMQQHNLPQ  121
+
+
+
+Lambda      K        H        a         alpha
+   0.303    0.124    0.270    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0364    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4989879807
+Results from round 3
+
+
+Query= D1G2Y
+
+Length=120
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q05041|HNFAA_XENLA Hepatocyte nuclear factor 1-alpha-A OS=Xe...  167     4e-48
+  sp|Q91739|HNFAB_XENLA Hepatocyte nuclear factor 1-alpha-B OS=Xe...  166     6e-48
+  sp|Q90867|HNF1A_CHICK Hepatocyte nuclear factor 1-alpha OS=Gall...  165     2e-47
+  sp|P27889|HNF1B_MOUSE Hepatocyte nuclear factor 1-beta OS=Mus m...  161     6e-46
+  sp|Q91910|HNF1B_XENLA Hepatocyte nuclear factor 1-beta OS=Xenop...  161     6e-46
+  sp|P23899|HNF1B_RAT Hepatocyte nuclear factor 1-beta OS=Rattus ...  160     8e-46
+  sp|A1L1N5|HN1BA_DANRE Hepatocyte nuclear factor 1-beta-A OS=Dan...  158     5e-45
+  sp|P35680|HNF1B_HUMAN Hepatocyte nuclear factor 1-beta OS=Homo ...  158     6e-45
+  sp|Q5RER5|HNF1B_PONAB Hepatocyte nuclear factor 1-beta OS=Pongo...  157     9e-45
+  sp|Q8UW00|HN1BB_DANRE Hepatocyte nuclear factor 1-beta-B OS=Dan...  156     2e-44
+  sp|Q03365|HNF1B_PIG Hepatocyte nuclear factor 1-beta OS=Sus scr...  151     1e-42
+  sp|P15257|HNF1A_RAT Hepatocyte nuclear factor 1-alpha OS=Rattus...  147     3e-41
+  sp|P22361|HNF1A_MOUSE Hepatocyte nuclear factor 1-alpha OS=Mus ...  147     6e-41
+  sp|P20823|HNF1A_HUMAN Hepatocyte nuclear factor 1-alpha OS=Homo...  146     1e-40
+  sp|Q91474|HNF1A_SALSA Hepatocyte nuclear factor 1-alpha OS=Salm...  141     5e-39
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q05041|HNFAA_XENLA Hepatocyte nuclear factor 1-alpha-A OS=Xenopus 
+laevis OX=8355 GN=hnf1a-a PE=2 SV=1
+Length=605
+
+ Score = 167 bits (422),  Expect = 4e-48, Method: Composition-based stats.
+ Identities = 39/128 (30%), Positives = 61/128 (48%), Gaps = 10/128 (8%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVS-------KLSQLQT-EXLAAL--LES  50
+            M S+LS LQ E L ALLESG++KEAL +AL            L  ++  +       L +
+Sbjct  1    MASQLSYLQRELLQALLESGVTKEALKKALADGDDYTYPNVPLDDIRNLDEGENCVQLPN  60
+
+Query  51   GLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLESG  110
+            GL +  + +   S   +  T  +   LE    +EA  Q  +V +L Q  +  +A L++S 
+Sbjct  61   GLGESHISEDESSDDGEDFTPPIMKELERLSPEEAAHQKAVVERLLQEDSWHVAKLVKSY  120
+
+Query  111  LSKEALIQ  118
+            L +  + Q
+Sbjct  121  LQQHNIPQ  128
+
+
+> sp|Q91739|HNFAB_XENLA Hepatocyte nuclear factor 1-alpha-B OS=Xenopus 
+laevis OX=8355 GN=hnf1a-b PE=2 SV=2
+Length=592
+
+ Score = 166 bits (421),  Expect = 6e-48, Method: Composition-based stats.
+ Identities = 39/128 (30%), Positives = 59/128 (46%), Gaps = 10/128 (8%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVS-------KLSQLQT-EXLAAL--LES  50
+            M S+LS LQ E L ALLESG++KEAL +AL            L  ++  +       L +
+Sbjct  1    MASQLSYLQQELLRALLESGVTKEALKKALADGDNYAYPNVPLDDIRNLDEGDNCVQLPN  60
+
+Query  51   GLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLESG  110
+            GL +  + +   S      T  +   LE    +EA  Q  +V +L Q     +A L++S 
+Sbjct  61   GLGEPQMSEDESSDDGGDFTPPIMKELERLSPEEAAHQKAVVERLLQEDPWHVAKLVKSY  120
+
+Query  111  LSKEALIQ  118
+            L +  + Q
+Sbjct  121  LQQHNIPQ  128
+
+
+> sp|Q90867|HNF1A_CHICK Hepatocyte nuclear factor 1-alpha OS=Gallus 
+gallus OX=9031 GN=HNF1A PE=2 SV=1
+Length=634
+
+ Score = 165 bits (418),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 43/133 (32%), Positives = 64/133 (48%), Gaps = 15/133 (11%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK----------LSQLQTEXLAALLE-  49
+            MVSKLS LQ E L ALLESGL+KE LI+ L               ++ LQTE   +  E 
+Sbjct  1    MVSKLSHLQVELLGALLESGLTKETLIKGLSEAEPYVLQSESQHAINALQTEKGESCPEI  60
+
+Query  50   ----SGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAA  105
+                +G+ +  L +   S   +  T  +   LE+   +EA  Q  +V +L Q     +A 
+Sbjct  61   PNLPNGMGETRLSEDETSDDGEEFTPPIMKELENLSPEEAAHQKAVVERLLQEDPWRVAK  120
+
+Query  106  LLESGLSKEALIQ  118
+            +++S L +  + Q
+Sbjct  121  MVKSYLQQHNIPQ  133
+
+
+> sp|P27889|HNF1B_MOUSE Hepatocyte nuclear factor 1-beta OS=Mus 
+musculus OX=10090 GN=Hnf1b PE=1 SV=2
+Length=558
+
+ Score = 161 bits (406),  Expect = 6e-46, Method: Composition-based stats.
+ Identities = 36/136 (26%), Positives = 60/136 (44%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSKL-----------------SQLQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE LIQAL  +                    + L T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLIQALEELLPSPNFGVKLETLPLSPGSGADLDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA  Q   V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAAEQRAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|Q91910|HNF1B_XENLA Hepatocyte nuclear factor 1-beta OS=Xenopus 
+laevis OX=8355 GN=hnf1b PE=2 SV=1
+Length=561
+
+ Score = 161 bits (406),  Expect = 6e-46, Method: Composition-based stats.
+ Identities = 37/135 (27%), Positives = 57/135 (42%), Gaps = 17/135 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMV---------------SKLSQLQTEXLA  45
+            MVSKLS LQ E L ALL SG++KE LIQAL  +               S   +   + + 
+Sbjct  1    MVSKLSPLQQELLNALLNSGVTKEDLIQALDDMIPSPSFGVKLENLHMSPEHESDNKPVF  60
+
+Query  46   ALLESGLS-KEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEXL  103
+              L +G   K  L     S+      T  +   L+S  ++EA  Q   V ++        
+Sbjct  61   HTLTNGHHHKGKLSGDEGSEDGDDFDTPPILKELQSLNTEEAAEQRAEVDRMLSEDPWRA  120
+
+Query  104  AALLESGLSKEALIQ  118
+            A +++  + +  + Q
+Sbjct  121  AKMIKGYMQQHNIPQ  135
+
+
+> sp|P23899|HNF1B_RAT Hepatocyte nuclear factor 1-beta OS=Rattus 
+norvegicus OX=10116 GN=Hnf1b PE=1 SV=1
+Length=557
+
+ Score = 160 bits (405),  Expect = 8e-46, Method: Composition-based stats.
+ Identities = 36/136 (26%), Positives = 60/136 (44%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSKL-----------------SQLQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE LIQAL  +                    + L T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLIQALEELLPSPNFGVKLETLPLSPGSGADLDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA  Q   V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAAEQRAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|A1L1N5|HN1BA_DANRE Hepatocyte nuclear factor 1-beta-A OS=Danio 
+rerio OX=7955 GN=hnf1ba PE=2 SV=2
+Length=559
+
+ Score = 158 bits (399),  Expect = 5e-45, Method: Composition-based stats.
+ Identities = 35/139 (25%), Positives = 61/139 (44%), Gaps = 21/139 (15%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK--------------------LSQLQ  40
+            MVSKL+ LQ E L+ALL+SG++K+ L+QAL  +                      LS   
+Sbjct  5    MVSKLTSLQQELLSALLDSGVTKDVLLQALEDLDPSPSAFGVKLDSLQMSPSGSKLSDTD  64
+
+Query  41   TEXLAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQ  99
+            ++ +   L +G SK  L     S+      T  +   L+S  ++EA  Q   + ++    
+Sbjct  65   SKPVFHTLTNGHSKGKLSGDEGSEDGDDYDTPPILKELQSQNTEEAAEQRAEIERMLAED  124
+
+Query  100  TEXLAALLESGLSKEALIQ  118
+                A +++  + +  + Q
+Sbjct  125  PWRAARMIKGYMQQHNIPQ  143
+
+
+> sp|P35680|HNF1B_HUMAN Hepatocyte nuclear factor 1-beta OS=Homo 
+sapiens OX=9606 GN=HNF1B PE=1 SV=1
+Length=557
+
+ Score = 158 bits (399),  Expect = 6e-45, Method: Composition-based stats.
+ Identities = 34/136 (25%), Positives = 60/136 (44%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSKL-----------------SQLQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE L+QAL  +                    ++  T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQALEELLPSPNFGVKLETLPLSPGSGAEPDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA  Q   V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAAEQRAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|Q5RER5|HNF1B_PONAB Hepatocyte nuclear factor 1-beta OS=Pongo 
+abelii OX=9601 GN=HNF1B PE=2 SV=1
+Length=557
+
+ Score = 157 bits (397),  Expect = 9e-45, Method: Composition-based stats.
+ Identities = 34/136 (25%), Positives = 60/136 (44%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSKL-----------------SQLQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE L+QAL  +                    ++  T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQALEELLPSPNFGVKLETLPLSPGSGAEPDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA  Q   V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAAEQRAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|Q8UW00|HN1BB_DANRE Hepatocyte nuclear factor 1-beta-B OS=Danio 
+rerio OX=7955 GN=hnf1bb PE=2 SV=1
+Length=532
+
+ Score = 156 bits (394),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 34/141 (24%), Positives = 56/141 (40%), Gaps = 23/141 (16%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMV------------SKLSQLQTEXLAAL-  47
+            MVSKL+ LQ E L+ALL+SG++K+ L+QAL  +              LS       +   
+Sbjct  5    MVSKLTSLQQELLSALLDSGVTKDVLVQALEDLCPCPAEFGIKIEKPLSPSSANGGSDCG  64
+
+Query  48   --------LESGLSKE-ALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQ  97
+                    L     K   L     S+      T  +   L+S  ++EA  Q   V ++  
+Sbjct  65   DSKPVFLTLTGAQGKGGKLSGDEGSEDGDDFDTPPILRELQSLNTEEAAEQRAEVDRMLS  124
+
+Query  98   LQTEXLAALLESGLSKEALIQ  118
+                 +A  ++  + +  + Q
+Sbjct  125  EDPWRVARTIKGYMQQHNIPQ  145
+
+
+> sp|Q03365|HNF1B_PIG Hepatocyte nuclear factor 1-beta OS=Sus scrofa 
+OX=9823 GN=HNF1B PE=1 SV=1
+Length=559
+
+ Score = 151 bits (382),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 33/136 (24%), Positives = 59/136 (43%), Gaps = 18/136 (13%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSKL-----------------SQLQTEX  43
+            MVSKL+ LQ E L+ALL SG++KE L+QAL  +                    ++  T+ 
+Sbjct  1    MVSKLTSLQQELLSALLSSGVTKEVLVQALEELLPSPSFGVKLETLPLSPGSGTEPDTKP  60
+
+Query  44   LAALLESGLSKEALIQALVSKLSQLQ-TEXLAALLESGLSKEALIQALMVSKLSQLQTEX  102
+            +   L +G +K  L     S+      T  +   L++  ++EA      V ++       
+Sbjct  61   VFHTLTNGHAKGRLSGDEGSEDGDDYDTPPILKELQALNTEEAADDGAEVDRMLSEDPWR  120
+
+Query  103  LAALLESGLSKEALIQ  118
+             A +++  + +  + Q
+Sbjct  121  AAKMIKGYMQQHNIPQ  136
+
+
+> sp|P15257|HNF1A_RAT Hepatocyte nuclear factor 1-alpha OS=Rattus 
+norvegicus OX=10116 GN=Hnf1a PE=1 SV=1
+Length=628
+
+ Score = 147 bits (372),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 45/130 (35%), Positives = 62/130 (48%), Gaps = 12/130 (9%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK---LSQLQTEXLAAL---------L  48
+            MVSKLSQLQTE LAALLESGLSKEALIQALG       +     +   +          L
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQALGEPGPYLMVGDGPLDKGESCGGTRGDLTEL  60
+
+Query  49   ESGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLE  108
+             +GL +    +       +     +   LE+   +EA  Q  +V  L Q     +A +++
+Sbjct  61   PNGLGETRGSEDDTDDDGEDFAPPILKELENLSPEEAAHQKAVVESLLQEDPWRVAKMVK  120
+
+Query  109  SGLSKEALIQ  118
+            S L +  + Q
+Sbjct  121  SYLQQHNIPQ  130
+
+
+> sp|P22361|HNF1A_MOUSE Hepatocyte nuclear factor 1-alpha OS=Mus 
+musculus OX=10090 GN=Hnf1a PE=1 SV=2
+Length=628
+
+ Score = 147 bits (370),  Expect = 6e-41, Method: Composition-based stats.
+ Identities = 45/130 (35%), Positives = 63/130 (48%), Gaps = 12/130 (9%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK---LSQLQTEXLAAL---------L  48
+            MVSKLSQLQTE LAALLESGLSKEALIQALG       + +   +   +          L
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQALGEPGPYLMVGEGPLDKGESCGGSRGDLTEL  60
+
+Query  49   ESGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLE  108
+             +GL +    +       +     +   LE+   +EA  Q  +V  L Q     +A +++
+Sbjct  61   PNGLGETRGSEDDTDDDGEDFAPPILKELENLSPEEAAHQKAVVESLLQEDPWRVAKMVK  120
+
+Query  109  SGLSKEALIQ  118
+            S L +  + Q
+Sbjct  121  SYLQQHNIPQ  130
+
+
+> sp|P20823|HNF1A_HUMAN Hepatocyte nuclear factor 1-alpha OS=Homo 
+sapiens OX=9606 GN=HNF1A PE=1 SV=2
+Length=631
+
+ Score = 146 bits (369),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 46/130 (35%), Positives = 63/130 (48%), Gaps = 12/130 (9%)
+
+Query  1    MVSKLSQLQTEXLAALLESGLSKEALIQALGMVSK---LSQLQTEXLAAL---------L  48
+            MVSKLSQLQTE LAALLESGLSKEALIQALG         +   +   +          L
+Sbjct  1    MVSKLSQLQTELLAALLESGLSKEALIQALGEPGPYLLAGEGPLDKGESCGGGRGELAEL  60
+
+Query  49   ESGLSKEALIQALVSKLSQLQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLE  108
+             +GL +    +       +  T  +   LE+   +EA  Q  +V  L Q     +A +++
+Sbjct  61   PNGLGETRGSEDETDDDGEDFTPPILKELENLSPEEAAHQKAVVETLLQEDPWRVAKMVK  120
+
+Query  109  SGLSKEALIQ  118
+            S L +  + Q
+Sbjct  121  SYLQQHNIPQ  130
+
+
+> sp|Q91474|HNF1A_SALSA Hepatocyte nuclear factor 1-alpha OS=Salmo 
+salar OX=8030 GN=hnf1a PE=2 SV=1
+Length=559
+
+ Score = 141 bits (356),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 32/116 (28%), Positives = 52/116 (45%), Gaps = 11/116 (9%)
+
+Query  4    KLSQLQTEXLAALLESGLSKEALIQALGMVSKLSQLQTEXLAALLESGLSKEALIQALVS  63
+            +LS LQ + + ALL SGLS+E L+ ALG + +            +  G  K        S
+Sbjct  16   RLSALQEQLIWALLGSGLSREVLVHALGELER----------ERVTPGAEKGDRGDGESS  65
+
+Query  64   KLSQ-LQTEXLAALLESGLSKEALIQALMVSKLSQLQTEXLAALLESGLSKEALIQ  118
+            +  +      +   LE+   +EA  Q  +V +L Q     +A L++S + +  L Q
+Sbjct  66   EEGEMDFPPPIFQELEALAPEEAARQRALVDQLLQEDPWRVAKLVKSYMQQHNLPQ  121
+
+
+
+Lambda      K        H        a         alpha
+   0.299    0.126    0.309    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4989879807
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 6, 2018  6:13 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

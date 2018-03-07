@@ -17,6 +17,8 @@ mkdir src
 cd data
 mkdir training_sets
 mkdir testing_sets
+mkdir PSSM
+mkdir FASTA
 cd ../results
 mkdir testing_results
 mkdir prediction_results

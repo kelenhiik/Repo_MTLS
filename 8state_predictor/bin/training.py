@@ -47,13 +47,13 @@ topology_dict={1:'G', 2:'I', 3:'H', 4:'E', 5:'B', 6:'T', 7:'S', 8:'C'}
 #       print(kernel, c_par, score)
 
 
-for c_score in (0.1, 0.5, 1, 1.5, 5, 10):
-    for decision_function_shape1 in ('ovo', 'ovr'):
-        for kernel1 in ('linear', 'poly', 'rbf', 'sigmoid'):
-            for win_len in range(9,20,2):
-                X_train, Y_train = all_parsing_codes.parse_with_all_codes('34_proteins.3line.txt', win_len)
-                model=svm.SVC(kernel=kernel1, gamma=1/X_train.shape[1], C= c_score, decision_function_shape=decision_function_shape1 ,cache_size=3000)
-                score = cross_val_score(model, X_train, Y_train, cv=3, verbose=True, n_jobs=-1)
-                score=np.average(score)
-                print(c_score, decision_function_shape1, kernel1, win_len, score)
+
+for decision_function_shape1 in ('ovo', 'ovr'):
+    for kernel1 in ('linear', 'rbf',):
+        for win_len in range(19,36,2):
+            X_train, Y_train = all_parsing_codes.parse_with_all_codes('34_proteins.3line.txt', win_len)
+            model=svm.SVC(kernel=kernel1, gamma=1/X_train.shape[1], C= 10, decision_function_shape=decision_function_shape1 ,cache_size=3000)
+            score = cross_val_score(model, X_train, Y_train, cv=3, verbose=True, n_jobs=-1)
+            score=np.average(score)
+            print(decision_function_shape1, kernel1, win_len, score)
 

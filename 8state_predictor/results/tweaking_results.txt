@@ -1,0 +1,3 @@
+34 proteins from the big file.
+RANDOM FOREST: n_estimators1 (here it is 300), min_samples_split1 (6) , win_len (9), score (0.559109750669). 
+Decision trees:min_samples_split (here it is 2), win length (here it is 9), 3fold cv score (here it is .425225871702)

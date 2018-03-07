@@ -1,0 +1,833 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= D1UNK
+
+Length=348
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|Q03708|IMM7_ECOLX Colicin-E7 immunity protein OS=Escherichia...  179     3e-54
+  sp|P04482|IMM2_ECOLX Colicin-E2 immunity protein OS=Escherichia...  120     5e-32
+  sp|P09881|IMM8_ECOLX Colicin-E8 immunity protein OS=Escherichia...  112     4e-29
+  sp|P13479|IMM9_ECOLX Colicin-E9 immunity protein OS=Escherichia...  111     1e-28
+  sp|P13478|IMMX_ECOLX Colicin-E8 immunity protein in ColE6 OS=Es...  108     1e-27
+  sp|Q06579|IMM2_PSEAE Pyocin-S2 immunity protein OS=Pseudomonas ...  97.4    1e-23
+  sp|Q06578|IMM1_PSEAI Pyocin-S1 immunity protein OS=Pseudomonas ...  95.9    5e-23
+
+
+> sp|Q03708|IMM7_ECOLX Colicin-E7 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=2
+Length=87
+
+ Score = 179 bits (453),  Expect = 3e-54, Method: Compositional matrix adjust.
+ Identities = 87/87 (100%), Positives = 87/87 (100%), Gaps = 0/87 (0%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN
+Sbjct  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+           RDDSPEGIVKEIKEWRAANGKPGFKQG
+Sbjct  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+
+
+ Score = 179 bits (453),  Expect = 3e-54, Method: Compositional matrix adjust.
+ Identities = 87/87 (100%), Positives = 87/87 (100%), Gaps = 0/87 (0%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN
+Sbjct  1    MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+            RDDSPEGIVKEIKEWRAANGKPGFKQG
+Sbjct  61   RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+
+
+ Score = 179 bits (453),  Expect = 3e-54, Method: Compositional matrix adjust.
+ Identities = 87/87 (100%), Positives = 87/87 (100%), Gaps = 0/87 (0%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN
+Sbjct  1    MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+            RDDSPEGIVKEIKEWRAANGKPGFKQG
+Sbjct  61   RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+
+
+ Score = 179 bits (453),  Expect = 3e-54, Method: Compositional matrix adjust.
+ Identities = 87/87 (100%), Positives = 87/87 (100%), Gaps = 0/87 (0%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN
+Sbjct  1    MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+            RDDSPEGIVKEIKEWRAANGKPGFKQG
+Sbjct  61   RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+
+
+> sp|P04482|IMM2_ECOLX Colicin-E2 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=1
+Length=86
+
+ Score = 120 bits (302),  Expect = 5e-32, Method: Compositional matrix adjust.
+ Identities = 58/87 (67%), Positives = 73/87 (84%), Gaps = 1/87 (1%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELK+SISDYTEAEF++ +K+I +    AT++  + L+  F ++TEHPDG+DLIYYP D+
+Sbjct  1   MELKHSISDYTEAEFLEFVKKICRAE-GATEEDDNKLVREFERLTEHPDGSDLIYYPRDD  59
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+           R+DSPEGIVKEIKEWRAANGK GFKQG
+Sbjct  60  REDSPEGIVKEIKEWRAANGKSGFKQG  86
+
+
+ Score = 120 bits (302),  Expect = 5e-32, Method: Compositional matrix adjust.
+ Identities = 58/87 (67%), Positives = 73/87 (84%), Gaps = 1/87 (1%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELK+SISDYTEAEF++ +K+I +    AT++  + L+  F ++TEHPDG+DLIYYP D+
+Sbjct  1    MELKHSISDYTEAEFLEFVKKICRAE-GATEEDDNKLVREFERLTEHPDGSDLIYYPRDD  59
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+            R+DSPEGIVKEIKEWRAANGK GFKQG
+Sbjct  60   REDSPEGIVKEIKEWRAANGKSGFKQG  86
+
+
+ Score = 120 bits (302),  Expect = 5e-32, Method: Compositional matrix adjust.
+ Identities = 58/87 (67%), Positives = 73/87 (84%), Gaps = 1/87 (1%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELK+SISDYTEAEF++ +K+I +    AT++  + L+  F ++TEHPDG+DLIYYP D+
+Sbjct  1    MELKHSISDYTEAEFLEFVKKICRAE-GATEEDDNKLVREFERLTEHPDGSDLIYYPRDD  59
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+            R+DSPEGIVKEIKEWRAANGK GFKQG
+Sbjct  60   REDSPEGIVKEIKEWRAANGKSGFKQG  86
+
+
+ Score = 120 bits (302),  Expect = 5e-32, Method: Compositional matrix adjust.
+ Identities = 58/87 (67%), Positives = 73/87 (84%), Gaps = 1/87 (1%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELK+SISDYTEAEF++ +K+I +    AT++  + L+  F ++TEHPDG+DLIYYP D+
+Sbjct  1    MELKHSISDYTEAEFLEFVKKICRAE-GATEEDDNKLVREFERLTEHPDGSDLIYYPRDD  59
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+            R+DSPEGIVKEIKEWRAANGK GFKQG
+Sbjct  60   REDSPEGIVKEIKEWRAANGKSGFKQG  86
+
+
+> sp|P09881|IMM8_ECOLX Colicin-E8 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=1
+Length=85
+
+ Score = 112 bits (281),  Expect = 4e-29, Method: Compositional matrix adjust.
+ Identities = 54/87 (62%), Positives = 65/87 (75%), Gaps = 2/87 (2%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELKNSISDYTE EF +++++I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1   MELKNSISDYTETEFKKIIEDII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+            D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59  NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 112 bits (281),  Expect = 4e-29, Method: Compositional matrix adjust.
+ Identities = 54/87 (62%), Positives = 65/87 (75%), Gaps = 2/87 (2%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELKNSISDYTE EF +++++I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKNSISDYTETEFKKIIEDII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 112 bits (281),  Expect = 4e-29, Method: Compositional matrix adjust.
+ Identities = 54/87 (62%), Positives = 65/87 (75%), Gaps = 2/87 (2%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELKNSISDYTE EF +++++I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKNSISDYTETEFKKIIEDII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 112 bits (281),  Expect = 4e-29, Method: Compositional matrix adjust.
+ Identities = 54/87 (62%), Positives = 65/87 (75%), Gaps = 2/87 (2%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELKNSISDYTE EF +++++I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKNSISDYTETEFKKIIEDII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+> sp|P13479|IMM9_ECOLX Colicin-E9 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=2
+Length=86
+
+ Score = 111 bits (278),  Expect = 1e-28, Method: Compositional matrix adjust.
+ Identities = 51/87 (59%), Positives = 68/87 (78%), Gaps = 1/87 (1%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+DLIYYP + 
+Sbjct  1   MELKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSDLIYYPKEG  59
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+            DDSP GIV  +K+WRAANGK GFKQG
+Sbjct  60  DDDSPSGIVNTVKQWRAANGKSGFKQG  86
+
+
+ Score = 111 bits (278),  Expect = 1e-28, Method: Compositional matrix adjust.
+ Identities = 51/87 (59%), Positives = 68/87 (78%), Gaps = 1/87 (1%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+DLIYYP + 
+Sbjct  1    MELKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSDLIYYPKEG  59
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+             DDSP GIV  +K+WRAANGK GFKQG
+Sbjct  60   DDDSPSGIVNTVKQWRAANGKSGFKQG  86
+
+
+ Score = 111 bits (278),  Expect = 1e-28, Method: Compositional matrix adjust.
+ Identities = 51/87 (59%), Positives = 68/87 (78%), Gaps = 1/87 (1%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+DLIYYP + 
+Sbjct  1    MELKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSDLIYYPKEG  59
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+             DDSP GIV  +K+WRAANGK GFKQG
+Sbjct  60   DDDSPSGIVNTVKQWRAANGKSGFKQG  86
+
+
+ Score = 111 bits (278),  Expect = 1e-28, Method: Compositional matrix adjust.
+ Identities = 51/87 (59%), Positives = 68/87 (78%), Gaps = 1/87 (1%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+DLIYYP + 
+Sbjct  1    MELKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSDLIYYPKEG  59
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+             DDSP GIV  +K+WRAANGK GFKQG
+Sbjct  60   DDDSPSGIVNTVKQWRAANGKSGFKQG  86
+
+
+> sp|P13478|IMMX_ECOLX Colicin-E8 immunity protein in ColE6 OS=Escherichia 
+coli OX=562 GN=imm PE=3 SV=1
+Length=85
+
+ Score = 108 bits (270),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 52/87 (60%), Positives = 62/87 (71%), Gaps = 2/87 (2%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELK SI DYTE EF ++++ I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1   MELKKSIGDYTETEFKKIIENII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+            D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59  NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 108 bits (270),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 52/87 (60%), Positives = 62/87 (71%), Gaps = 2/87 (2%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELK SI DYTE EF ++++ I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKKSIGDYTETEFKKIIENII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 108 bits (270),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 52/87 (60%), Positives = 62/87 (71%), Gaps = 2/87 (2%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELK SI DYTE EF ++++ I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKKSIGDYTETEFKKIIENII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 108 bits (270),  Expect = 1e-27, Method: Compositional matrix adjust.
+ Identities = 52/87 (60%), Positives = 62/87 (71%), Gaps = 2/87 (2%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELK SI DYTE EF ++++ I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKKSIGDYTETEFKKIIENII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+> sp|Q06579|IMM2_PSEAE Pyocin-S2 immunity protein OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 
+14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=imm2 
+PE=1 SV=1
+Length=87
+
+ Score = 97.4 bits (241),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 45/88 (51%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  3   LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  59
+           +K+ IS+YTE EF++ +K+I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1   MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  60  NRDDSPEGIVKEIKEWRAANGKPGFKQG  87
+           NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60  NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 97.4 bits (241),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 45/88 (51%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  90   LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  146
+            +K+ IS+YTE EF++ +K+I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  147  NRDDSPEGIVKEIKEWRAANGKPGFKQG  174
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 97.4 bits (241),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 45/88 (51%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  177  LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  233
+            +K+ IS+YTE EF++ +K+I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  234  NRDDSPEGIVKEIKEWRAANGKPGFKQG  261
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 97.4 bits (241),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 45/88 (51%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  264  LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  320
+            +K+ IS+YTE EF++ +K+I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  321  NRDDSPEGIVKEIKEWRAANGKPGFKQG  348
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+> sp|Q06578|IMM1_PSEAI Pyocin-S1 immunity protein OS=Pseudomonas 
+aeruginosa OX=287 GN=imm1 PE=1 SV=1
+Length=87
+
+ Score = 95.9 bits (237),  Expect = 5e-23, Method: Compositional matrix adjust.
+ Identities = 44/88 (50%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  3   LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  59
+           +K+ IS+YTE EF++ +++I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1   MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  60  NRDDSPEGIVKEIKEWRAANGKPGFKQG  87
+           NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60  NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 95.9 bits (237),  Expect = 5e-23, Method: Compositional matrix adjust.
+ Identities = 44/88 (50%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  90   LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  146
+            +K+ IS+YTE EF++ +++I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  147  NRDDSPEGIVKEIKEWRAANGKPGFKQG  174
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 95.9 bits (237),  Expect = 5e-23, Method: Compositional matrix adjust.
+ Identities = 44/88 (50%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  177  LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  233
+            +K+ IS+YTE EF++ +++I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  234  NRDDSPEGIVKEIKEWRAANGKPGFKQG  261
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 95.9 bits (237),  Expect = 5e-23, Method: Compositional matrix adjust.
+ Identities = 44/88 (50%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  264  LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  320
+            +K+ IS+YTE EF++ +++I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  321  NRDDSPEGIVKEIKEWRAANGKPGFKQG  348
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.134    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 30546328091
+Results from round 2
+
+
+Query= D1UNK
+
+Length=348
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q03708|IMM7_ECOLX Colicin-E7 immunity protein OS=Escherichia...  149     5e-43
+  sp|P13479|IMM9_ECOLX Colicin-E9 immunity protein OS=Escherichia...  145     3e-41
+  sp|P04482|IMM2_ECOLX Colicin-E2 immunity protein OS=Escherichia...  139     3e-39
+  sp|P09881|IMM8_ECOLX Colicin-E8 immunity protein OS=Escherichia...  132     1e-36
+  sp|P13478|IMMX_ECOLX Colicin-E8 immunity protein in ColE6 OS=Es...  129     4e-35
+  sp|Q06579|IMM2_PSEAE Pyocin-S2 immunity protein OS=Pseudomonas ...  124     3e-33
+  sp|Q06578|IMM1_PSEAI Pyocin-S1 immunity protein OS=Pseudomonas ...  122     1e-32
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q03708|IMM7_ECOLX Colicin-E7 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=2
+Length=87
+
+ Score = 149 bits (377),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 87/87 (100%), Positives = 87/87 (100%), Gaps = 0/87 (0%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN
+Sbjct  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+           RDDSPEGIVKEIKEWRAANGKPGFKQG
+Sbjct  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+
+
+ Score = 149 bits (377),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 87/87 (100%), Positives = 87/87 (100%), Gaps = 0/87 (0%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN
+Sbjct  1    MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+            RDDSPEGIVKEIKEWRAANGKPGFKQG
+Sbjct  61   RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+
+
+ Score = 149 bits (377),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 87/87 (100%), Positives = 87/87 (100%), Gaps = 0/87 (0%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN
+Sbjct  1    MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+            RDDSPEGIVKEIKEWRAANGKPGFKQG
+Sbjct  61   RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+
+
+ Score = 149 bits (377),  Expect = 5e-43, Method: Composition-based stats.
+ Identities = 87/87 (100%), Positives = 87/87 (100%), Gaps = 0/87 (0%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN
+Sbjct  1    MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+            RDDSPEGIVKEIKEWRAANGKPGFKQG
+Sbjct  61   RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+
+
+> sp|P13479|IMM9_ECOLX Colicin-E9 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=2
+Length=86
+
+ Score = 145 bits (365),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 51/87 (59%), Positives = 68/87 (78%), Gaps = 1/87 (1%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+DLIYYP + 
+Sbjct  1   MELKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSDLIYYPKEG  59
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+            DDSP GIV  +K+WRAANGK GFKQG
+Sbjct  60  DDDSPSGIVNTVKQWRAANGKSGFKQG  86
+
+
+ Score = 145 bits (365),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 51/87 (59%), Positives = 68/87 (78%), Gaps = 1/87 (1%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+DLIYYP + 
+Sbjct  1    MELKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSDLIYYPKEG  59
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+             DDSP GIV  +K+WRAANGK GFKQG
+Sbjct  60   DDDSPSGIVNTVKQWRAANGKSGFKQG  86
+
+
+ Score = 145 bits (365),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 51/87 (59%), Positives = 68/87 (78%), Gaps = 1/87 (1%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+DLIYYP + 
+Sbjct  1    MELKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSDLIYYPKEG  59
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+             DDSP GIV  +K+WRAANGK GFKQG
+Sbjct  60   DDDSPSGIVNTVKQWRAANGKSGFKQG  86
+
+
+ Score = 145 bits (365),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 51/87 (59%), Positives = 68/87 (78%), Gaps = 1/87 (1%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELK+SISDYTEAEF+QL+  I   + ++ ++++  L+ HF ++TEHP G+DLIYYP + 
+Sbjct  1    MELKHSISDYTEAEFLQLVTTICNADTSSEEELVK-LVTHFEEMTEHPSGSDLIYYPKEG  59
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+             DDSP GIV  +K+WRAANGK GFKQG
+Sbjct  60   DDDSPSGIVNTVKQWRAANGKSGFKQG  86
+
+
+> sp|P04482|IMM2_ECOLX Colicin-E2 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=1
+Length=86
+
+ Score = 139 bits (351),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 58/87 (67%), Positives = 73/87 (84%), Gaps = 1/87 (1%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELK+SISDYTEAEF++ +K+I +    AT++  + L+  F ++TEHPDG+DLIYYP D+
+Sbjct  1   MELKHSISDYTEAEFLEFVKKICRAE-GATEEDDNKLVREFERLTEHPDGSDLIYYPRDD  59
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+           R+DSPEGIVKEIKEWRAANGK GFKQG
+Sbjct  60  REDSPEGIVKEIKEWRAANGKSGFKQG  86
+
+
+ Score = 139 bits (351),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 58/87 (67%), Positives = 73/87 (84%), Gaps = 1/87 (1%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELK+SISDYTEAEF++ +K+I +    AT++  + L+  F ++TEHPDG+DLIYYP D+
+Sbjct  1    MELKHSISDYTEAEFLEFVKKICRAE-GATEEDDNKLVREFERLTEHPDGSDLIYYPRDD  59
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+            R+DSPEGIVKEIKEWRAANGK GFKQG
+Sbjct  60   REDSPEGIVKEIKEWRAANGKSGFKQG  86
+
+
+ Score = 139 bits (351),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 58/87 (67%), Positives = 73/87 (84%), Gaps = 1/87 (1%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELK+SISDYTEAEF++ +K+I +    AT++  + L+  F ++TEHPDG+DLIYYP D+
+Sbjct  1    MELKHSISDYTEAEFLEFVKKICRAE-GATEEDDNKLVREFERLTEHPDGSDLIYYPRDD  59
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+            R+DSPEGIVKEIKEWRAANGK GFKQG
+Sbjct  60   REDSPEGIVKEIKEWRAANGKSGFKQG  86
+
+
+ Score = 139 bits (351),  Expect = 3e-39, Method: Composition-based stats.
+ Identities = 58/87 (67%), Positives = 73/87 (84%), Gaps = 1/87 (1%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELK+SISDYTEAEF++ +K+I +    AT++  + L+  F ++TEHPDG+DLIYYP D+
+Sbjct  1    MELKHSISDYTEAEFLEFVKKICRAE-GATEEDDNKLVREFERLTEHPDGSDLIYYPRDD  59
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+            R+DSPEGIVKEIKEWRAANGK GFKQG
+Sbjct  60   REDSPEGIVKEIKEWRAANGKSGFKQG  86
+
+
+> sp|P09881|IMM8_ECOLX Colicin-E8 immunity protein OS=Escherichia 
+coli OX=562 GN=imm PE=1 SV=1
+Length=85
+
+ Score = 132 bits (333),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 54/87 (62%), Positives = 65/87 (75%), Gaps = 2/87 (2%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELKNSISDYTE EF +++++I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1   MELKNSISDYTETEFKKIIEDII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+            D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59  NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 132 bits (333),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 54/87 (62%), Positives = 65/87 (75%), Gaps = 2/87 (2%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELKNSISDYTE EF +++++I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKNSISDYTETEFKKIIEDII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 132 bits (333),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 54/87 (62%), Positives = 65/87 (75%), Gaps = 2/87 (2%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELKNSISDYTE EF +++++I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKNSISDYTETEFKKIIEDII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 132 bits (333),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 54/87 (62%), Positives = 65/87 (75%), Gaps = 2/87 (2%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELKNSISDYTE EF +++++I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKNSISDYTETEFKKIIEDII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+> sp|P13478|IMMX_ECOLX Colicin-E8 immunity protein in ColE6 OS=Escherichia 
+coli OX=562 GN=imm PE=3 SV=1
+Length=85
+
+ Score = 129 bits (323),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 52/87 (60%), Positives = 62/87 (71%), Gaps = 2/87 (2%)
+
+Query  1   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  60
+           MELK SI DYTE EF ++++ I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1   MELKKSIGDYTETEFKKIIENII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  61  RDDSPEGIVKEIKEWRAANGKPGFKQG  87
+            D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59  NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 129 bits (323),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 52/87 (60%), Positives = 62/87 (71%), Gaps = 2/87 (2%)
+
+Query  88   MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  147
+            MELK SI DYTE EF ++++ I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKKSIGDYTETEFKKIIENII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  148  RDDSPEGIVKEIKEWRAANGKPGFKQG  174
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 129 bits (323),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 52/87 (60%), Positives = 62/87 (71%), Gaps = 2/87 (2%)
+
+Query  175  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  234
+            MELK SI DYTE EF ++++ I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKKSIGDYTETEFKKIIENII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  235  RDDSPEGIVKEIKEWRAANGKPGFKQG  261
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+ Score = 129 bits (323),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 52/87 (60%), Positives = 62/87 (71%), Gaps = 2/87 (2%)
+
+Query  262  MELKNSISDYTEAEFVQLLKEIEKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSDN  321
+            MELK SI DYTE EF ++++ I   N    +   D  LEHF+ +TEHP G+DLIYYP  N
+Sbjct  1    MELKKSIGDYTETEFKKIIENII--NCEGDEKKQDDNLEHFISVTEHPSGSDLIYYPEGN  58
+
+Query  322  RDDSPEGIVKEIKEWRAANGKPGFKQG  348
+             D SPE ++KEIKEWRAANGK GFKQG
+Sbjct  59   NDGSPEAVIKEIKEWRAANGKSGFKQG  85
+
+
+> sp|Q06579|IMM2_PSEAE Pyocin-S2 immunity protein OS=Pseudomonas 
+aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 
+14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=imm2 
+PE=1 SV=1
+Length=87
+
+ Score = 124 bits (310),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 45/88 (51%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  3   LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  59
+           +K+ IS+YTE EF++ +K+I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1   MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  60  NRDDSPEGIVKEIKEWRAANGKPGFKQG  87
+           NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60  NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 124 bits (310),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 45/88 (51%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  90   LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  146
+            +K+ IS+YTE EF++ +K+I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  147  NRDDSPEGIVKEIKEWRAANGKPGFKQG  174
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 124 bits (310),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 45/88 (51%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  177  LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  233
+            +K+ IS+YTE EF++ +K+I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  234  NRDDSPEGIVKEIKEWRAANGKPGFKQG  261
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 124 bits (310),  Expect = 3e-33, Method: Composition-based stats.
+ Identities = 45/88 (51%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  264  LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  320
+            +K+ IS+YTE EF++ +K+I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVKDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  321  NRDDSPEGIVKEIKEWRAANGKPGFKQG  348
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+> sp|Q06578|IMM1_PSEAI Pyocin-S1 immunity protein OS=Pseudomonas 
+aeruginosa OX=287 GN=imm1 PE=1 SV=1
+Length=87
+
+ Score = 122 bits (306),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 44/88 (50%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  3   LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  59
+           +K+ IS+YTE EF++ +++I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1   MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  60  NRDDSPEGIVKEIKEWRAANGKPGFKQG  87
+           NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60  NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 122 bits (306),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 44/88 (50%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  90   LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  146
+            +K+ IS+YTE EF++ +++I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  147  NRDDSPEGIVKEIKEWRAANGKPGFKQG  174
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 122 bits (306),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 44/88 (50%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  177  LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  233
+            +K+ IS+YTE EF++ +++I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  234  NRDDSPEGIVKEIKEWRAANGKPGFKQG  261
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+ Score = 122 bits (306),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 44/88 (50%), Positives = 65/88 (74%), Gaps = 4/88 (5%)
+
+Query  264  LKNSISDYTEAEFVQLLKEI---EKENVAATDDVLDVLLEHFVKITEHPDGTDLIYYPSD  320
+            +K+ IS+YTE EF++ +++I    K+     +  +  +LE F K+TEHP G+DL+YYP++
+Sbjct  1    MKSKISEYTEKEFLEFVEDIYTNNKKKFPTEESHIQAVLE-FKKLTEHPSGSDLLYYPNE  59
+
+Query  321  NRDDSPEGIVKEIKEWRAANGKPGFKQG  348
+            NR+DSP G+VKE+KEWRA+ G PGFK G
+Sbjct  60   NREDSPAGVVKEVKEWRASKGLPGFKAG  87
+
+
+
+Lambda      K        H        a         alpha
+   0.296    0.128    0.357    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0397    0.140     1.90     42.6     43.6 
+
+Effective search space used: 30546328091
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 6, 2018  6:13 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,457 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= D2ARA
+
+Length=149
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Esc...  314     2e-107
+  sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Esc...  314     2e-107
+  sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Cit...  293     3e-99 
+  sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Sal...  284     1e-95 
+  sp|P07642|ARAC_DICCH Arabinose operon regulatory protein OS=Dic...  161     2e-47 
+
+
+> sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Escherichia 
+coli (strain K12) OX=83333 GN=araC PE=1 SV=1
+Length=292
+
+ Score = 314 bits (805),  Expect = 2e-107, Method: Compositional matrix adjust.
+ Identities = 149/149 (100%), Positives = 149/149 (100%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII
+Sbjct  79   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Escherichia 
+coli O157:H7 OX=83334 GN=araC PE=3 SV=1
+Length=292
+
+ Score = 314 bits (805),  Expect = 2e-107, Method: Compositional matrix adjust.
+ Identities = 149/149 (100%), Positives = 149/149 (100%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII
+Sbjct  79   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Citrobacter 
+freundii OX=546 GN=araC PE=4 SV=1
+Length=281
+
+ Score = 293 bits (751),  Expect = 3e-99, Method: Compositional matrix adjust.
+ Identities = 136/149 (91%), Positives = 144/149 (97%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRG+GV+ NQG++FVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGEGVINNQGKQFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHP+A EWYHQWVYFRPRAYW EWL WP+IFA TGFFRPDEAHQPHF++LFGQII
+Sbjct  79   IHHYGRHPDASEWYHQWVYFRPRAYWQEWLTWPAIFAQTGFFRPDEAHQPHFNELFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=araC PE=4 SV=1
+Length=281
+
+ Score = 284 bits (726),  Expect = 1e-95, Method: Compositional matrix adjust.
+ Identities = 132/149 (89%), Positives = 139/149 (93%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRG+GV+ N G +FVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGEGVINNNGEQFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHP+A EWYHQWVYFRPRAYW EWL WP+IFA TGFFRPDEA QPHFS+LFGQII
+Sbjct  79   IHHYGRHPDASEWYHQWVYFRPRAYWQEWLTWPTIFAQTGFFRPDEARQPHFSELFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            +AGQGEGRYSELLAINLLEQLLLRRM  I
+Sbjct  139  SAGQGEGRYSELLAINLLEQLLLRRMAVI  167
+
+
+> sp|P07642|ARAC_DICCH Arabinose operon regulatory protein OS=Dickeya 
+chrysanthemi OX=556 GN=araC PE=4 SV=1
+Length=310
+
+ Score = 161 bits (408),  Expect = 2e-47, Method: Compositional matrix adjust.
+ Identities = 81/148 (55%), Positives = 97/148 (66%), Gaps = 1/148 (1%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPI A G LDFFIDRP GMKGYI+NLT++GQG + +    F C PGD+LLFPP  
+Sbjct  24   LVAGLTPILAEGPLDFFIDRPDGMKGYIINLTMKGQGQIFDGDETFFCNPGDLLLFPPKS  83
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFR-PDEAHQPHFSDLFGQI  119
+             H YGR P +  WYH+WVYFRPRAYW +WL W +  +  G    P+      F  LF  I
+Sbjct  84   THFYGRSPSSDCWYHRWVYFRPRAYWADWLEWHTKSSGIGRMSLPNNQLLLEFDRLFANI  143
+
+Query  120  INAGQGEGRYSELLAINLLEQLLLRRME  147
+                +   R+SE L +NLLE+LLLR ME
+Sbjct  144  EQTQRSGRRFSEELGMNLLERLLLRAME  171
+
+
+
+Lambda      K        H        a         alpha
+   0.326    0.146    0.492    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5883023118
+Results from round 2
+
+
+Query= D2ARA
+
+Length=149
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Esc...  300     1e-101
+  sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Esc...  300     1e-101
+  sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Cit...  297     1e-100
+  sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Sal...  287     7e-97 
+  sp|P07642|ARAC_DICCH Arabinose operon regulatory protein OS=Dic...  268     4e-89 
+
+Sequences not found previously or not previously below threshold:
+
+  sp|O31449|YBFI_BACSU Uncharacterized HTH-type transcriptional r...  41.1    0.001
+
+
+> sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Escherichia 
+coli (strain K12) OX=83333 GN=araC PE=1 SV=1
+Length=292
+
+ Score = 300 bits (768),  Expect = 1e-101, Method: Composition-based stats.
+ Identities = 149/149 (100%), Positives = 149/149 (100%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII
+Sbjct  79   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Escherichia 
+coli O157:H7 OX=83334 GN=araC PE=3 SV=1
+Length=292
+
+ Score = 300 bits (768),  Expect = 1e-101, Method: Composition-based stats.
+ Identities = 149/149 (100%), Positives = 149/149 (100%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII
+Sbjct  79   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Citrobacter 
+freundii OX=546 GN=araC PE=4 SV=1
+Length=281
+
+ Score = 297 bits (760),  Expect = 1e-100, Method: Composition-based stats.
+ Identities = 136/149 (91%), Positives = 144/149 (97%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRG+GV+ NQG++FVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGEGVINNQGKQFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHP+A EWYHQWVYFRPRAYW EWL WP+IFA TGFFRPDEAHQPHF++LFGQII
+Sbjct  79   IHHYGRHPDASEWYHQWVYFRPRAYWQEWLTWPAIFAQTGFFRPDEAHQPHFNELFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=araC PE=4 SV=1
+Length=281
+
+ Score = 287 bits (735),  Expect = 7e-97, Method: Composition-based stats.
+ Identities = 132/149 (89%), Positives = 139/149 (93%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRG+GV+ N G +FVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGEGVINNNGEQFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHP+A EWYHQWVYFRPRAYW EWL WP+IFA TGFFRPDEA QPHFS+LFGQII
+Sbjct  79   IHHYGRHPDASEWYHQWVYFRPRAYWQEWLTWPTIFAQTGFFRPDEARQPHFSELFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            +AGQGEGRYSELLAINLLEQLLLRRM  I
+Sbjct  139  SAGQGEGRYSELLAINLLEQLLLRRMAVI  167
+
+
+> sp|P07642|ARAC_DICCH Arabinose operon regulatory protein OS=Dickeya 
+chrysanthemi OX=556 GN=araC PE=4 SV=1
+Length=310
+
+ Score = 268 bits (686),  Expect = 4e-89, Method: Composition-based stats.
+ Identities = 81/148 (55%), Positives = 97/148 (66%), Gaps = 1/148 (1%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPI A G LDFFIDRP GMKGYI+NLT++GQG + +    F C PGD+LLFPP  
+Sbjct  24   LVAGLTPILAEGPLDFFIDRPDGMKGYIINLTMKGQGQIFDGDETFFCNPGDLLLFPPKS  83
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFR-PDEAHQPHFSDLFGQI  119
+             H YGR P +  WYH+WVYFRPRAYW +WL W +  +  G    P+      F  LF  I
+Sbjct  84   THFYGRSPSSDCWYHRWVYFRPRAYWADWLEWHTKSSGIGRMSLPNNQLLLEFDRLFANI  143
+
+Query  120  INAGQGEGRYSELLAINLLEQLLLRRME  147
+                +   R+SE L +NLLE+LLLR ME
+Sbjct  144  EQTQRSGRRFSEELGMNLLERLLLRAME  171
+
+
+> sp|O31449|YBFI_BACSU Uncharacterized HTH-type transcriptional 
+regulator YbfI OS=Bacillus subtilis (strain 168) OX=224308 
+GN=ybfI PE=4 SV=1
+Length=275
+
+ Score = 41.1 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 26/50 (52%), Gaps = 4/50 (8%)
+
+Query  27  YILNLTIRGQGVVKNQGREFVCRPGDILLFPPGEIHHY----GRHPEARE  72
+           Y++    +GQ  +  Q +E++  PGD+LLF P + H      GR  + R 
+Sbjct  36  YVIGFIEKGQRYLACQDQEYIINPGDLLLFNPRDTHSCEQIDGRTLDYRC  85
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.141    0.466    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0439    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5883023118
+Results from round 3
+
+
+Query= D2ARA
+
+Length=149
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Esc...  289     1e-97
+  sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Esc...  289     1e-97
+  sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Cit...  286     3e-96
+  sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Sal...  276     2e-92
+  sp|P07642|ARAC_DICCH Arabinose operon regulatory protein OS=Dic...  259     2e-85
+  sp|O31449|YBFI_BACSU Uncharacterized HTH-type transcriptional r...  77.3    2e-16
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P0A9E0|ARAC_ECOLI Arabinose operon regulatory protein OS=Escherichia 
+coli (strain K12) OX=83333 GN=araC PE=1 SV=1
+Length=292
+
+ Score = 289 bits (741),  Expect = 1e-97, Method: Composition-based stats.
+ Identities = 149/149 (100%), Positives = 149/149 (100%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII
+Sbjct  79   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P0A9E1|ARAC_ECO57 Arabinose operon regulatory protein OS=Escherichia 
+coli O157:H7 OX=83334 GN=araC PE=3 SV=1
+Length=292
+
+ Score = 289 bits (741),  Expect = 1e-97, Method: Composition-based stats.
+ Identities = 149/149 (100%), Positives = 149/149 (100%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII
+Sbjct  79   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P11765|ARAC_CITFR Arabinose operon regulatory protein OS=Citrobacter 
+freundii OX=546 GN=araC PE=4 SV=1
+Length=281
+
+ Score = 286 bits (731),  Expect = 3e-96, Method: Composition-based stats.
+ Identities = 136/149 (91%), Positives = 144/149 (97%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRG+GV+ NQG++FVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGEGVINNQGKQFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHP+A EWYHQWVYFRPRAYW EWL WP+IFA TGFFRPDEAHQPHF++LFGQII
+Sbjct  79   IHHYGRHPDASEWYHQWVYFRPRAYWQEWLTWPAIFAQTGFFRPDEAHQPHFNELFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            NAGQGEGRYSELLAINLLEQLLLRRMEAI
+Sbjct  139  NAGQGEGRYSELLAINLLEQLLLRRMEAI  167
+
+
+> sp|P03022|ARAC_SALTY Arabinose operon regulatory protein OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) 
+OX=99287 GN=araC PE=4 SV=1
+Length=281
+
+ Score = 276 bits (705),  Expect = 2e-92, Method: Composition-based stats.
+ Identities = 132/149 (89%), Positives = 139/149 (93%), Gaps = 0/149 (0%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRG+GV+ N G +FVCRPGDILLFPPGE
+Sbjct  19   LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGEGVINNNGEQFVCRPGDILLFPPGE  78
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFRPDEAHQPHFSDLFGQII  120
+            IHHYGRHP+A EWYHQWVYFRPRAYW EWL WP+IFA TGFFRPDEA QPHFS+LFGQII
+Sbjct  79   IHHYGRHPDASEWYHQWVYFRPRAYWQEWLTWPTIFAQTGFFRPDEARQPHFSELFGQII  138
+
+Query  121  NAGQGEGRYSELLAINLLEQLLLRRMEAI  149
+            +AGQGEGRYSELLAINLLEQLLLRRM  I
+Sbjct  139  SAGQGEGRYSELLAINLLEQLLLRRMAVI  167
+
+
+> sp|P07642|ARAC_DICCH Arabinose operon regulatory protein OS=Dickeya 
+chrysanthemi OX=556 GN=araC PE=4 SV=1
+Length=310
+
+ Score = 259 bits (662),  Expect = 2e-85, Method: Composition-based stats.
+ Identities = 81/148 (55%), Positives = 97/148 (66%), Gaps = 1/148 (1%)
+
+Query  1    LVAGLTPIEANGYLDFFIDRPLGMKGYILNLTIRGQGVVKNQGREFVCRPGDILLFPPGE  60
+            LVAGLTPI A G LDFFIDRP GMKGYI+NLT++GQG + +    F C PGD+LLFPP  
+Sbjct  24   LVAGLTPILAEGPLDFFIDRPDGMKGYIINLTMKGQGQIFDGDETFFCNPGDLLLFPPKS  83
+
+Query  61   IHHYGRHPEAREWYHQWVYFRPRAYWHEWLNWPSIFANTGFFR-PDEAHQPHFSDLFGQI  119
+             H YGR P +  WYH+WVYFRPRAYW +WL W +  +  G    P+      F  LF  I
+Sbjct  84   THFYGRSPSSDCWYHRWVYFRPRAYWADWLEWHTKSSGIGRMSLPNNQLLLEFDRLFANI  143
+
+Query  120  INAGQGEGRYSELLAINLLEQLLLRRME  147
+                +   R+SE L +NLLE+LLLR ME
+Sbjct  144  EQTQRSGRRFSEELGMNLLERLLLRAME  171
+
+
+> sp|O31449|YBFI_BACSU Uncharacterized HTH-type transcriptional 
+regulator YbfI OS=Bacillus subtilis (strain 168) OX=224308 
+GN=ybfI PE=4 SV=1
+Length=275
+
+ Score = 77.3 bits (189),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 26/50 (52%), Gaps = 4/50 (8%)
+
+Query  27  YILNLTIRGQGVVKNQGREFVCRPGDILLFPPGEIHHY----GRHPEARE  72
+           Y++    +GQ  +  Q +E++  PGD+LLF P + H      GR  + R 
+Sbjct  36  YVIGFIEKGQRYLACQDQEYIINPGDLLLFNPRDTHSCEQIDGRTLDYRC  85
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.142    0.464    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0442    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5883023118
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 6, 2018  6:13 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

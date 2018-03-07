@@ -1,0 +1,1369 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= D2RTP
+
+Length=244
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P22629|SAV_STRAV Streptavidin OS=Streptomyces avidinii OX=18...  252     7e-83
+  sp|Q53532|SAV1_STRVL Streptavidin-V1 OS=Streptomyces violaceus ...  250     3e-82
+  sp|Q53533|SAV2_STRVL Streptavidin-V2 OS=Streptomyces violaceus ...  243     1e-79
+  sp|P56734|AVR4_CHICK Avidin-related protein 4/5 OS=Gallus gallu...  49.3    3e-06
+  sp|P02701|AVID_CHICK Avidin OS=Gallus gallus OX=9031 GN=AVD PE=...  45.4    5e-05
+  sp|P56733|AVR3_CHICK Avidin-related protein 3 OS=Gallus gallus ...  42.4    7e-04
+  sp|P56735|AVR6_CHICK Avidin-related protein 6 OS=Gallus gallus ...  42.4    8e-04
+  sp|P56736|AVR7_CHICK Avidin-related protein 7 OS=Gallus gallus ...  42.0    9e-04
+  sp|O13153|AVR1_CHICK Avidin-related protein 1 OS=Gallus gallus ...  41.6    0.001
+  sp|P10079|FBP1_STRPU Fibropellin-1 OS=Strongylocentrotus purpur...  41.6    0.005
+
+
+> sp|P22629|SAV_STRAV Streptavidin OS=Streptomyces avidinii OX=1895 
+PE=1 SV=1
+Length=183
+
+ Score = 252 bits (643),  Expect = 7e-83, Method: Compositional matrix adjust.
+ Identities = 125/128 (98%), Positives = 126/128 (98%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+ Score = 247 bits (631),  Expect = 5e-81, Method: Compositional matrix adjust.
+ Identities = 123/130 (95%), Positives = 125/130 (96%), Gaps = 0/130 (0%)
+
+Query  115  HDTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSA  174
+             D+  +V  AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSA
+Sbjct  28   KDSKAQVSAAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSA  87
+
+Query  175  PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKST  234
+            PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKST
+Sbjct  88   PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKST  147
+
+Query  235  LVGHDTFTKV  244
+            LVGHDTFTKV
+Sbjct  148  LVGHDTFTKV  157
+
+
+> sp|Q53532|SAV1_STRVL Streptavidin-V1 OS=Streptomyces violaceus 
+OX=1936 PE=3 SV=1
+Length=183
+
+ Score = 250 bits (639),  Expect = 3e-82, Method: Compositional matrix adjust.
+ Identities = 124/128 (97%), Positives = 125/128 (98%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYVGG EARINTQWLLTSGTTEANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVGGTEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+ Score = 246 bits (627),  Expect = 2e-80, Method: Compositional matrix adjust.
+ Identities = 122/130 (94%), Positives = 124/130 (95%), Gaps = 0/130 (0%)
+
+Query  115  HDTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSA  174
+             D+  +V  AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSA
+Sbjct  28   KDSKAQVSAAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSA  87
+
+Query  175  PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKST  234
+            PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGG EARINTQWLLTSGTTEANAWKST
+Sbjct  88   PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGTEARINTQWLLTSGTTEANAWKST  147
+
+Query  235  LVGHDTFTKV  244
+            LVGHDTFTKV
+Sbjct  148  LVGHDTFTKV  157
+
+
+> sp|Q53533|SAV2_STRVL Streptavidin-V2 OS=Streptomyces violaceus 
+OX=1936 PE=3 SV=1
+Length=183
+
+ Score = 243 bits (621),  Expect = 1e-79, Method: Compositional matrix adjust.
+ Identities = 120/128 (94%), Positives = 123/128 (96%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTA ADG+LTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTANADGSLTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYV G+EARINTQWLLTSGTT ANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVAGSEARINTQWLLTSGTTAANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+ Score = 236 bits (602),  Expect = 1e-76, Method: Compositional matrix adjust.
+ Identities = 117/130 (90%), Positives = 121/130 (93%), Gaps = 0/130 (0%)
+
+Query  115  HDTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSA  174
+             D+  +   AEAGITGTWYNQLGSTFIVTA ADG+LTGTYESAVGNAESRYVLTGRYDSA
+Sbjct  28   KDSKAQAAVAEAGITGTWYNQLGSTFIVTANADGSLTGTYESAVGNAESRYVLTGRYDSA  87
+
+Query  175  PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKST  234
+            PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYV G+EARINTQWLLTSGTT ANAWKST
+Sbjct  88   PATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVAGSEARINTQWLLTSGTTAANAWKST  147
+
+Query  235  LVGHDTFTKV  244
+            LVGHDTFTKV
+Sbjct  148  LVGHDTFTKV  157
+
+
+> sp|P56734|AVR4_CHICK Avidin-related protein 4/5 OS=Gallus gallus 
+OX=9031 GN=AVR4 PE=1 SV=1
+Length=150
+
+ Score = 49.3 bits (116),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 44/133 (33%), Positives = 65/133 (49%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A  + G  TGTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFTGTYLTAVADNPGNITLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEAN-AWKSTL  112
+            S    G+TV W  N+  + S T ++GQ      G E  + T WLL S   + +  WK+T 
+Sbjct  82   SQPTFGFTVHW--NF--SESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDISYDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT++   E
+Sbjct  137  VGYNNFTRLCTVE  149
+
+
+ Score = 48.5 bits (114),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 43/129 (33%), Positives = 64/129 (50%), Gaps = 19/129 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A  + G  TGTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFTGTYLTAVADNPGNITLSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEAN-AWKSTL  235
+            S    G+TV W  N+  + S T ++GQ      G E  + T WLL S   + +  WK+T 
+Sbjct  82   SQPTFGFTVHW--NF--SESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDISYDWKATR  136
+
+Query  236  VGHDTFTKV  244
+            VG++ FT++
+Sbjct  137  VGYNNFTRL  145
+
+
+> sp|P02701|AVID_CHICK Avidin OS=Gallus gallus OX=9031 GN=AVD PE=1 
+SV=3
+Length=152
+
+ Score = 45.4 bits (106),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 41/129 (32%), Positives = 61/129 (47%), Gaps = 15/129 (12%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV---GNAESRYVLTGRYDSAPATDGS  57
+            +  +TG W N LGS   + A  + G  TGTY +AV    N      L G  ++      +
+Sbjct  27   KCSLTGKWTNDLGSNMTIGAVNSRGEFTGTYITAVTATSNEIKESPLHGTQNT--INKRT  84
+
+Query  58   GTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTLV  113
+                G+TV WK     + S T ++GQ      G E  + T WLL S   +  + WK+T V
+Sbjct  85   QPTFGFTVNWK----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDIGDDWKATRV  139
+
+Query  114  GHDTFTKVK  122
+            G + FT+++
+Sbjct  140  GINIFTRLR  148
+
+
+ Score = 44.7 bits (104),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 41/128 (32%), Positives = 60/128 (47%), Gaps = 15/128 (12%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV---GNAESRYVLTGRYDSAPATDGS  180
+            +  +TG W N LGS   + A  + G  TGTY +AV    N      L G  ++      +
+Sbjct  27   KCSLTGKWTNDLGSNMTIGAVNSRGEFTGTYITAVTATSNEIKESPLHGTQNT--INKRT  84
+
+Query  181  GTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTLV  236
+                G+TV WK     + S T ++GQ      G E  + T WLL S   +  + WK+T V
+Sbjct  85   QPTFGFTVNWK----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDIGDDWKATRV  139
+
+Query  237  GHDTFTKV  244
+            G + FT++
+Sbjct  140  GINIFTRL  147
+
+
+> sp|P56733|AVR3_CHICK Avidin-related protein 3 OS=Gallus gallus 
+OX=9031 GN=AVR3 PE=2 SV=1
+Length=150
+
+ Score = 42.4 bits (98),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 39/133 (29%), Positives = 63/133 (47%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A  + G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFAGTYLTAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  112
+                 G+TV W  N+  + S + + GQ      G E  + T+WL      + ++ WK+T 
+Sbjct  82   CQPTFGFTVHW--NF--SESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGYNNFTRQRTVE  149
+
+
+ Score = 40.8 bits (94),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 38/128 (30%), Positives = 61/128 (48%), Gaps = 19/128 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A  + G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFAGTYLTAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  235
+                 G+TV W  N+  + S + + GQ      G E  + T+WL      + ++ WK+T 
+Sbjct  82   CQPTFGFTVHW--NF--SESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  236  VGHDTFTK  243
+            VG++ FT+
+Sbjct  137  VGYNNFTR  144
+
+
+> sp|P56735|AVR6_CHICK Avidin-related protein 6 OS=Gallus gallus 
+OX=9031 GN=AVR6 PE=3 SV=1
+Length=150
+
+ Score = 42.4 bits (98),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 42/135 (31%), Positives = 66/135 (49%), Gaps = 23/135 (17%)
+
+Query  2    EAGITGTWYNQLGSTFIVTAGA---DGALTGTYESAV----GNAESRYVLTGRYDSAPAT  54
+            +  +TG W N LGS  I+T GA   +G   GTY +AV    GN +   +L  ++  A   
+Sbjct  27   KCSLTGEWDNNLGS--IMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA---  81
+
+Query  55   DGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKS  110
+                   G+TV W  N+  + S + + GQ      G E  + T+WL      + ++ WK+
+Sbjct  82   --CQPTFGFTVHW--NF--SESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDWKA  134
+
+Query  111  TLVGHDTFTKVKPAE  125
+            T VG++ FT+ +  E
+Sbjct  135  TRVGYNNFTRQRTVE  149
+
+
+ Score = 40.8 bits (94),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 41/130 (32%), Positives = 64/130 (49%), Gaps = 23/130 (18%)
+
+Query  125  EAGITGTWYNQLGSTFIVTAGA---DGALTGTYESAV----GNAESRYVLTGRYDSAPAT  177
+            +  +TG W N LGS  I+T GA   +G   GTY +AV    GN +   +L  ++  A   
+Sbjct  27   KCSLTGEWDNNLGS--IMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA---  81
+
+Query  178  DGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKS  233
+                   G+TV W  N+  + S + + GQ      G E  + T+WL      + ++ WK+
+Sbjct  82   --CQPTFGFTVHW--NF--SESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDWKA  134
+
+Query  234  TLVGHDTFTK  243
+            T VG++ FT+
+Sbjct  135  TRVGYNNFTR  144
+
+
+> sp|P56736|AVR7_CHICK Avidin-related protein 7 OS=Gallus gallus 
+OX=9031 GN=AVR7 PE=3 SV=1
+Length=150
+
+ Score = 42.0 bits (97),  Expect = 9e-04, Method: Compositional matrix adjust.
+ Identities = 40/133 (30%), Positives = 63/133 (47%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTAGAD-GALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A  D G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGEWDNNLGSNMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  112
+                 G+TV W  N+  + S + + GQ      G E  + T+WL      + ++ WK+T 
+Sbjct  82   CQPTFGFTVHW--NF--SESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGYNNFTRQRTVE  149
+
+
+ Score = 40.8 bits (94),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 39/128 (30%), Positives = 61/128 (48%), Gaps = 19/128 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTAGAD-GALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A  D G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGEWDNNLGSNMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  235
+                 G+TV W  N+  + S + + GQ      G E  + T+WL      + ++ WK+T 
+Sbjct  82   CQPTFGFTVHW--NF--SESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  236  VGHDTFTK  243
+            VG++ FT+
+Sbjct  137  VGYNNFTR  144
+
+
+> sp|O13153|AVR1_CHICK Avidin-related protein 1 OS=Gallus gallus 
+OX=9031 GN=AVR1 PE=2 SV=2
+Length=150
+
+ Score = 41.6 bits (96),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 42/135 (31%), Positives = 65/135 (48%), Gaps = 23/135 (17%)
+
+Query  2    EAGITGTWYNQLGSTFIVTAGA---DGALTGTYESAV----GNAESRYVLTGRYDSAPAT  54
+            +  +TG W N LGS  I+T GA   +G   GTY +AV    GN     +L  ++  A   
+Sbjct  27   KCSLTGKWDNDLGS--IMTIGAVNDNGEFNGTYITAVADNPGNITRSPLLGIQHKRA---  81
+
+Query  55   DGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKS  110
+                   G+TV W  N+  + S + + GQ      G E  + T+WL      + ++ WK+
+Sbjct  82   --CQPTFGFTVHW--NF--SESTSVFVGQCFVDKSGKEV-LKTKWLQRLAVDDISDDWKA  134
+
+Query  111  TLVGHDTFTKVKPAE  125
+            T VG++ FT+ +  E
+Sbjct  135  TRVGNNDFTRQRTVE  149
+
+
+ Score = 40.4 bits (93),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 41/130 (32%), Positives = 63/130 (48%), Gaps = 23/130 (18%)
+
+Query  125  EAGITGTWYNQLGSTFIVTAGA---DGALTGTYESAV----GNAESRYVLTGRYDSAPAT  177
+            +  +TG W N LGS  I+T GA   +G   GTY +AV    GN     +L  ++  A   
+Sbjct  27   KCSLTGKWDNDLGS--IMTIGAVNDNGEFNGTYITAVADNPGNITRSPLLGIQHKRA---  81
+
+Query  178  DGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKS  233
+                   G+TV W  N+  + S + + GQ      G E  + T+WL      + ++ WK+
+Sbjct  82   --CQPTFGFTVHW--NF--SESTSVFVGQCFVDKSGKEV-LKTKWLQRLAVDDISDDWKA  134
+
+Query  234  TLVGHDTFTK  243
+            T VG++ FT+
+Sbjct  135  TRVGNNDFTR  144
+
+
+> sp|P10079|FBP1_STRPU Fibropellin-1 OS=Strongylocentrotus purpuratus 
+OX=7668 GN=EGF1 PE=1 SV=2
+Length=1064
+
+ Score = 41.6 bits (96),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 36/131 (27%), Positives = 60/131 (46%), Gaps = 21/131 (16%)
+
+Query  5     ITGTWYNQLGSTFIVTAGADGALTGTY----ESAVGNAESRYVL---TGRYDSAPATDGS  57
+             + G WYN+      +T  + G + G Y    E A+G A    V+   +  YD        
+Sbjct  941   LEGMWYNECNDQVTITKTSTGMMLGDYMTYNERALGYAAPTVVVGYASNNYDFP------  994
+
+Query  58    GTALGWTVAWKNNYRNAHSATTWSGQ-YVGGAEARINTQWLLTSG-TTEANAWKSTLVGH  115
+               + G+TV       N  S T+W+GQ ++   E  + T W+ T+  +T  +  KS +VG 
+Sbjct  995   --SFGFTVV----RDNGQSTTSWTGQCHLCDGEEVLYTTWINTNMVSTCQDIKKSNMVGQ  1048
+
+Query  116   DTFTKVKPAEA  126
+             D +T+ + + A
+Sbjct  1049  DKWTRYEQSIA  1059
+
+
+ Score = 41.6 bits (96),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 35/125 (28%), Positives = 57/125 (46%), Gaps = 21/125 (17%)
+
+Query  128   ITGTWYNQLGSTFIVTAGADGALTGTY----ESAVGNAESRYVL---TGRYDSAPATDGS  180
+             + G WYN+      +T  + G + G Y    E A+G A    V+   +  YD        
+Sbjct  941   LEGMWYNECNDQVTITKTSTGMMLGDYMTYNERALGYAAPTVVVGYASNNYDFP------  994
+
+Query  181   GTALGWTVAWKNNYRNAHSATTWSGQ-YVGGAEARINTQWLLTSG-TTEANAWKSTLVGH  238
+               + G+TV       N  S T+W+GQ ++   E  + T W+ T+  +T  +  KS +VG 
+Sbjct  995   --SFGFTVV----RDNGQSTTSWTGQCHLCDGEEVLYTTWINTNMVSTCQDIKKSNMVGQ  1048
+
+Query  239   DTFTK  243
+             D +T+
+Sbjct  1049  DKWTR  1053
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.125    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17494641891
+Results from round 2
+
+
+Query= D2RTP
+
+Length=244
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P22629|SAV_STRAV Streptavidin OS=Streptomyces avidinii OX=18...  165     5e-49
+  sp|Q53532|SAV1_STRVL Streptavidin-V1 OS=Streptomyces violaceus ...  163     2e-48
+  sp|Q53533|SAV2_STRVL Streptavidin-V2 OS=Streptomyces violaceus ...  160     8e-47
+  sp|P56735|AVR6_CHICK Avidin-related protein 6 OS=Gallus gallus ...  151     7e-44
+  sp|P56736|AVR7_CHICK Avidin-related protein 7 OS=Gallus gallus ...  150     1e-43
+  sp|P56733|AVR3_CHICK Avidin-related protein 3 OS=Gallus gallus ...  149     2e-43
+  sp|O13153|AVR1_CHICK Avidin-related protein 1 OS=Gallus gallus ...  144     3e-41
+  sp|P56734|AVR4_CHICK Avidin-related protein 4/5 OS=Gallus gallu...  140     9e-40
+  sp|P02701|AVID_CHICK Avidin OS=Gallus gallus OX=9031 GN=AVD PE=...  129     2e-35
+
+Sequences not found previously or not previously below threshold:
+
+  sp|P56732|AVR2_CHICK Avidin-related protein 2 OS=Gallus gallus ...  138     4e-39
+  sp|P10079|FBP1_STRPU Fibropellin-1 OS=Strongylocentrotus purpur...  60.6    2e-09
+  sp|P49013|FBP3_STRPU Fibropellin-3 OS=Strongylocentrotus purpur...  49.5    1e-05
+
+
+> sp|P22629|SAV_STRAV Streptavidin OS=Streptomyces avidinii OX=1895 
+PE=1 SV=1
+Length=183
+
+ Score = 165 bits (418),  Expect = 5e-49, Method: Composition-based stats.
+ Identities = 123/129 (95%), Positives = 125/129 (97%), Gaps = 0/129 (0%)
+
+Query  116  DTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  175
+            D+  +V  AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP
+Sbjct  29   DSKAQVSAAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  88
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL  235
+            ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL
+Sbjct  89   ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL  148
+
+Query  236  VGHDTFTKV  244
+            VGHDTFTKV
+Sbjct  149  VGHDTFTKV  157
+
+
+ Score = 160 bits (405),  Expect = 4e-47, Method: Composition-based stats.
+ Identities = 125/128 (98%), Positives = 126/128 (98%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+> sp|Q53532|SAV1_STRVL Streptavidin-V1 OS=Streptomyces violaceus 
+OX=1936 PE=3 SV=1
+Length=183
+
+ Score = 163 bits (413),  Expect = 2e-48, Method: Composition-based stats.
+ Identities = 122/129 (95%), Positives = 124/129 (96%), Gaps = 0/129 (0%)
+
+Query  116  DTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  175
+            D+  +V  AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP
+Sbjct  29   DSKAQVSAAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  88
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL  235
+            ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGG EARINTQWLLTSGTTEANAWKSTL
+Sbjct  89   ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGTEARINTQWLLTSGTTEANAWKSTL  148
+
+Query  236  VGHDTFTKV  244
+            VGHDTFTKV
+Sbjct  149  VGHDTFTKV  157
+
+
+ Score = 158 bits (400),  Expect = 2e-46, Method: Composition-based stats.
+ Identities = 124/128 (97%), Positives = 125/128 (98%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYVGG EARINTQWLLTSGTTEANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVGGTEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+> sp|Q53533|SAV2_STRVL Streptavidin-V2 OS=Streptomyces violaceus 
+OX=1936 PE=3 SV=1
+Length=183
+
+ Score = 160 bits (403),  Expect = 8e-47, Method: Composition-based stats.
+ Identities = 116/121 (96%), Positives = 118/121 (98%), Gaps = 0/121 (0%)
+
+Query  124  AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  183
+            AEAGITGTWYNQLGSTFIVTA ADG+LTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTANADGSLTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  184  LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  243
+            LGWTVAWKNNYRNAHSATTWSGQYV G+EARINTQWLLTSGTT ANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVAGSEARINTQWLLTSGTTAANAWKSTLVGHDTFTK  156
+
+Query  244  V  244
+            V
+Sbjct  157  V  157
+
+
+ Score = 156 bits (394),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 120/128 (94%), Positives = 123/128 (96%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTA ADG+LTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTANADGSLTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYV G+EARINTQWLLTSGTT ANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVAGSEARINTQWLLTSGTTAANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+> sp|P56735|AVR6_CHICK Avidin-related protein 6 OS=Gallus gallus 
+OX=9031 GN=AVR6 PE=3 SV=1
+Length=150
+
+ Score = 151 bits (380),  Expect = 7e-44, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 61/133 (46%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A   +G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGEWDNNLGSIMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  112
+                 G+TV W      + S + + GQ      G E  + T+WL      + ++ WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGYNNFTRQRTVE  149
+
+
+ Score = 116 bits (290),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 37/128 (29%), Positives = 58/128 (45%), Gaps = 19/128 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A   +G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGEWDNNLGSIMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  235
+                 G+TV W      + S + + GQ      G E  + T+WL      +  + WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  236  VGHDTFTK  243
+            VG++ FT+
+Sbjct  137  VGYNNFTR  144
+
+
+> sp|P56736|AVR7_CHICK Avidin-related protein 7 OS=Gallus gallus 
+OX=9031 GN=AVR7 PE=3 SV=1
+Length=150
+
+ Score = 150 bits (379),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 61/133 (46%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A   +G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGEWDNNLGSNMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  112
+                 G+TV W      + S + + GQ      G E  + T+WL      + ++ WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGYNNFTRQRTVE  149
+
+
+ Score = 116 bits (289),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 37/128 (29%), Positives = 58/128 (45%), Gaps = 19/128 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A   +G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGEWDNNLGSNMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  235
+                 G+TV W      + S + + GQ      G E  + T+WL      +  + WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  236  VGHDTFTK  243
+            VG++ FT+
+Sbjct  137  VGYNNFTR  144
+
+
+> sp|P56733|AVR3_CHICK Avidin-related protein 3 OS=Gallus gallus 
+OX=9031 GN=AVR3 PE=2 SV=1
+Length=150
+
+ Score = 149 bits (377),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 61/133 (46%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A  + G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFAGTYLTAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  112
+                 G+TV W      + S + + GQ      G E  + T+WL      + ++ WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGYNNFTRQRTVE  149
+
+
+ Score = 120 bits (301),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 37/128 (29%), Positives = 58/128 (45%), Gaps = 19/128 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A  + G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFAGTYLTAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  235
+                 G+TV W      + S + + GQ      G E  + T+WL      +  + WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  236  VGHDTFTK  243
+            VG++ FT+
+Sbjct  137  VGYNNFTR  144
+
+
+> sp|O13153|AVR1_CHICK Avidin-related protein 1 OS=Gallus gallus 
+OX=9031 GN=AVR1 PE=2 SV=2
+Length=150
+
+ Score = 144 bits (362),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 60/133 (45%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A   +G   GTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGKWDNDLGSIMTIGAVNDNGEFNGTYITAVADNPGNITRSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  112
+                 G+TV W      + S + + GQ      G E  + T+WL      + ++ WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFVDKSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGNNDFTRQRTVE  149
+
+
+ Score = 114 bits (284),  Expect = 9e-30, Method: Composition-based stats.
+ Identities = 37/128 (29%), Positives = 57/128 (45%), Gaps = 19/128 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A   +G   GTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGKWDNDLGSIMTIGAVNDNGEFNGTYITAVADNPGNITRSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  235
+                 G+TV W      + S + + GQ      G E  + T+WL      +  + WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFVDKSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  236  VGHDTFTK  243
+            VG++ FT+
+Sbjct  137  VGNNDFTR  144
+
+
+> sp|P56734|AVR4_CHICK Avidin-related protein 4/5 OS=Gallus gallus 
+OX=9031 GN=AVR4 PE=1 SV=1
+Length=150
+
+ Score = 140 bits (352),  Expect = 9e-40, Method: Composition-based stats.
+ Identities = 43/133 (32%), Positives = 63/133 (47%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A  + G  TGTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFTGTYLTAVADNPGNITLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEAN-AWKSTL  112
+            S    G+TV W      + S T ++GQ      G E  + T WLL S   + +  WK+T 
+Sbjct  82   SQPTFGFTVHWN----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDISYDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT++   E
+Sbjct  137  VGYNNFTRLCTVE  149
+
+
+ Score = 131 bits (329),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 42/129 (33%), Positives = 62/129 (48%), Gaps = 19/129 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A  + G  TGTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFTGTYLTAVADNPGNITLSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEAN-AWKSTL  235
+            S    G+TV W      + S T ++GQ      G E  + T WLL S   + +  WK+T 
+Sbjct  82   SQPTFGFTVHWN----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDISYDWKATR  136
+
+Query  236  VGHDTFTKV  244
+            VG++ FT++
+Sbjct  137  VGYNNFTRL  145
+
+
+> sp|P56732|AVR2_CHICK Avidin-related protein 2 OS=Gallus gallus 
+OX=9031 GN=AVR2 PE=1 SV=1
+Length=150
+
+ Score = 138 bits (348),  Expect = 4e-39, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 59/133 (44%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A   +G   GTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGEWDNDLGSIMTIGAVNDNGEFDGTYITAVADNPGNITLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTE-ANAWKSTL  112
+            S    G+TV W      + S + + GQ      G E  + T+WL      + ++ W +T 
+Sbjct  82   SQPTFGFTVHWN----FSESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDWIATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+    E
+Sbjct  137  VGNNDFTRQHTVE  149
+
+
+ Score = 112 bits (280),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 37/128 (29%), Positives = 57/128 (45%), Gaps = 19/128 (15%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  179
+            +  +TG W N LGS   + A   +G   GTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGEWDNDLGSIMTIGAVNDNGEFDGTYITAVADNPGNITLSPLLGIQHKRA-----  81
+
+Query  180  SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  235
+            S    G+TV W      + S + + GQ      G E  + T+WL      +  + W +T 
+Sbjct  82   SQPTFGFTVHWN----FSESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDWIATR  136
+
+Query  236  VGHDTFTK  243
+            VG++ FT+
+Sbjct  137  VGNNDFTR  144
+
+
+> sp|P02701|AVID_CHICK Avidin OS=Gallus gallus OX=9031 GN=AVD PE=1 
+SV=3
+Length=152
+
+ Score = 129 bits (324),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 41/128 (32%), Positives = 60/128 (47%), Gaps = 15/128 (12%)
+
+Query  125  EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV---GNAESRYVLTGRYDSAPATDGS  180
+            +  +TG W N LGS   + A  + G  TGTY +AV    N      L G  ++      +
+Sbjct  27   KCSLTGKWTNDLGSNMTIGAVNSRGEFTGTYITAVTATSNEIKESPLHGTQNT--INKRT  84
+
+Query  181  GTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTLV  236
+                G+TV WK     + S T ++GQ      G E  + T WLL S   +  + WK+T V
+Sbjct  85   QPTFGFTVNWK----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDIGDDWKATRV  139
+
+Query  237  GHDTFTKV  244
+            G + FT++
+Sbjct  140  GINIFTRL  147
+
+
+ Score = 126 bits (315),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 41/132 (31%), Positives = 62/132 (47%), Gaps = 15/132 (11%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV---GNAESRYVLTGRYDSAPATDGS  57
+            +  +TG W N LGS   + A  + G  TGTY +AV    N      L G  ++      +
+Sbjct  27   KCSLTGKWTNDLGSNMTIGAVNSRGEFTGTYITAVTATSNEIKESPLHGTQNT--INKRT  84
+
+Query  58   GTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTLV  113
+                G+TV WK     + S T ++GQ      G E  + T WLL S   +  + WK+T V
+Sbjct  85   QPTFGFTVNWK----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDIGDDWKATRV  139
+
+Query  114  GHDTFTKVKPAE  125
+            G + FT+++  +
+Sbjct  140  GINIFTRLRTQK  151
+
+
+> sp|P10079|FBP1_STRPU Fibropellin-1 OS=Strongylocentrotus purpuratus 
+OX=7668 GN=EGF1 PE=1 SV=2
+Length=1064
+
+ Score = 60.6 bits (145),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 33/139 (24%), Positives = 57/139 (41%), Gaps = 17/139 (12%)
+
+Query  112   LVGHDTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYES----AVGNAESRYVL  167
+              +G+      +     + G WYN+      +T  + G + G Y +    A+G A    V+
+Sbjct  925   RLGYIGVNCEEVGFCDLEGMWYNECNDQVTITKTSTGMMLGDYMTYNERALGYAAPTVVV  984
+
+Query  168   TGRYDSAPATDGSGTALGWTVAWKNNYRNAHSATTWSGQY--VGGAEARINTQWLLTSGT  225
+                     + +    + G+TV       N  S T+W+GQ     G E  + T W+ T+  
+Sbjct  985   G-----YASNNYDFPSFGFTVV----RDNGQSTTSWTGQCHLCDGEEV-LYTTWINTNMV  1034
+
+Query  226   TEANAW-KSTLVGHDTFTK  243
+             +      KS +VG D +T+
+Sbjct  1035  STCQDIKKSNMVGQDKWTR  1053
+
+
+ Score = 59.1 bits (141),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 32/125 (26%), Positives = 53/125 (42%), Gaps = 17/125 (14%)
+
+Query  3     AGITGTWYNQLGSTFIVTAGADGALTGTYES----AVGNAESRYVLTGRYDSAPATDGSG  58
+               + G WYN+      +T  + G + G Y +    A+G A    V+        + +   
+Sbjct  939   CDLEGMWYNECNDQVTITKTSTGMMLGDYMTYNERALGYAAPTVVVG-----YASNNYDF  993
+
+Query  59    TALGWTVAWKNNYRNAHSATTWSGQY--VGGAEARINTQWLLTSGTTEANAW-KSTLVGH  115
+              + G+TV       N  S T+W+GQ     G E  + T W+ T+  +      KS +VG 
+Sbjct  994   PSFGFTVV----RDNGQSTTSWTGQCHLCDGEEV-LYTTWINTNMVSTCQDIKKSNMVGQ  1048
+
+Query  116   DTFTK  120
+             D +T+
+Sbjct  1049  DKWTR  1053
+
+
+> sp|P49013|FBP3_STRPU Fibropellin-3 OS=Strongylocentrotus purpuratus 
+OX=7668 GN=EGF3 PE=1 SV=1
+Length=570
+
+ Score = 49.5 bits (116),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 26/137 (19%), Positives = 51/137 (37%), Gaps = 13/137 (9%)
+
+Query  112  LVGHDTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNA--ESRYVLTG  169
+              G+      +     + G W+N+      +   + G + G + +        +   +  
+Sbjct  431  RQGYAGVNCEEVGFCDLEGVWFNECNDQITIIKTSTGMMLGDHMTFTERELGVAAPTVMV  490
+
+Query  170  RYDSAPATDGSGTALGWTVAWKNNYRNAHSATTWSGQY--VGGAEARINTQWLLTSGTTE  227
+             Y   P+ +    + G TV       N  + T+W+GQ     G E  + T W+ +S  + 
+Sbjct  491  GY---PSNNYDFPSFGITVV----RDNGRTTTSWTGQCHLCDGQEV-LYTTWIESSMVST  542
+
+Query  228  ANAWK-STLVGHDTFTK  243
+                K +  VG D +T+
+Sbjct  543  CEEIKRANKVGQDKWTR  559
+
+
+ Score = 48.7 bits (114),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/123 (20%), Positives = 48/123 (39%), Gaps = 13/123 (11%)
+
+Query  3    AGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNA--ESRYVLTGRYDSAPATDGSGTA  60
+              + G W+N+      +   + G + G + +        +   +   Y   P+ +    +
+Sbjct  445  CDLEGVWFNECNDQITIIKTSTGMMLGDHMTFTERELGVAAPTVMVGY---PSNNYDFPS  501
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQY--VGGAEARINTQWLLTSGTTEANAWK-STLVGHDT  117
+             G TV       N  + T+W+GQ     G E  + T W+ +S  +     K +  VG D 
+Sbjct  502  FGITVV----RDNGRTTTSWTGQCHLCDGQEV-LYTTWIESSMVSTCEEIKRANKVGQDK  556
+
+Query  118  FTK  120
+            +T+
+Sbjct  557  WTR  559
+
+
+
+Lambda      K        H        a         alpha
+   0.309    0.119    0.343    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0373    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17494641891
+Results from round 3
+
+
+Query= D2RTP
+
+Length=244
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P22629|SAV_STRAV Streptavidin OS=Streptomyces avidinii OX=18...  151     2e-43
+  sp|Q53532|SAV1_STRVL Streptavidin-V1 OS=Streptomyces violaceus ...  149     8e-43
+  sp|Q53533|SAV2_STRVL Streptavidin-V2 OS=Streptomyces violaceus ...  148     1e-42
+  sp|P10079|FBP1_STRPU Fibropellin-1 OS=Strongylocentrotus purpur...  147     2e-38
+  sp|P49013|FBP3_STRPU Fibropellin-3 OS=Strongylocentrotus purpur...  144     3e-38
+  sp|P56735|AVR6_CHICK Avidin-related protein 6 OS=Gallus gallus ...  123     4e-33
+  sp|P56733|AVR3_CHICK Avidin-related protein 3 OS=Gallus gallus ...  122     6e-33
+  sp|P56736|AVR7_CHICK Avidin-related protein 7 OS=Gallus gallus ...  122     7e-33
+  sp|P56734|AVR4_CHICK Avidin-related protein 4/5 OS=Gallus gallu...  121     3e-32
+  sp|O13153|AVR1_CHICK Avidin-related protein 1 OS=Gallus gallus ...  118     3e-31
+  sp|P56732|AVR2_CHICK Avidin-related protein 2 OS=Gallus gallus ...  113     2e-29
+  sp|P02701|AVID_CHICK Avidin OS=Gallus gallus OX=9031 GN=AVD PE=...  110     3e-28
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P22629|SAV_STRAV Streptavidin OS=Streptomyces avidinii OX=1895 
+PE=1 SV=1
+Length=183
+
+ Score = 151 bits (380),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 123/129 (95%), Positives = 125/129 (97%), Gaps = 0/129 (0%)
+
+Query  116  DTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  175
+            D+  +V  AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP
+Sbjct  29   DSKAQVSAAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  88
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL  235
+            ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL
+Sbjct  89   ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL  148
+
+Query  236  VGHDTFTKV  244
+            VGHDTFTKV
+Sbjct  149  VGHDTFTKV  157
+
+
+ Score = 149 bits (377),  Expect = 6e-43, Method: Composition-based stats.
+ Identities = 125/128 (98%), Positives = 126/128 (98%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+> sp|Q53532|SAV1_STRVL Streptavidin-V1 OS=Streptomyces violaceus 
+OX=1936 PE=3 SV=1
+Length=183
+
+ Score = 149 bits (376),  Expect = 8e-43, Method: Composition-based stats.
+ Identities = 122/129 (95%), Positives = 124/129 (96%), Gaps = 0/129 (0%)
+
+Query  116  DTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  175
+            D+  +V  AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP
+Sbjct  29   DSKAQVSAAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  88
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL  235
+            ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGG EARINTQWLLTSGTTEANAWKSTL
+Sbjct  89   ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGTEARINTQWLLTSGTTEANAWKSTL  148
+
+Query  236  VGHDTFTKV  244
+            VGHDTFTKV
+Sbjct  149  VGHDTFTKV  157
+
+
+ Score = 148 bits (373),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 124/128 (97%), Positives = 125/128 (98%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYVGG EARINTQWLLTSGTTEANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVGGTEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+> sp|Q53533|SAV2_STRVL Streptavidin-V2 OS=Streptomyces violaceus 
+OX=1936 PE=3 SV=1
+Length=183
+
+ Score = 148 bits (374),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 117/129 (91%), Positives = 121/129 (94%), Gaps = 0/129 (0%)
+
+Query  116  DTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAP  175
+            D+  +   AEAGITGTWYNQLGSTFIVTA ADG+LTGTYESAVGNAESRYVLTGRYDSAP
+Sbjct  29   DSKAQAAVAEAGITGTWYNQLGSTFIVTANADGSLTGTYESAVGNAESRYVLTGRYDSAP  88
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTL  235
+            ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYV G+EARINTQWLLTSGTT ANAWKSTL
+Sbjct  89   ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYVAGSEARINTQWLLTSGTTAANAWKSTL  148
+
+Query  236  VGHDTFTKV  244
+            VGHDTFTKV
+Sbjct  149  VGHDTFTKV  157
+
+
+ Score = 148 bits (373),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 120/128 (94%), Positives = 123/128 (96%), Gaps = 0/128 (0%)
+
+Query  1    AEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  60
+            AEAGITGTWYNQLGSTFIVTA ADG+LTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA
+Sbjct  37   AEAGITGTWYNQLGSTFIVTANADGSLTGTYESAVGNAESRYVLTGRYDSAPATDGSGTA  96
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQYVGGAEARINTQWLLTSGTTEANAWKSTLVGHDTFTK  120
+            LGWTVAWKNNYRNAHSATTWSGQYV G+EARINTQWLLTSGTT ANAWKSTLVGHDTFTK
+Sbjct  97   LGWTVAWKNNYRNAHSATTWSGQYVAGSEARINTQWLLTSGTTAANAWKSTLVGHDTFTK  156
+
+Query  121  VKPAEAGI  128
+            VKP+ A I
+Sbjct  157  VKPSAASI  164
+
+
+> sp|P10079|FBP1_STRPU Fibropellin-1 OS=Strongylocentrotus purpuratus 
+OX=7668 GN=EGF1 PE=1 SV=2
+Length=1064
+
+ Score = 147 bits (371),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 33/139 (24%), Positives = 57/139 (41%), Gaps = 17/139 (12%)
+
+Query  112   LVGHDTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYES----AVGNAESRYVL  167
+              +G+      +     + G WYN+      +T  + G + G Y +    A+G A    V+
+Sbjct  925   RLGYIGVNCEEVGFCDLEGMWYNECNDQVTITKTSTGMMLGDYMTYNERALGYAAPTVVV  984
+
+Query  168   TGRYDSAPATDGSGTALGWTVAWKNNYRNAHSATTWSGQY--VGGAEARINTQWLLTSGT  225
+                     + +    + G+TV       N  S T+W+GQ     G E  + T W+ T+  
+Sbjct  985   G-----YASNNYDFPSFGFTVV----RDNGQSTTSWTGQCHLCDGEEV-LYTTWINTNMV  1034
+
+Query  226   TEANAW-KSTLVGHDTFTK  243
+             +      KS +VG D +T+
+Sbjct  1035  STCQDIKKSNMVGQDKWTR  1053
+
+
+ Score = 122 bits (305),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 32/127 (25%), Positives = 54/127 (43%), Gaps = 17/127 (13%)
+
+Query  3     AGITGTWYNQLGSTFIVTAGADGALTGTYES----AVGNAESRYVLTGRYDSAPATDGSG  58
+               + G WYN+      +T  + G + G Y +    A+G A    V+        + +   
+Sbjct  939   CDLEGMWYNECNDQVTITKTSTGMMLGDYMTYNERALGYAAPTVVVG-----YASNNYDF  993
+
+Query  59    TALGWTVAWKNNYRNAHSATTWSGQY--VGGAEARINTQWLLTSGTTEANAW-KSTLVGH  115
+              + G+TV       N  S T+W+GQ     G E  + T W+ T+  +      KS +VG 
+Sbjct  994   PSFGFTVV----RDNGQSTTSWTGQCHLCDGEEV-LYTTWINTNMVSTCQDIKKSNMVGQ  1048
+
+Query  116   DTFTKVK  122
+             D +T+ +
+Sbjct  1049  DKWTRYE  1055
+
+
+> sp|P49013|FBP3_STRPU Fibropellin-3 OS=Strongylocentrotus purpuratus 
+OX=7668 GN=EGF3 PE=1 SV=1
+Length=570
+
+ Score = 144 bits (363),  Expect = 3e-38, Method: Composition-based stats.
+ Identities = 26/137 (19%), Positives = 51/137 (37%), Gaps = 13/137 (9%)
+
+Query  112  LVGHDTFTKVKPAEAGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNA--ESRYVLTG  169
+              G+      +     + G W+N+      +   + G + G + +        +   +  
+Sbjct  431  RQGYAGVNCEEVGFCDLEGVWFNECNDQITIIKTSTGMMLGDHMTFTERELGVAAPTVMV  490
+
+Query  170  RYDSAPATDGSGTALGWTVAWKNNYRNAHSATTWSGQY--VGGAEARINTQWLLTSGTTE  227
+             Y   P+ +    + G TV       N  + T+W+GQ     G E  + T W+ +S  + 
+Sbjct  491  GY---PSNNYDFPSFGITVV----RDNGRTTTSWTGQCHLCDGQEV-LYTTWIESSMVST  542
+
+Query  228  ANAWK-STLVGHDTFTK  243
+                K +  VG D +T+
+Sbjct  543  CEEIKRANKVGQDKWTR  559
+
+
+ Score = 121 bits (303),  Expect = 5e-30, Method: Composition-based stats.
+ Identities = 26/129 (20%), Positives = 51/129 (40%), Gaps = 13/129 (10%)
+
+Query  3    AGITGTWYNQLGSTFIVTAGADGALTGTYESAVGNA--ESRYVLTGRYDSAPATDGSGTA  60
+              + G W+N+      +   + G + G + +        +   +   Y   P+ +    +
+Sbjct  445  CDLEGVWFNECNDQITIIKTSTGMMLGDHMTFTERELGVAAPTVMVGY---PSNNYDFPS  501
+
+Query  61   LGWTVAWKNNYRNAHSATTWSGQY--VGGAEARINTQWLLTSGTTEANAWK-STLVGHDT  117
+             G TV       N  + T+W+GQ     G E  + T W+ +S  +     K +  VG D 
+Sbjct  502  FGITVV----RDNGRTTTSWTGQCHLCDGQEV-LYTTWIESSMVSTCEEIKRANKVGQDK  556
+
+Query  118  FTKVKPAEA  126
+            +T+ + + A
+Sbjct  557  WTRYEQSFA  565
+
+
+> sp|P56735|AVR6_CHICK Avidin-related protein 6 OS=Gallus gallus 
+OX=9031 GN=AVR6 PE=3 SV=1
+Length=150
+
+ Score = 123 bits (308),  Expect = 4e-33, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 60/133 (45%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A   +G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGEWDNNLGSIMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  112
+                 G+TV W      + S + + GQ      G E  + T+WL      +  + WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGYNNFTRQRTVE  149
+
+
+ Score = 119 bits (297),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 37/132 (28%), Positives = 59/132 (45%), Gaps = 19/132 (14%)
+
+Query  121  VKPAEAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAP  175
+            +   +  +TG W N LGS   + A   +G   GTY +AV    GN +   +L  ++  A 
+Sbjct  23   LSARKCSLTGEWDNNLGSIMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-  81
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAW  231
+                     G+TV W      + S + + GQ      G E  + T+WL      +  + W
+Sbjct  82   ----CQPTFGFTVHWN----FSESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDW  132
+
+Query  232  KSTLVGHDTFTK  243
+            K+T VG++ FT+
+Sbjct  133  KATRVGYNNFTR  144
+
+
+> sp|P56733|AVR3_CHICK Avidin-related protein 3 OS=Gallus gallus 
+OX=9031 GN=AVR3 PE=2 SV=1
+Length=150
+
+ Score = 122 bits (306),  Expect = 6e-33, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 60/133 (45%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A  + G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFAGTYLTAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  112
+                 G+TV W      + S + + GQ      G E  + T+WL      +  + WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGYNNFTRQRTVE  149
+
+
+ Score = 118 bits (296),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 37/132 (28%), Positives = 59/132 (45%), Gaps = 19/132 (14%)
+
+Query  121  VKPAEAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAP  175
+            +   +  +TG W N LGS   + A  + G   GTY +AV    GN +   +L  ++  A 
+Sbjct  23   LSARKCSLTGKWTNNLGSIMTIRAVNSRGEFAGTYLTAVADNPGNIKLSPLLGIQHKRA-  81
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAW  231
+                     G+TV W      + S + + GQ      G E  + T+WL      +  + W
+Sbjct  82   ----CQPTFGFTVHWN----FSESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDW  132
+
+Query  232  KSTLVGHDTFTK  243
+            K+T VG++ FT+
+Sbjct  133  KATRVGYNNFTR  144
+
+
+> sp|P56736|AVR7_CHICK Avidin-related protein 7 OS=Gallus gallus 
+OX=9031 GN=AVR7 PE=3 SV=1
+Length=150
+
+ Score = 122 bits (306),  Expect = 7e-33, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 60/133 (45%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A   +G   GTY +AV    GN +   +L  ++  A     
+Sbjct  27   KCSLTGEWDNNLGSNMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  112
+                 G+TV W      + S + + GQ      G E  + T+WL      +  + WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGYNNFTRQRTVE  149
+
+
+ Score = 118 bits (296),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 37/132 (28%), Positives = 59/132 (45%), Gaps = 19/132 (14%)
+
+Query  121  VKPAEAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAP  175
+            +   +  +TG W N LGS   + A   +G   GTY +AV    GN +   +L  ++  A 
+Sbjct  23   LSARKCSLTGEWDNNLGSNMTIGAVNDNGEFNGTYITAVADNPGNIKLSPLLGIQHKRA-  81
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAW  231
+                     G+TV W      + S + + GQ      G E  + T+WL      +  + W
+Sbjct  82   ----CQPTFGFTVHWN----FSESTSVFVGQCFIDRSGKEV-LKTKWLQRLAVDDISDDW  132
+
+Query  232  KSTLVGHDTFTK  243
+            K+T VG++ FT+
+Sbjct  133  KATRVGYNNFTR  144
+
+
+> sp|P56734|AVR4_CHICK Avidin-related protein 4/5 OS=Gallus gallus 
+OX=9031 GN=AVR4 PE=1 SV=1
+Length=150
+
+ Score = 121 bits (302),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 43/133 (32%), Positives = 63/133 (47%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A  + G  TGTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGKWTNNLGSIMTIRAVNSRGEFTGTYLTAVADNPGNITLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEAN-AWKSTL  112
+            S    G+TV W      + S T ++GQ      G E  + T WLL S   + +  WK+T 
+Sbjct  82   SQPTFGFTVHWN----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDISYDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT++   E
+Sbjct  137  VGYNNFTRLCTVE  149
+
+
+ Score = 118 bits (295),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 42/133 (32%), Positives = 63/133 (47%), Gaps = 19/133 (14%)
+
+Query  121  VKPAEAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAP  175
+            +   +  +TG W N LGS   + A  + G  TGTY +AV    GN     +L  ++  A 
+Sbjct  23   LSARKCSLTGKWTNNLGSIMTIRAVNSRGEFTGTYLTAVADNPGNITLSPLLGIQHKRA-  81
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEAN-AW  231
+                S    G+TV W      + S T ++GQ      G E  + T WLL S   + +  W
+Sbjct  82   ----SQPTFGFTVHWN----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDISYDW  132
+
+Query  232  KSTLVGHDTFTKV  244
+            K+T VG++ FT++
+Sbjct  133  KATRVGYNNFTRL  145
+
+
+> sp|O13153|AVR1_CHICK Avidin-related protein 1 OS=Gallus gallus 
+OX=9031 GN=AVR1 PE=2 SV=2
+Length=150
+
+ Score = 118 bits (294),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 59/133 (44%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A   +G   GTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGKWDNDLGSIMTIGAVNDNGEFNGTYITAVADNPGNITRSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  112
+                 G+TV W      + S + + GQ      G E  + T+WL      +  + WK+T 
+Sbjct  82   CQPTFGFTVHWN----FSESTSVFVGQCFVDKSGKEV-LKTKWLQRLAVDDISDDWKATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+ +  E
+Sbjct  137  VGNNDFTRQRTVE  149
+
+
+ Score = 115 bits (287),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 37/132 (28%), Positives = 58/132 (44%), Gaps = 19/132 (14%)
+
+Query  121  VKPAEAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAP  175
+            +   +  +TG W N LGS   + A   +G   GTY +AV    GN     +L  ++  A 
+Sbjct  23   LSARKCSLTGKWDNDLGSIMTIGAVNDNGEFNGTYITAVADNPGNITRSPLLGIQHKRA-  81
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAW  231
+                     G+TV W      + S + + GQ      G E  + T+WL      +  + W
+Sbjct  82   ----CQPTFGFTVHWN----FSESTSVFVGQCFVDKSGKEV-LKTKWLQRLAVDDISDDW  132
+
+Query  232  KSTLVGHDTFTK  243
+            K+T VG++ FT+
+Sbjct  133  KATRVGNNDFTR  144
+
+
+> sp|P56732|AVR2_CHICK Avidin-related protein 2 OS=Gallus gallus 
+OX=9031 GN=AVR2 PE=1 SV=1
+Length=150
+
+ Score = 113 bits (283),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 38/133 (29%), Positives = 58/133 (44%), Gaps = 19/133 (14%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAPATDG  56
+            +  +TG W N LGS   + A   +G   GTY +AV    GN     +L  ++  A     
+Sbjct  27   KCSLTGEWDNDLGSIMTIGAVNDNGEFDGTYITAVADNPGNITLSPLLGIQHKRA-----  81
+
+Query  57   SGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTL  112
+            S    G+TV W      + S + + GQ      G E  + T+WL      +  + W +T 
+Sbjct  82   SQPTFGFTVHWN----FSESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDWIATR  136
+
+Query  113  VGHDTFTKVKPAE  125
+            VG++ FT+    E
+Sbjct  137  VGNNDFTRQHTVE  149
+
+
+ Score = 112 bits (279),  Expect = 6e-29, Method: Composition-based stats.
+ Identities = 37/132 (28%), Positives = 58/132 (44%), Gaps = 19/132 (14%)
+
+Query  121  VKPAEAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV----GNAESRYVLTGRYDSAP  175
+            +   +  +TG W N LGS   + A   +G   GTY +AV    GN     +L  ++  A 
+Sbjct  23   LSARKCSLTGEWDNDLGSIMTIGAVNDNGEFDGTYITAVADNPGNITLSPLLGIQHKRA-  81
+
+Query  176  ATDGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAW  231
+                S    G+TV W      + S + + GQ      G E  + T+WL      +  + W
+Sbjct  82   ----SQPTFGFTVHWN----FSESTSVFVGQCFVDRSGKEV-LKTKWLQRLAVDDISDDW  132
+
+Query  232  KSTLVGHDTFTK  243
+             +T VG++ FT+
+Sbjct  133  IATRVGNNDFTR  144
+
+
+> sp|P02701|AVID_CHICK Avidin OS=Gallus gallus OX=9031 GN=AVD PE=1 
+SV=3
+Length=152
+
+ Score = 110 bits (275),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 41/132 (31%), Positives = 62/132 (47%), Gaps = 15/132 (11%)
+
+Query  2    EAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV---GNAESRYVLTGRYDSAPATDGS  57
+            +  +TG W N LGS   + A  + G  TGTY +AV    N      L G  ++      +
+Sbjct  27   KCSLTGKWTNDLGSNMTIGAVNSRGEFTGTYITAVTATSNEIKESPLHGTQNT--INKRT  84
+
+Query  58   GTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWKSTLV  113
+                G+TV WK     + S T ++GQ      G E  + T WLL S   +  + WK+T V
+Sbjct  85   QPTFGFTVNWK----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDIGDDWKATRV  139
+
+Query  114  GHDTFTKVKPAE  125
+            G + FT+++  +
+Sbjct  140  GINIFTRLRTQK  151
+
+
+ Score = 109 bits (272),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 41/132 (31%), Positives = 61/132 (46%), Gaps = 15/132 (11%)
+
+Query  121  VKPAEAGITGTWYNQLGSTFIVTA-GADGALTGTYESAV---GNAESRYVLTGRYDSAPA  176
+            +   +  +TG W N LGS   + A  + G  TGTY +AV    N      L G  ++   
+Sbjct  23   LSARKCSLTGKWTNDLGSNMTIGAVNSRGEFTGTYITAVTATSNEIKESPLHGTQNT--I  80
+
+Query  177  TDGSGTALGWTVAWKNNYRNAHSATTWSGQYV---GGAEARINTQWLLTSGTTEA-NAWK  232
+               +    G+TV WK     + S T ++GQ      G E  + T WLL S   +  + WK
+Sbjct  81   NKRTQPTFGFTVNWK----FSESTTVFTGQCFIDRNGKEV-LKTMWLLRSSVNDIGDDWK  135
+
+Query  233  STLVGHDTFTKV  244
+            +T VG + FT++
+Sbjct  136  ATRVGINIFTRL  147
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.120    0.332    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0360    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17494641891
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 6, 2018  6:13 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

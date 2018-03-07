@@ -14,7 +14,7 @@ def parse_unknown_file(filename, sliding_window):
     dictionary = fasta_parser_onlyseq(filename)
 
     for identification in dictionary:
-        sw_of_unknown_topo_seq = encode_protein((dictionary[identification][0]), sliding_window)
+        sw_of_unknown_topo_seq = encode_protein((dictionary[identification]), sliding_window)
 
 #in the end, if i want one protein at a time, this is the place I call my model to predict
 #the thing I have here, the previous line. Maybe I even have to write a new function for this
@@ -131,6 +131,12 @@ def fasta_parser_onlyseq(filename):
     dict2 = dict(zip(list1[::2], list1[1::2]))
     return dict2
 
+
+def fasta_parsing_from_3lines(filename):
+    """ Takes a file with three lines: ID, seq, topo. Output dictionary ID:(sequence) """
+    list1 = [line.upper().rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
+    dict3 = dict(zip(list1[::3], list1[1::3]))
+    return dict3
 
 ################################################################################
 # Manually made dictionary for the topologies in numerical form

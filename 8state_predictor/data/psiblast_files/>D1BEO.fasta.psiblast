@@ -1,0 +1,665 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= D1BEO
+
+Length=98
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P15570|ELIB_PHYCR Beta-elicitin cryptogein OS=Phytophthora c...  183     3e-59
+  sp|P35697|ELIB_PHYDR Beta-elicitin DRE-beta OS=Phytophthora dre...  167     6e-53
+  sp|P15569|ELIB_PHYCI Beta-elicitin cinnamomin OS=Phytophthora c...  164     1e-51
+  sp|P35698|ELIA_PHYME Alpha-elicitin MGM-alpha OS=Phytophthora m...  161     7e-51
+  sp|P35696|ELIA_PHYDR Alpha-elicitin DRE-alpha OS=Phytophthora d...  160     2e-50
+  sp|P15571|ELIA_PHYCP Alpha-elicitin capsicein OS=Phytophthora c...  144     3e-44
+  sp|P85436|ELIA_PHYSY Alpha-elicitin syringicin OS=Phytophthora ...  143     8e-44
+  sp|P85174|ELIA_PHYHI Alpha-elicitin hibernalin OS=Phytophthora ...  143     8e-44
+  sp|P35699|ELIB_PHYME Beta-elicitin MGM-beta OS=Phytophthora meg...  142     3e-43
+  sp|P41801|ELI_PHYPR Elicitin OS=Phytophthora parasitica OX=4792...  140     2e-42
+  sp|P41802|ELIA1_PHYCR Acidic elicitin A1 OS=Phytophthora crypto...  137     7e-41
+  sp|P41803|ELIA2_PHYCR Highly acidic elicitin 20 OS=Phytophthora...  127     6e-37
+  sp|P0C231|ELI1_PHYVE Elicitin Vex1 OS=Phytopythium vexans OX=90...  126     7e-37
+  sp|P0C232|ELI2_PHYVE Elicitin Vex2 OS=Phytopythium vexans OX=90...  121     5e-35
+  sp|P41804|ELIA3_PHYCR Highly acidic elicitin 26 OS=Phytophthora...  119     8e-34
+  sp|Q1ESR5|ELI1_PYTOL Elicitin-like protein 1 OS=Pythium oligand...  48.9    3e-07
+  sp|Q1ESR4|ELI2_PYTOL Elicitin-like protein 2 OS=Pythium oligand...  45.8    3e-06
+
+
+> sp|P15570|ELIB_PHYCR Beta-elicitin cryptogein OS=Phytophthora 
+cryptogea OX=4786 PE=1 SV=2
+Length=118
+
+ Score = 183 bits (465),  Expect = 3e-59, Method: Compositional matrix adjust.
+ Identities = 94/98 (96%), Positives = 94/98 (96%), Gaps = 0/98 (0%)
+
+Query  1    TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+            TA TATQQTAAYKTLVSILSDASFNQ STDSGYSMLTAKALPTTAQYKLMCASTA NTMI
+Sbjct  21   TACTATQQTAAYKTLVSILSDASFNQCSTDSGYSMLTAKALPTTAQYKLMCASTACNTMI  80
+
+Query  61   KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            KKIVTLNPPN DLTVPTSGLVLNVYSYANGFSNKCSSL
+Sbjct  81   KKIVTLNPPNCDLTVPTSGLVLNVYSYANGFSNKCSSL  118
+
+
+> sp|P35697|ELIB_PHYDR Beta-elicitin DRE-beta OS=Phytophthora drechsleri 
+OX=4794 PE=1 SV=1
+Length=98
+
+ Score = 167 bits (422),  Expect = 6e-53, Method: Compositional matrix adjust.
+ Identities = 83/98 (85%), Positives = 90/98 (92%), Gaps = 0/98 (0%)
+
+Query  1   TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+           T  T+TQQTAAY TLVSILSD+SFN+ ++DSGYSMLTAKALPTTAQYKLMCASTA NTMI
+Sbjct  1   TTCTSTQQTAAYTTLVSILSDSSFNKCASDSGYSMLTAKALPTTAQYKLMCASTACNTMI  60
+
+Query  61  KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           KKIV+LNPPN DLTVPTSGLVLNVY YANGFS KC+SL
+Sbjct  61  KKIVSLNPPNCDLTVPTSGLVLNVYEYANGFSTKCASL  98
+
+
+> sp|P15569|ELIB_PHYCI Beta-elicitin cinnamomin OS=Phytophthora 
+cinnamomi OX=4785 PE=1 SV=1
+Length=98
+
+ Score = 164 bits (414),  Expect = 1e-51, Method: Compositional matrix adjust.
+ Identities = 82/98 (84%), Positives = 90/98 (92%), Gaps = 0/98 (0%)
+
+Query  1   TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+           TA TATQQTAAYKTLVSILS++SF+Q S DSGYSMLTA ALPT AQYKLMCASTA NTMI
+Sbjct  1   TACTATQQTAAYKTLVSILSESSFSQCSKDSGYSMLTATALPTNAQYKLMCASTACNTMI  60
+
+Query  61  KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           KKIV LNPP+ DLTVPTSGLVL+VY+YANGFS+KC+SL
+Sbjct  61  KKIVALNPPDCDLTVPTSGLVLDVYTYANGFSSKCASL  98
+
+
+> sp|P35698|ELIA_PHYME Alpha-elicitin MGM-alpha OS=Phytophthora 
+megasperma OX=4788 PE=1 SV=1
+Length=98
+
+ Score = 161 bits (408),  Expect = 7e-51, Method: Compositional matrix adjust.
+ Identities = 82/98 (84%), Positives = 88/98 (90%), Gaps = 0/98 (0%)
+
+Query  1   TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+           T  T+TQQTAAY TLVSILSD+SFNQ +TDSGYSMLTA ALPTTAQYKLMCASTA NTMI
+Sbjct  1   TTCTSTQQTAAYVTLVSILSDSSFNQCATDSGYSMLTATALPTTAQYKLMCASTACNTMI  60
+
+Query  61  KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            KIVTLNPP+ +LTVPTSGLVLNVYSYANGFS  C+SL
+Sbjct  61  NKIVTLNPPDCELTVPTSGLVLNVYSYANGFSATCASL  98
+
+
+> sp|P35696|ELIA_PHYDR Alpha-elicitin DRE-alpha OS=Phytophthora 
+drechsleri OX=4794 PE=1 SV=1
+Length=98
+
+ Score = 160 bits (406),  Expect = 2e-50, Method: Compositional matrix adjust.
+ Identities = 81/98 (83%), Positives = 87/98 (89%), Gaps = 0/98 (0%)
+
+Query  1   TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+           T  T+TQQTAAY TLVSILSD+SFNQ +TDSGYSMLTA ALPT AQYKLMC+STA NTMI
+Sbjct  1   TTCTSTQQTAAYVTLVSILSDSSFNQCATDSGYSMLTATALPTDAQYKLMCSSTACNTMI  60
+
+Query  61  KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           KKIV+LN PN DLTVPTSGLVLNVY YANGFS KC+SL
+Sbjct  61  KKIVSLNAPNCDLTVPTSGLVLNVYEYANGFSTKCASL  98
+
+
+> sp|P15571|ELIA_PHYCP Alpha-elicitin capsicein OS=Phytophthora 
+capsici OX=4784 PE=1 SV=1
+Length=98
+
+ Score = 144 bits (364),  Expect = 3e-44, Method: Compositional matrix adjust.
+ Identities = 72/87 (83%), Positives = 78/87 (90%), Gaps = 0/87 (0%)
+
+Query  12  YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+           Y  LVSILSD+SFNQ +TDSGYSMLTA ALPTTAQYKLMCASTA NTMI KIV+LNPP+ 
+Sbjct  12  YVALVSILSDSSFNQCATDSGYSMLTATALPTTAQYKLMCASTACNTMITKIVSLNPPDC  71
+
+Query  72  DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           +LTVPTSGLVLNVYSYANGFS  C+SL
+Sbjct  72  ELTVPTSGLVLNVYSYANGFSATCASL  98
+
+
+> sp|P85436|ELIA_PHYSY Alpha-elicitin syringicin OS=Phytophthora 
+syringae OX=67594 PE=1 SV=1
+Length=98
+
+ Score = 143 bits (361),  Expect = 8e-44, Method: Compositional matrix adjust.
+ Identities = 72/89 (81%), Positives = 79/89 (89%), Gaps = 0/89 (0%)
+
+Query  10  AAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPP  69
+           AAY  LVSILSD+SFNQ +TDSGYSMLTA ALPTTAQYKLMCASTA  TMI KIV+LN P
+Sbjct  10  AAYVALVSILSDSSFNQCATDSGYSMLTATALPTTAQYKLMCASTACKTMITKIVSLNAP  69
+
+Query  70  NADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           + +LTVPTSGLVLNVYSYANGFS+ C+SL
+Sbjct  70  DCELTVPTSGLVLNVYSYANGFSSTCASL  98
+
+
+> sp|P85174|ELIA_PHYHI Alpha-elicitin hibernalin OS=Phytophthora 
+hibernalis OX=175300 PE=1 SV=1
+Length=98
+
+ Score = 143 bits (361),  Expect = 8e-44, Method: Compositional matrix adjust.
+ Identities = 72/89 (81%), Positives = 79/89 (89%), Gaps = 0/89 (0%)
+
+Query  10  AAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPP  69
+           AAY  LVSILSD+SFNQ +TDSGYSMLTA ALPTTAQYKLMCASTA  TMI KIV+LN P
+Sbjct  10  AAYVALVSILSDSSFNQCATDSGYSMLTATALPTTAQYKLMCASTACKTMITKIVSLNAP  69
+
+Query  70  NADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           + +LTVPTSGLVLNVYSYANGFS+ C+SL
+Sbjct  70  DCELTVPTSGLVLNVYSYANGFSSTCASL  98
+
+
+> sp|P35699|ELIB_PHYME Beta-elicitin MGM-beta OS=Phytophthora megasperma 
+OX=4788 PE=1 SV=1
+Length=98
+
+ Score = 142 bits (358),  Expect = 3e-43, Method: Compositional matrix adjust.
+ Identities = 70/87 (80%), Positives = 77/87 (89%), Gaps = 0/87 (0%)
+
+Query  12  YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+           YKTLVSILS++SFNQ S DSGYSMLTA ALPT AQYKLMCASTA  +MI KIV LNPP+ 
+Sbjct  12  YKTLVSILSESSFNQCSKDSGYSMLTATALPTNAQYKLMCASTACKSMINKIVVLNPPDC  71
+
+Query  72  DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           DLTVPTSGLVL+VY+YANGFS KC+SL
+Sbjct  72  DLTVPTSGLVLDVYTYANGFSTKCASL  98
+
+
+> sp|P41801|ELI_PHYPR Elicitin OS=Phytophthora parasitica OX=4792 
+GN=PARA1 PE=3 SV=1
+Length=118
+
+ Score = 140 bits (353),  Expect = 2e-42, Method: Compositional matrix adjust.
+ Identities = 69/87 (79%), Positives = 76/87 (87%), Gaps = 0/87 (0%)
+
+Query  12   YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+            Y  LVSILSD SFNQ STDSGYSMLTA +LPTT QYKLMCASTA  TMI KIVTLNPP+ 
+Sbjct  32   YVALVSILSDTSFNQCSTDSGYSMLTATSLPTTEQYKLMCASTACKTMINKIVTLNPPDC  91
+
+Query  72   DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            +LTVPTSGLVLNV++YANGFS+ C+SL
+Sbjct  92   ELTVPTSGLVLNVFTYANGFSSTCASL  118
+
+
+> sp|P41802|ELIA1_PHYCR Acidic elicitin A1 OS=Phytophthora cryptogea 
+OX=4786 GN=B14 PE=3 SV=1
+Length=118
+
+ Score = 137 bits (344),  Expect = 7e-41, Method: Compositional matrix adjust.
+ Identities = 67/87 (77%), Positives = 76/87 (87%), Gaps = 0/87 (0%)
+
+Query  12   YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+            Y  LVSILSD+SFNQ +TDSGYSMLTA +LPTT QYKLMCASTA N+MI KI++LN P+ 
+Sbjct  32   YVALVSILSDSSFNQCATDSGYSMLTATSLPTTDQYKLMCASTACNSMIAKIISLNAPDC  91
+
+Query  72   DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            +LTVPTSGLVLNVYSYANGFS  C+SL
+Sbjct  92   ELTVPTSGLVLNVYSYANGFSATCASL  118
+
+
+> sp|P41803|ELIA2_PHYCR Highly acidic elicitin 20 OS=Phytophthora 
+cryptogea OX=4786 GN=B20 PE=3 SV=1
+Length=123
+
+ Score = 127 bits (318),  Expect = 6e-37, Method: Compositional matrix adjust.
+ Identities = 59/87 (68%), Positives = 73/87 (84%), Gaps = 0/87 (0%)
+
+Query  12   YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+            Y  LVSILS++ F+  ++DSGYSMLTA ALPTTAQY+LMCASTA   MI++I+ LNPP+ 
+Sbjct  32   YVALVSILSESFFSTCASDSGYSMLTATALPTTAQYELMCASTACQEMIEEIIALNPPDC  91
+
+Query  72   DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            DLTVPTSGLV+NVY YAN F++ C+SL
+Sbjct  92   DLTVPTSGLVINVYEYANDFASTCASL  118
+
+
+> sp|P0C231|ELI1_PHYVE Elicitin Vex1 OS=Phytopythium vexans OX=907947 
+PE=1 SV=1
+Length=98
+
+ Score = 126 bits (316),  Expect = 7e-37, Method: Compositional matrix adjust.
+ Identities = 63/87 (72%), Positives = 70/87 (80%), Gaps = 0/87 (0%)
+
+Query  12  YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+           Y  LVSILSD +F+Q STDSGYSMLTA ALPTT QY  MCASTA   MI  I+TLNPP+ 
+Sbjct  12  YVALVSILSDDNFSQCSTDSGYSMLTATALPTTEQYTKMCASTACQAMIANIITLNPPDC  71
+
+Query  72  DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           +LTVPTSGLVLNVY YANGF+  C+SL
+Sbjct  72  ELTVPTSGLVLNVYEYANGFNATCASL  98
+
+
+> sp|P0C232|ELI2_PHYVE Elicitin Vex2 OS=Phytopythium vexans OX=907947 
+PE=1 SV=1
+Length=100
+
+ Score = 121 bits (304),  Expect = 5e-35, Method: Compositional matrix adjust.
+ Identities = 61/87 (70%), Positives = 68/87 (78%), Gaps = 0/87 (0%)
+
+Query  12  YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+           +  LVS+LS  +FNQ STDSGYSMLTA ALPTT QY  MCASTA   MI+ I+  N P+ 
+Sbjct  12  FVALVSVLSTDNFNQCSTDSGYSMLTATALPTTEQYTKMCASTACQGMIQTIIAANAPDC  71
+
+Query  72  DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           +LTVPTSGLVLNVY YANGFS KCSSL
+Sbjct  72  ELTVPTSGLVLNVYEYANGFSAKCSSL  98
+
+
+> sp|P41804|ELIA3_PHYCR Highly acidic elicitin 26 OS=Phytophthora 
+cryptogea OX=4786 GN=B26 PE=3 SV=1
+Length=123
+
+ Score = 119 bits (297),  Expect = 8e-34, Method: Compositional matrix adjust.
+ Identities = 56/82 (68%), Positives = 70/82 (85%), Gaps = 0/82 (0%)
+
+Query  10   AAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPP  69
+            +AY TLV++LS + F   ++DSGYSMLTA ALPTTAQY+LMCASTA   MI +I+TL+PP
+Sbjct  30   SAYVTLVTLLSKSYFTTCASDSGYSMLTATALPTTAQYELMCASTACQEMIAEIITLSPP  89
+
+Query  70   NADLTVPTSGLVLNVYSYANGF  91
+            + DLTVPTSGLV++VY+YANGF
+Sbjct  90   DCDLTVPTSGLVIDVYTYANGF  111
+
+
+> sp|Q1ESR5|ELI1_PYTOL Elicitin-like protein 1 OS=Pythium oligandrum 
+OX=41045 GN=POD-1 PE=2 SV=1
+Length=170
+
+ Score = 48.9 bits (115),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 28/74 (38%), Positives = 39/74 (53%), Gaps = 3/74 (4%)
+
+Query  28   STDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNADL---TVPTSGLVLNV  84
+            S+DSG+SM+  K LPT  QY  MCAS     ++  I      + +L   +V    + LNV
+Sbjct  48   SSDSGFSMVPPKGLPTDDQYVKMCASKNCRDLLDVIKKAGLKDCELNFGSVFPGSVPLNV  107
+
+Query  85   YSYANGFSNKCSSL  98
+            Y    GF  KC+S+
+Sbjct  108  YQLGQGFDAKCASI  121
+
+
+> sp|Q1ESR4|ELI2_PYTOL Elicitin-like protein 2 OS=Pythium oligandrum 
+OX=41045 GN=POD-2 PE=2 SV=1
+Length=164
+
+ Score = 45.8 bits (107),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 26/74 (35%), Positives = 38/74 (51%), Gaps = 3/74 (4%)
+
+Query  28   STDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNADL---TVPTSGLVLNV  84
+            S+DSG+SM+    LPT  QY  MCAS     +++ I      + +L   ++    + LNV
+Sbjct  48   SSDSGFSMVPPTGLPTDDQYVKMCASKNCKALLEFIKGAGLKDCELNFGSIFPGSVPLNV  107
+
+Query  85   YSYANGFSNKCSSL  98
+            Y    GF  KC S+
+Sbjct  108  YQLGQGFDAKCESI  121
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.120    0.325    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5032694349
+Results from round 2
+
+
+Query= D1BEO
+
+Length=98
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P15570|ELIB_PHYCR Beta-elicitin cryptogein OS=Phytophthora c...  119     4e-34
+  sp|P15569|ELIB_PHYCI Beta-elicitin cinnamomin OS=Phytophthora c...  118     7e-34
+  sp|P35697|ELIB_PHYDR Beta-elicitin DRE-beta OS=Phytophthora dre...  117     2e-33
+  sp|P35696|ELIA_PHYDR Alpha-elicitin DRE-alpha OS=Phytophthora d...  116     4e-33
+  sp|P35698|ELIA_PHYME Alpha-elicitin MGM-alpha OS=Phytophthora m...  114     2e-32
+  sp|P35699|ELIB_PHYME Beta-elicitin MGM-beta OS=Phytophthora meg...  113     6e-32
+  sp|P41801|ELI_PHYPR Elicitin OS=Phytophthora parasitica OX=4792...  112     3e-31
+  sp|P41802|ELIA1_PHYCR Acidic elicitin A1 OS=Phytophthora crypto...  111     4e-31
+  sp|P0C231|ELI1_PHYVE Elicitin Vex1 OS=Phytopythium vexans OX=90...  110     9e-31
+  sp|P15571|ELIA_PHYCP Alpha-elicitin capsicein OS=Phytophthora c...  108     6e-30
+  sp|P85436|ELIA_PHYSY Alpha-elicitin syringicin OS=Phytophthora ...  105     6e-29
+  sp|P85174|ELIA_PHYHI Alpha-elicitin hibernalin OS=Phytophthora ...  105     6e-29
+  sp|P41803|ELIA2_PHYCR Highly acidic elicitin 20 OS=Phytophthora...  105     2e-28
+  sp|P0C232|ELI2_PHYVE Elicitin Vex2 OS=Phytopythium vexans OX=90...  103     4e-28
+  sp|P41804|ELIA3_PHYCR Highly acidic elicitin 26 OS=Phytophthora...  97.9    1e-25
+  sp|Q1ESR5|ELI1_PYTOL Elicitin-like protein 1 OS=Pythium oligand...  95.6    3e-24
+  sp|Q1ESR4|ELI2_PYTOL Elicitin-like protein 2 OS=Pythium oligand...  92.5    4e-23
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P15570|ELIB_PHYCR Beta-elicitin cryptogein OS=Phytophthora 
+cryptogea OX=4786 PE=1 SV=2
+Length=118
+
+ Score = 119 bits (299),  Expect = 4e-34, Method: Composition-based stats.
+ Identities = 94/98 (96%), Positives = 94/98 (96%), Gaps = 0/98 (0%)
+
+Query  1    TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+            TA TATQQTAAYKTLVSILSDASFNQ STDSGYSMLTAKALPTTAQYKLMCASTA NTMI
+Sbjct  21   TACTATQQTAAYKTLVSILSDASFNQCSTDSGYSMLTAKALPTTAQYKLMCASTACNTMI  80
+
+Query  61   KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            KKIVTLNPPN DLTVPTSGLVLNVYSYANGFSNKCSSL
+Sbjct  81   KKIVTLNPPNCDLTVPTSGLVLNVYSYANGFSNKCSSL  118
+
+
+> sp|P15569|ELIB_PHYCI Beta-elicitin cinnamomin OS=Phytophthora 
+cinnamomi OX=4785 PE=1 SV=1
+Length=98
+
+ Score = 118 bits (295),  Expect = 7e-34, Method: Composition-based stats.
+ Identities = 82/98 (84%), Positives = 90/98 (92%), Gaps = 0/98 (0%)
+
+Query  1   TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+           TA TATQQTAAYKTLVSILS++SF+Q S DSGYSMLTA ALPT AQYKLMCASTA NTMI
+Sbjct  1   TACTATQQTAAYKTLVSILSESSFSQCSKDSGYSMLTATALPTNAQYKLMCASTACNTMI  60
+
+Query  61  KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           KKIV LNPP+ DLTVPTSGLVL+VY+YANGFS+KC+SL
+Sbjct  61  KKIVALNPPDCDLTVPTSGLVLDVYTYANGFSSKCASL  98
+
+
+> sp|P35697|ELIB_PHYDR Beta-elicitin DRE-beta OS=Phytophthora drechsleri 
+OX=4794 PE=1 SV=1
+Length=98
+
+ Score = 117 bits (292),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 83/98 (85%), Positives = 90/98 (92%), Gaps = 0/98 (0%)
+
+Query  1   TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+           T  T+TQQTAAY TLVSILSD+SFN+ ++DSGYSMLTAKALPTTAQYKLMCASTA NTMI
+Sbjct  1   TTCTSTQQTAAYTTLVSILSDSSFNKCASDSGYSMLTAKALPTTAQYKLMCASTACNTMI  60
+
+Query  61  KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           KKIV+LNPPN DLTVPTSGLVLNVY YANGFS KC+SL
+Sbjct  61  KKIVSLNPPNCDLTVPTSGLVLNVYEYANGFSTKCASL  98
+
+
+> sp|P35696|ELIA_PHYDR Alpha-elicitin DRE-alpha OS=Phytophthora 
+drechsleri OX=4794 PE=1 SV=1
+Length=98
+
+ Score = 116 bits (290),  Expect = 4e-33, Method: Composition-based stats.
+ Identities = 81/98 (83%), Positives = 87/98 (89%), Gaps = 0/98 (0%)
+
+Query  1   TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+           T  T+TQQTAAY TLVSILSD+SFNQ +TDSGYSMLTA ALPT AQYKLMC+STA NTMI
+Sbjct  1   TTCTSTQQTAAYVTLVSILSDSSFNQCATDSGYSMLTATALPTDAQYKLMCSSTACNTMI  60
+
+Query  61  KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           KKIV+LN PN DLTVPTSGLVLNVY YANGFS KC+SL
+Sbjct  61  KKIVSLNAPNCDLTVPTSGLVLNVYEYANGFSTKCASL  98
+
+
+> sp|P35698|ELIA_PHYME Alpha-elicitin MGM-alpha OS=Phytophthora 
+megasperma OX=4788 PE=1 SV=1
+Length=98
+
+ Score = 114 bits (286),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 82/98 (84%), Positives = 88/98 (90%), Gaps = 0/98 (0%)
+
+Query  1   TAATATQQTAAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMI  60
+           T  T+TQQTAAY TLVSILSD+SFNQ +TDSGYSMLTA ALPTTAQYKLMCASTA NTMI
+Sbjct  1   TTCTSTQQTAAYVTLVSILSDSSFNQCATDSGYSMLTATALPTTAQYKLMCASTACNTMI  60
+
+Query  61  KKIVTLNPPNADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            KIVTLNPP+ +LTVPTSGLVLNVYSYANGFS  C+SL
+Sbjct  61  NKIVTLNPPDCELTVPTSGLVLNVYSYANGFSATCASL  98
+
+
+> sp|P35699|ELIB_PHYME Beta-elicitin MGM-beta OS=Phytophthora megasperma 
+OX=4788 PE=1 SV=1
+Length=98
+
+ Score = 113 bits (282),  Expect = 6e-32, Method: Composition-based stats.
+ Identities = 70/87 (80%), Positives = 77/87 (89%), Gaps = 0/87 (0%)
+
+Query  12  YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+           YKTLVSILS++SFNQ S DSGYSMLTA ALPT AQYKLMCASTA  +MI KIV LNPP+ 
+Sbjct  12  YKTLVSILSESSFNQCSKDSGYSMLTATALPTNAQYKLMCASTACKSMINKIVVLNPPDC  71
+
+Query  72  DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           DLTVPTSGLVL+VY+YANGFS KC+SL
+Sbjct  72  DLTVPTSGLVLDVYTYANGFSTKCASL  98
+
+
+> sp|P41801|ELI_PHYPR Elicitin OS=Phytophthora parasitica OX=4792 
+GN=PARA1 PE=3 SV=1
+Length=118
+
+ Score = 112 bits (279),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 69/87 (79%), Positives = 76/87 (87%), Gaps = 0/87 (0%)
+
+Query  12   YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+            Y  LVSILSD SFNQ STDSGYSMLTA +LPTT QYKLMCASTA  TMI KIVTLNPP+ 
+Sbjct  32   YVALVSILSDTSFNQCSTDSGYSMLTATSLPTTEQYKLMCASTACKTMINKIVTLNPPDC  91
+
+Query  72   DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            +LTVPTSGLVLNV++YANGFS+ C+SL
+Sbjct  92   ELTVPTSGLVLNVFTYANGFSSTCASL  118
+
+
+> sp|P41802|ELIA1_PHYCR Acidic elicitin A1 OS=Phytophthora cryptogea 
+OX=4786 GN=B14 PE=3 SV=1
+Length=118
+
+ Score = 111 bits (278),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 67/87 (77%), Positives = 76/87 (87%), Gaps = 0/87 (0%)
+
+Query  12   YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+            Y  LVSILSD+SFNQ +TDSGYSMLTA +LPTT QYKLMCASTA N+MI KI++LN P+ 
+Sbjct  32   YVALVSILSDSSFNQCATDSGYSMLTATSLPTTDQYKLMCASTACNSMIAKIISLNAPDC  91
+
+Query  72   DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            +LTVPTSGLVLNVYSYANGFS  C+SL
+Sbjct  92   ELTVPTSGLVLNVYSYANGFSATCASL  118
+
+
+> sp|P0C231|ELI1_PHYVE Elicitin Vex1 OS=Phytopythium vexans OX=907947 
+PE=1 SV=1
+Length=98
+
+ Score = 110 bits (275),  Expect = 9e-31, Method: Composition-based stats.
+ Identities = 63/87 (72%), Positives = 70/87 (80%), Gaps = 0/87 (0%)
+
+Query  12  YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+           Y  LVSILSD +F+Q STDSGYSMLTA ALPTT QY  MCASTA   MI  I+TLNPP+ 
+Sbjct  12  YVALVSILSDDNFSQCSTDSGYSMLTATALPTTEQYTKMCASTACQAMIANIITLNPPDC  71
+
+Query  72  DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           +LTVPTSGLVLNVY YANGF+  C+SL
+Sbjct  72  ELTVPTSGLVLNVYEYANGFNATCASL  98
+
+
+> sp|P15571|ELIA_PHYCP Alpha-elicitin capsicein OS=Phytophthora 
+capsici OX=4784 PE=1 SV=1
+Length=98
+
+ Score = 108 bits (269),  Expect = 6e-30, Method: Composition-based stats.
+ Identities = 72/87 (83%), Positives = 78/87 (90%), Gaps = 0/87 (0%)
+
+Query  12  YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+           Y  LVSILSD+SFNQ +TDSGYSMLTA ALPTTAQYKLMCASTA NTMI KIV+LNPP+ 
+Sbjct  12  YVALVSILSDSSFNQCATDSGYSMLTATALPTTAQYKLMCASTACNTMITKIVSLNPPDC  71
+
+Query  72  DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           +LTVPTSGLVLNVYSYANGFS  C+SL
+Sbjct  72  ELTVPTSGLVLNVYSYANGFSATCASL  98
+
+
+> sp|P85436|ELIA_PHYSY Alpha-elicitin syringicin OS=Phytophthora 
+syringae OX=67594 PE=1 SV=1
+Length=98
+
+ Score = 105 bits (262),  Expect = 6e-29, Method: Composition-based stats.
+ Identities = 72/89 (81%), Positives = 79/89 (89%), Gaps = 0/89 (0%)
+
+Query  10  AAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPP  69
+           AAY  LVSILSD+SFNQ +TDSGYSMLTA ALPTTAQYKLMCASTA  TMI KIV+LN P
+Sbjct  10  AAYVALVSILSDSSFNQCATDSGYSMLTATALPTTAQYKLMCASTACKTMITKIVSLNAP  69
+
+Query  70  NADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           + +LTVPTSGLVLNVYSYANGFS+ C+SL
+Sbjct  70  DCELTVPTSGLVLNVYSYANGFSSTCASL  98
+
+
+> sp|P85174|ELIA_PHYHI Alpha-elicitin hibernalin OS=Phytophthora 
+hibernalis OX=175300 PE=1 SV=1
+Length=98
+
+ Score = 105 bits (262),  Expect = 6e-29, Method: Composition-based stats.
+ Identities = 72/89 (81%), Positives = 79/89 (89%), Gaps = 0/89 (0%)
+
+Query  10  AAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPP  69
+           AAY  LVSILSD+SFNQ +TDSGYSMLTA ALPTTAQYKLMCASTA  TMI KIV+LN P
+Sbjct  10  AAYVALVSILSDSSFNQCATDSGYSMLTATALPTTAQYKLMCASTACKTMITKIVSLNAP  69
+
+Query  70  NADLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           + +LTVPTSGLVLNVYSYANGFS+ C+SL
+Sbjct  70  DCELTVPTSGLVLNVYSYANGFSSTCASL  98
+
+
+> sp|P41803|ELIA2_PHYCR Highly acidic elicitin 20 OS=Phytophthora 
+cryptogea OX=4786 GN=B20 PE=3 SV=1
+Length=123
+
+ Score = 105 bits (261),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 59/87 (68%), Positives = 73/87 (84%), Gaps = 0/87 (0%)
+
+Query  12   YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+            Y  LVSILS++ F+  ++DSGYSMLTA ALPTTAQY+LMCASTA   MI++I+ LNPP+ 
+Sbjct  32   YVALVSILSESFFSTCASDSGYSMLTATALPTTAQYELMCASTACQEMIEEIIALNPPDC  91
+
+Query  72   DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+            DLTVPTSGLV+NVY YAN F++ C+SL
+Sbjct  92   DLTVPTSGLVINVYEYANDFASTCASL  118
+
+
+> sp|P0C232|ELI2_PHYVE Elicitin Vex2 OS=Phytopythium vexans OX=907947 
+PE=1 SV=1
+Length=100
+
+ Score = 103 bits (257),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 61/87 (70%), Positives = 68/87 (78%), Gaps = 0/87 (0%)
+
+Query  12  YKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNA  71
+           +  LVS+LS  +FNQ STDSGYSMLTA ALPTT QY  MCASTA   MI+ I+  N P+ 
+Sbjct  12  FVALVSVLSTDNFNQCSTDSGYSMLTATALPTTEQYTKMCASTACQGMIQTIIAANAPDC  71
+
+Query  72  DLTVPTSGLVLNVYSYANGFSNKCSSL  98
+           +LTVPTSGLVLNVY YANGFS KCSSL
+Sbjct  72  ELTVPTSGLVLNVYEYANGFSAKCSSL  98
+
+
+> sp|P41804|ELIA3_PHYCR Highly acidic elicitin 26 OS=Phytophthora 
+cryptogea OX=4786 GN=B26 PE=3 SV=1
+Length=123
+
+ Score = 97.9 bits (242),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 56/82 (68%), Positives = 70/82 (85%), Gaps = 0/82 (0%)
+
+Query  10   AAYKTLVSILSDASFNQBSTDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPP  69
+            +AY TLV++LS + F   ++DSGYSMLTA ALPTTAQY+LMCASTA   MI +I+TL+PP
+Sbjct  30   SAYVTLVTLLSKSYFTTCASDSGYSMLTATALPTTAQYELMCASTACQEMIAEIITLSPP  89
+
+Query  70   NADLTVPTSGLVLNVYSYANGF  91
+            + DLTVPTSGLV++VY+YANGF
+Sbjct  90   DCDLTVPTSGLVIDVYTYANGF  111
+
+
+> sp|Q1ESR5|ELI1_PYTOL Elicitin-like protein 1 OS=Pythium oligandrum 
+OX=41045 GN=POD-1 PE=2 SV=1
+Length=170
+
+ Score = 95.6 bits (236),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 28/74 (38%), Positives = 39/74 (53%), Gaps = 3/74 (4%)
+
+Query  28   STDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNADL---TVPTSGLVLNV  84
+            S+DSG+SM+  K LPT  QY  MCAS     ++  I      + +L   +V    + LNV
+Sbjct  48   SSDSGFSMVPPKGLPTDDQYVKMCASKNCRDLLDVIKKAGLKDCELNFGSVFPGSVPLNV  107
+
+Query  85   YSYANGFSNKCSSL  98
+            Y    GF  KC+S+
+Sbjct  108  YQLGQGFDAKCASI  121
+
+
+> sp|Q1ESR4|ELI2_PYTOL Elicitin-like protein 2 OS=Pythium oligandrum 
+OX=41045 GN=POD-2 PE=2 SV=1
+Length=164
+
+ Score = 92.5 bits (228),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 26/74 (35%), Positives = 38/74 (51%), Gaps = 3/74 (4%)
+
+Query  28   STDSGYSMLTAKALPTTAQYKLMCASTABNTMIKKIVTLNPPNADL---TVPTSGLVLNV  84
+            S+DSG+SM+    LPT  QY  MCAS     +++ I      + +L   ++    + LNV
+Sbjct  48   SSDSGFSMVPPTGLPTDDQYVKMCASKNCKALLEFIKGAGLKDCELNFGSIFPGSVPLNV  107
+
+Query  85   YSYANGFSNKCSSL  98
+            Y    GF  KC S+
+Sbjct  108  YQLGQGFDAKCESI  121
+
+
+
+Lambda      K        H        a         alpha
+   0.309    0.127    0.354    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0390    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5032694349
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 6, 2018  6:13 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

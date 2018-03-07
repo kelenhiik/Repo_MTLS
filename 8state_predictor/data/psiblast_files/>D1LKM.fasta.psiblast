@@ -1,0 +1,1025 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= D1LKM
+
+Length=190
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P24931|RUBY_DESVH Rubrerythrin OS=Desulfovibrio vulgaris (st...  391     2e-138
+  sp|Q9AGG3|RUBY_PORGI Rubrerythrin OS=Porphyromonas gingivalis (...  233     3e-76 
+  sp|Q97FZ9|RUBY1_CLOAB Rubrerythrin-1 OS=Clostridium acetobutyli...  211     2e-67 
+  sp|P51591|RUBY_CLOPE Rubrerythrin OS=Clostridium perfringens (s...  208     2e-66 
+  sp|Q58144|RUBY_METJA Putative rubrerythrin OS=Methanocaldococcu...  160     1e-47 
+  sp|P30820|NIGY_DESVH Nigerythrin OS=Desulfovibrio vulgaris (str...  85.1    5e-19 
+  sp|Q97ET8|RUBY2_CLOAB Rubrerythrin-2 OS=Clostridium acetobutyli...  69.7    1e-13 
+  sp|Q58147|Y737_METJA Uncharacterized protein MJ0737 OS=Methanoc...  39.7    0.001 
+  sp|Q9V099|RUBR_PYRAB Rubredoxin OS=Pyrococcus abyssi (strain GE...  37.4    0.008 
+
+
+> sp|P24931|RUBY_DESVH Rubrerythrin OS=Desulfovibrio vulgaris (strain 
+Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=rbr PE=1 SV=1
+Length=191
+
+ Score = 391 bits (1005),  Expect = 2e-138, Method: Compositional matrix adjust.
+ Identities = 190/190 (100%), Positives = 190/190 (100%), Gaps = 0/190 (0%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF
+Sbjct  2    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  61
+
+Query  61   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  120
+            KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF
+Sbjct  62   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  121
+
+Query  121  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  180
+            ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK
+Sbjct  122  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  181
+
+Query  181  AHFELLGINW  190
+            AHFELLGINW
+Sbjct  182  AHFELLGINW  191
+
+
+> sp|Q9AGG3|RUBY_PORGI Rubrerythrin OS=Porphyromonas gingivalis 
+(strain ATCC BAA-308 / W83) OX=242619 GN=rbr PE=2 SV=1
+Length=200
+
+ Score = 233 bits (595),  Expect = 3e-76, Method: Compositional matrix adjust.
+ Identities = 110/190 (58%), Positives = 144/190 (76%), Gaps = 0/190 (0%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KS+KGS+TEK++L AFAGESQAR+RY +F   AKK+G+ QI+ +F ETA+QE+EHAKR F
+Sbjct  11   KSIKGSKTEKHLLMAFAGESQARSRYTFFASVAKKEGYEQIAGVFMETAEQEKEHAKRFF  70
+
+Query  61   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  120
+             FLEGG LEI A+FPAGII  T  NL A+AAGE+ E+T++YP+FA  A EEG++EIA VF
+Sbjct  71   SFLEGGMLEITASFPAGIIGSTAENLRAAAAGENEEWTDLYPAFAETAEEEGFKEIAAVF  130
+
+Query  121  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  180
+              IA  E  HE+R+L    ++++G VF R +   W+CRNCGYV     AP+LCPACAHP+
+Sbjct  131  RQIAKVEAEHERRYLALLAHVEDGSVFERTEEIAWQCRNCGYVITSKKAPKLCPACAHPQ  190
+
+Query  181  AHFELLGINW  190
+            A+FE +  N+
+Sbjct  191  AYFEPMKTNY  200
+
+
+> sp|Q97FZ9|RUBY1_CLOAB Rubrerythrin-1 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 / VKM 
+B-1787) OX=272562 GN=rbr1 PE=1 SV=1
+Length=195
+
+ Score = 211 bits (536),  Expect = 2e-67, Method: Compositional matrix adjust.
+ Identities = 102/195 (52%), Positives = 142/195 (73%), Gaps = 6/195 (3%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKG++T +N++ AFAGESQARNRY ++   AKK+G+VQIS+IF ETA+ ER HAKR F
+Sbjct  2    KSLKGTKTAENLMKAFAGESQARNRYTFYSNTAKKEGYVQISNIFLETAENERMHAKRFF  61
+
+Query  61   KFL-EGGDLEIV----AAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEE  115
+            KFL EG D E V    A++P   + DT  NLIA+A GE+ E+T++YPSFA+ A +EG++ 
+Sbjct  62   KFLSEGLDDEAVEINGASYPT-TLGDTKKNLIAAAKGENEEWTDLYPSFAKTAEDEGFKG  120
+
+Query  116  IARVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPA  175
+            +A  F  IA  E+ HEKR+    +NI+E +VF +++   W+C  CGY+ EG  AP++CPA
+Sbjct  121  VAAAFRLIAAVEKEHEKRYNALLKNIEENKVFEKDEVKFWKCIKCGYIFEGKTAPKVCPA  180
+
+Query  176  CAHPKAHFELLGINW  190
+            C HP+A+FE+L  N+
+Sbjct  181  CLHPQAYFEILSENY  195
+
+
+> sp|P51591|RUBY_CLOPE Rubrerythrin OS=Clostridium perfringens 
+(strain 13 / Type A) OX=195102 GN=rbr PE=3 SV=2
+Length=195
+
+ Score = 208 bits (529),  Expect = 2e-66, Method: Compositional matrix adjust.
+ Identities = 98/190 (52%), Positives = 134/190 (71%), Gaps = 4/190 (2%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKG++T +N++ +FAGE QAR RY YF   A+K+G+VQIS+IF ETA+ E+EHAKR +
+Sbjct  2    KSLKGTKTAENLMKSFAGECQARTRYTYFSSTARKEGYVQISNIFLETAENEKEHAKRFY  61
+
+Query  61   KFL----EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEI  116
+            KFL    +G  +EI AA+P  +  DT  NL  +A GEH E + +YPSFA +A EEG+ E+
+Sbjct  62   KFLKDDLQGEAVEINAAYPVELPTDTLTNLKFAAEGEHDELSNLYPSFADVADEEGFPEV  121
+
+Query  117  ARVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPAC  176
+            A  F  IA AE  H  RF+  A+NI+EG+VF +++   W+C NCG++ EG  AP  CPAC
+Sbjct  122  AAAFRMIAKAETAHYNRFMKLAKNIEEGKVFKKDEVVLWKCGNCGFIWEGAEAPLKCPAC  181
+
+Query  177  AHPKAHFELL  186
+             HP+A+FE+ 
+Sbjct  182  LHPQAYFEVF  191
+
+
+> sp|Q58144|RUBY_METJA Putative rubrerythrin OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 
+/ NBRC 100440) OX=243232 GN=MJ0734 PE=3 SV=1
+Length=204
+
+ Score = 160 bits (406),  Expect = 1e-47, Method: Compositional matrix adjust.
+ Identities = 79/187 (42%), Positives = 117/187 (63%), Gaps = 9/187 (5%)
+
+Query  8    TEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFL----  63
+            T KN+  A+ GES ARNRY  +   AK++G+ QI++IF  TA+ EREHAK L+  +    
+Sbjct  13   TLKNLTKAYIGESLARNRYTCYAKIAKQEGYEQIAEIFLLTAENEREHAKWLYYLITELK  72
+
+Query  64   -----EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIAR  118
+                 +   +++       ++ +T  NL AS  GEH E+TEMYP FA IA +EG +EIA 
+Sbjct  73   KKYNIDDKAIKVDGVEVPIVLGNTAENLKASIEGEHFEHTEMYPKFADIAEKEGLKEIAD  132
+
+Query  119  VFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAH  178
+               +I +AE+ HE+RF    + ++EG VF +++  +W CR CG+VH G   PE CP+C+H
+Sbjct  133  RLRAIGIAEKHHEERFKKLLKEVEEGTVFKKDKPVEWVCRKCGFVHLGKEPPEKCPSCSH  192
+
+Query  179  PKAHFEL  185
+            P+ +FE+
+Sbjct  193  PRKYFEV  199
+
+
+> sp|P30820|NIGY_DESVH Nigerythrin OS=Desulfovibrio vulgaris (strain 
+Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=ngr PE=1 SV=3
+Length=202
+
+ Score = 85.1 bits (209),  Expect = 5e-19, Method: Compositional matrix adjust.
+ Identities = 63/186 (34%), Positives = 90/186 (48%), Gaps = 12/186 (6%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            K+  GS  E N+  A AGE+ A  +Y  F   A++ G+ QI+ +F  TA  E  H    +
+Sbjct  23   KTAVGSTLE-NLKAAIAGETGAHAKYTAFAKAAREQGYEQIARLFEATAAAELIHIGLEY  81
+
+Query  61   KF---LEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIA  117
+                 +E G  +   A P+    D   NLI+ A GE +E ++MYP+F R A+EEG  +  
+Sbjct  82   ALVAEMEPGYEKPTVAAPSAYSCDL--NLISGANGEIYETSDMYPAFIRKAQEEGNSKAV  139
+
+Query  118  RVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACA  177
+             VF    +AE  H +R+L    +I        +      C  CGY+H+G    E CP C 
+Sbjct  140  HVFTRAKLAESVHAERYLAAYNDIDA-----PDDDKFHLCPICGYIHKGEDF-EKCPICF  193
+
+Query  178  HPKAHF  183
+             PK  F
+Sbjct  194  RPKDTF  199
+
+
+> sp|Q97ET8|RUBY2_CLOAB Rubrerythrin-2 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 / VKM 
+B-1787) OX=272562 GN=rbr2 PE=2 SV=1
+Length=184
+
+ Score = 69.7 bits (169),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 57/191 (30%), Positives = 83/191 (43%), Gaps = 18/191 (9%)
+
+Query  2    SLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFK  61
+            S+K + T   + +A+ GES A  RY  +G +A+   +  I  +F   A  E  HAK  F 
+Sbjct  2    SVKNAMTADFLRSAYGGESMAHMRYLIWGEEAENSNYPNIGRLFKAIAYSEHIHAKNHFN  61
+
+Query  62   FLEGGDLEIVAAFPAGIIADTHA--NLIASAAGEHHEYTEMYPSFARIAREEGYEEIARV  119
+             L+  DL   +     +   T+   NL  +  GE HE  +MYP +   AR +  +E  R 
+Sbjct  62   VLKE-DLYDSSVVAGAVFGSTNLIDNLQGAINGELHEIKQMYPVYLETARYQEEKEAERT  120
+
+Query  120  FASIAVAEEFHEKRFLDFARNIKE------GRVFLREQATKWRCRNCGYVHEGTGAPELC  173
+            F     AE+ H K F D   + KE      G+V++        C  CG+        E C
+Sbjct  121  FHYALEAEKIHAKLFQDAQDSAKENKDINIGKVYI--------CPVCGFTTLDENI-EQC  171
+
+Query  174  PACAHPKAHFE  184
+            P C   K  F+
+Sbjct  172  PICGVKKDKFQ  182
+
+
+> sp|Q58147|Y737_METJA Uncharacterized protein MJ0737 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0737 PE=4 SV=1
+Length=61
+
+ Score = 39.7 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 13/23 (57%), Positives = 14/23 (61%), Gaps = 0/23 (0%)
+
+Query  155  WRCRNCGYVHEGTGAPELCPACA  177
+            W+C NCGYV E    PE CP C 
+Sbjct  4    WKCSNCGYVFEAEKPPERCPNCG  26
+
+
+> sp|Q9V099|RUBR_PYRAB Rubredoxin OS=Pyrococcus abyssi (strain 
+GE5 / Orsay) OX=272844 GN=rub PE=1 SV=1
+Length=53
+
+ Score = 37.4 bits (85),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 17/48 (35%), Positives = 23/48 (48%), Gaps = 17/48 (35%)
+
+Query  154  KWRCRNCGYVH-EGTGAPE----------------LCPACAHPKAHFE  184
+            KWRC+ CGY++ E  G P+                +CP C  PK+ FE
+Sbjct  3    KWRCKICGYIYDEDEGDPDNGISPGTKFEDLPDDWVCPLCGAPKSEFE  50
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.135    0.409    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10889729641
+Results from round 2
+
+
+Query= D1LKM
+
+Length=190
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P24931|RUBY_DESVH Rubrerythrin OS=Desulfovibrio vulgaris (st...  273     6e-92
+  sp|P51591|RUBY_CLOPE Rubrerythrin OS=Clostridium perfringens (s...  258     6e-86
+  sp|Q9AGG3|RUBY_PORGI Rubrerythrin OS=Porphyromonas gingivalis (...  258     1e-85
+  sp|Q97FZ9|RUBY1_CLOAB Rubrerythrin-1 OS=Clostridium acetobutyli...  254     2e-84
+  sp|Q58144|RUBY_METJA Putative rubrerythrin OS=Methanocaldococcu...  235     1e-76
+  sp|Q97ET8|RUBY2_CLOAB Rubrerythrin-2 OS=Clostridium acetobutyli...  203     1e-64
+  sp|P30820|NIGY_DESVH Nigerythrin OS=Desulfovibrio vulgaris (str...  201     2e-63
+  sp|Q58147|Y737_METJA Uncharacterized protein MJ0737 OS=Methanoc...  51.3    6e-08
+
+Sequences not found previously or not previously below threshold:
+
+  sp|P48329|YCX8_CYAPA Uncharacterized protein in petA-psaM inter...  63.7    1e-11
+  sp|Q97D83|RRBR2_CLOAB Reverse rubrerythrin-2 OS=Clostridium ace...  48.6    4e-06
+  sp|Q97D82|RRBR1_CLOAB Reverse rubrerythrin-1 OS=Clostridium ace...  48.6    4e-06
+  sp|Q58156|Y746_METJA Uncharacterized protein MJ0746 OS=Methanoc...  40.6    0.002
+
+
+> sp|P24931|RUBY_DESVH Rubrerythrin OS=Desulfovibrio vulgaris (strain 
+Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=rbr PE=1 SV=1
+Length=191
+
+ Score = 273 bits (698),  Expect = 6e-92, Method: Composition-based stats.
+ Identities = 190/190 (100%), Positives = 190/190 (100%), Gaps = 0/190 (0%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF
+Sbjct  2    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  61
+
+Query  61   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  120
+            KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF
+Sbjct  62   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  121
+
+Query  121  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  180
+            ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK
+Sbjct  122  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  181
+
+Query  181  AHFELLGINW  190
+            AHFELLGINW
+Sbjct  182  AHFELLGINW  191
+
+
+> sp|P51591|RUBY_CLOPE Rubrerythrin OS=Clostridium perfringens 
+(strain 13 / Type A) OX=195102 GN=rbr PE=3 SV=2
+Length=195
+
+ Score = 258 bits (659),  Expect = 6e-86, Method: Composition-based stats.
+ Identities = 98/194 (51%), Positives = 135/194 (70%), Gaps = 4/194 (2%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKG++T +N++ +FAGE QAR RY YF   A+K+G+VQIS+IF ETA+ E+EHAKR +
+Sbjct  2    KSLKGTKTAENLMKSFAGECQARTRYTYFSSTARKEGYVQISNIFLETAENEKEHAKRFY  61
+
+Query  61   KFL----EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEI  116
+            KFL    +G  +EI AA+P  +  DT  NL  +A GEH E + +YPSFA +A EEG+ E+
+Sbjct  62   KFLKDDLQGEAVEINAAYPVELPTDTLTNLKFAAEGEHDELSNLYPSFADVADEEGFPEV  121
+
+Query  117  ARVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPAC  176
+            A  F  IA AE  H  RF+  A+NI+EG+VF +++   W+C NCG++ EG  AP  CPAC
+Sbjct  122  AAAFRMIAKAETAHYNRFMKLAKNIEEGKVFKKDEVVLWKCGNCGFIWEGAEAPLKCPAC  181
+
+Query  177  AHPKAHFELLGINW  190
+             HP+A+FE+    +
+Sbjct  182  LHPQAYFEVFKETY  195
+
+
+> sp|Q9AGG3|RUBY_PORGI Rubrerythrin OS=Porphyromonas gingivalis 
+(strain ATCC BAA-308 / W83) OX=242619 GN=rbr PE=2 SV=1
+Length=200
+
+ Score = 258 bits (658),  Expect = 1e-85, Method: Composition-based stats.
+ Identities = 110/190 (58%), Positives = 144/190 (76%), Gaps = 0/190 (0%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KS+KGS+TEK++L AFAGESQAR+RY +F   AKK+G+ QI+ +F ETA+QE+EHAKR F
+Sbjct  11   KSIKGSKTEKHLLMAFAGESQARSRYTFFASVAKKEGYEQIAGVFMETAEQEKEHAKRFF  70
+
+Query  61   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  120
+             FLEGG LEI A+FPAGII  T  NL A+AAGE+ E+T++YP+FA  A EEG++EIA VF
+Sbjct  71   SFLEGGMLEITASFPAGIIGSTAENLRAAAAGENEEWTDLYPAFAETAEEEGFKEIAAVF  130
+
+Query  121  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  180
+              IA  E  HE+R+L    ++++G VF R +   W+CRNCGYV     AP+LCPACAHP+
+Sbjct  131  RQIAKVEAEHERRYLALLAHVEDGSVFERTEEIAWQCRNCGYVITSKKAPKLCPACAHPQ  190
+
+Query  181  AHFELLGINW  190
+            A+FE +  N+
+Sbjct  191  AYFEPMKTNY  200
+
+
+> sp|Q97FZ9|RUBY1_CLOAB Rubrerythrin-1 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 / VKM 
+B-1787) OX=272562 GN=rbr1 PE=1 SV=1
+Length=195
+
+ Score = 254 bits (648),  Expect = 2e-84, Method: Composition-based stats.
+ Identities = 98/194 (51%), Positives = 138/194 (71%), Gaps = 4/194 (2%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKG++T +N++ AFAGESQARNRY ++   AKK+G+VQIS+IF ETA+ ER HAKR F
+Sbjct  2    KSLKGTKTAENLMKAFAGESQARNRYTFYSNTAKKEGYVQISNIFLETAENERMHAKRFF  61
+
+Query  61   KFL----EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEI  116
+            KFL    +   +EI  A     + DT  NLIA+A GE+ E+T++YPSFA+ A +EG++ +
+Sbjct  62   KFLSEGLDDEAVEINGASYPTTLGDTKKNLIAAAKGENEEWTDLYPSFAKTAEDEGFKGV  121
+
+Query  117  ARVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPAC  176
+            A  F  IA  E+ HEKR+    +NI+E +VF +++   W+C  CGY+ EG  AP++CPAC
+Sbjct  122  AAAFRLIAAVEKEHEKRYNALLKNIEENKVFEKDEVKFWKCIKCGYIFEGKTAPKVCPAC  181
+
+Query  177  AHPKAHFELLGINW  190
+             HP+A+FE+L  N+
+Sbjct  182  LHPQAYFEILSENY  195
+
+
+> sp|Q58144|RUBY_METJA Putative rubrerythrin OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 
+/ NBRC 100440) OX=243232 GN=MJ0734 PE=3 SV=1
+Length=204
+
+ Score = 235 bits (599),  Expect = 1e-76, Method: Composition-based stats.
+ Identities = 79/192 (41%), Positives = 118/192 (61%), Gaps = 9/192 (5%)
+
+Query  8    TEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFL----  63
+            T KN+  A+ GES ARNRY  +   AK++G+ QI++IF  TA+ EREHAK L+  +    
+Sbjct  13   TLKNLTKAYIGESLARNRYTCYAKIAKQEGYEQIAEIFLLTAENEREHAKWLYYLITELK  72
+
+Query  64   -----EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIAR  118
+                 +   +++       ++ +T  NL AS  GEH E+TEMYP FA IA +EG +EIA 
+Sbjct  73   KKYNIDDKAIKVDGVEVPIVLGNTAENLKASIEGEHFEHTEMYPKFADIAEKEGLKEIAD  132
+
+Query  119  VFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAH  178
+               +I +AE+ HE+RF    + ++EG VF +++  +W CR CG+VH G   PE CP+C+H
+Sbjct  133  RLRAIGIAEKHHEERFKKLLKEVEEGTVFKKDKPVEWVCRKCGFVHLGKEPPEKCPSCSH  192
+
+Query  179  PKAHFELLGINW  190
+            P+ +FE+    +
+Sbjct  193  PRKYFEVKCEKY  204
+
+
+> sp|Q97ET8|RUBY2_CLOAB Rubrerythrin-2 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 / VKM 
+B-1787) OX=272562 GN=rbr2 PE=2 SV=1
+Length=184
+
+ Score = 203 bits (517),  Expect = 1e-64, Method: Composition-based stats.
+ Identities = 55/187 (29%), Positives = 80/187 (43%), Gaps = 6/187 (3%)
+
+Query  2    SLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFK  61
+            S+K + T   + +A+ GES A  RY  +G +A+   +  I  +F   A  E  HAK  F 
+Sbjct  2    SVKNAMTADFLRSAYGGESMAHMRYLIWGEEAENSNYPNIGRLFKAIAYSEHIHAKNHFN  61
+
+Query  62   FLEGGDLEIVAAFPAGIIADTHA--NLIASAAGEHHEYTEMYPSFARIAREEGYEEIARV  119
+             L+  DL   +     +   T+   NL  +  GE HE  +MYP +   AR +  +E  R 
+Sbjct  62   VLKE-DLYDSSVVAGAVFGSTNLIDNLQGAINGELHEIKQMYPVYLETARYQEEKEAERT  120
+
+Query  120  FASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHP  179
+            F     AE+ H K F D   + KE +         + C  CG+        E CP C   
+Sbjct  121  FHYALEAEKIHAKLFQDAQDSAKENK--DINIGKVYICPVCGFTTLDENI-EQCPICGVK  177
+
+Query  180  KAHFELL  186
+            K  F+  
+Sbjct  178  KDKFQAF  184
+
+
+> sp|P30820|NIGY_DESVH Nigerythrin OS=Desulfovibrio vulgaris (strain 
+Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=ngr PE=1 SV=3
+Length=202
+
+ Score = 201 bits (510),  Expect = 2e-63, Method: Composition-based stats.
+ Identities = 63/186 (34%), Positives = 91/186 (49%), Gaps = 12/186 (6%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            K+  GS T +N+  A AGE+ A  +Y  F   A++ G+ QI+ +F  TA  E  H    +
+Sbjct  23   KTAVGS-TLENLKAAIAGETGAHAKYTAFAKAAREQGYEQIARLFEATAAAELIHIGLEY  81
+
+Query  61   KF---LEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIA  117
+                 +E G  +   A P+    D   NLI+ A GE +E ++MYP+F R A+EEG  +  
+Sbjct  82   ALVAEMEPGYEKPTVAAPSAYSCDL--NLISGANGEIYETSDMYPAFIRKAQEEGNSKAV  139
+
+Query  118  RVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACA  177
+             VF    +AE  H +R+L    +I        +      C  CGY+H+G    E CP C 
+Sbjct  140  HVFTRAKLAESVHAERYLAAYNDIDA-----PDDDKFHLCPICGYIHKGEDF-EKCPICF  193
+
+Query  178  HPKAHF  183
+             PK  F
+Sbjct  194  RPKDTF  199
+
+
+> sp|P48329|YCX8_CYAPA Uncharacterized protein in petA-psaM intergenic 
+region OS=Cyanophora paradoxa OX=2762 PE=1 SV=1
+Length=180
+
+ Score = 63.7 bits (153),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 32/134 (24%), Positives = 51/134 (38%), Gaps = 16/134 (12%)
+
+Query  26   YNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFLEGGDLEIVAA------------  73
+            Y  F   A++ G  +I  +F   A +E  HA+ L K     +++  A             
+Sbjct  45   YPTFAEIARRSGQPEIGAMFDAIAKEEGMHAQLLTKLYSELEVKDSAETLEAKRLVSTIE  104
+
+Query  74   ----FPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVAEEF  129
+                  A         L  +   E  E  + YP+FA++A E+G  E+A  F +I  +E  
+Sbjct  105  SQIDAVASDSRGLRRALETALEVETIESQKTYPAFAKLAAEQGNMEVATAFEAIVKSETK  164
+
+Query  130  HEKRFLDFARNIKE  143
+            H         N+ E
+Sbjct  165  HANWVKRALENLLE  178
+
+
+ Score = 51.0 bits (120),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 22/62 (35%), Positives = 31/62 (50%), Gaps = 0/62 (0%)
+
+Query  81   DTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVAEEFHEKRFLDFARN  140
+            +T AN  +S   E +E   MYP+FA IAR  G  EI  +F +IA  E  H +        
+Sbjct  25   NTDANAASSIEVEMYECDCMYPTFAEIARRSGQPEIGAMFDAIAKEEGMHAQLLTKLYSE  84
+
+Query  141  IK  142
+            ++
+Sbjct  85   LE  86
+
+
+> sp|Q58147|Y737_METJA Uncharacterized protein MJ0737 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0737 PE=4 SV=1
+Length=61
+
+ Score = 51.3 bits (121),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 13/31 (42%), Positives = 17/31 (55%), Gaps = 0/31 (0%)
+
+Query  155  WRCRNCGYVHEGTGAPELCPACAHPKAHFEL  185
+            W+C NCGYV E    PE CP C      +++
+Sbjct  4    WKCSNCGYVFEAEKPPERCPNCGEKCTFYDV  34
+
+
+> sp|Q97D83|RRBR2_CLOAB Reverse rubrerythrin-2 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 
+/ VKM B-1787) OX=272562 GN=rbr3B PE=1 SV=1
+Length=181
+
+ Score = 48.6 bits (114),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 27/130 (21%), Positives = 47/130 (36%), Gaps = 12/130 (9%)
+
+Query  10   KNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFLEGGDLE  69
+            + +   F GE      Y     QA ++G+ ++++ +   A +E EHA +  + L      
+Sbjct  60   EGLRANFTGECTEVGMYLAMARQADREGYPEVAEAYKRIAFEEAEHASKFAELLGE----  115
+
+Query  70   IVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVAEEF  129
+                    ++ADT  NL      E     E     A +A++  Y+ I      +   E  
+Sbjct  116  -------VVVADTKTNLQMRVDAE-KGACEGKKELATLAKKLNYDAIHDTVHEMCKDEAR  167
+
+Query  130  HEKRFLDFAR  139
+            H   F     
+Sbjct  168  HGSAFRGLLN  177
+
+
+ Score = 46.0 bits (107),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 14/31 (45%), Positives = 18/31 (58%), Gaps = 0/31 (0%)
+
+Query  153  TKWRCRNCGYVHEGTGAPELCPACAHPKAHF  183
+             K++C  CGY++ G  APE CP C   K  F
+Sbjct  2    KKFKCVVCGYIYTGEDAPEKCPVCGAGKDKF  32
+
+
+ Score = 44.4 bits (103),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 24/78 (31%), Positives = 33/78 (42%), Gaps = 1/78 (1%)
+
+Query  64   EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASI  123
+            EG   E       G+  +    L A+  GE  E   MY + AR A  EGY E+A  +  I
+Sbjct  40   EGWADEHKIGIAKGVDKEVLEGLRANFTGECTEVG-MYLAMARQADREGYPEVAEAYKRI  98
+
+Query  124  AVAEEFHEKRFLDFARNI  141
+            A  E  H  +F +    +
+Sbjct  99   AFEEAEHASKFAELLGEV  116
+
+
+> sp|Q97D82|RRBR1_CLOAB Reverse rubrerythrin-1 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 
+/ VKM B-1787) OX=272562 GN=rbr3A PE=1 SV=1
+Length=181
+
+ Score = 48.6 bits (114),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 27/130 (21%), Positives = 47/130 (36%), Gaps = 12/130 (9%)
+
+Query  10   KNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFLEGGDLE  69
+            + +   F GE      Y     QA ++G+ ++++ +   A +E EHA +  + L      
+Sbjct  60   EGLRANFTGECTEVGMYLAMARQADREGYPEVAEAYKRIAFEEAEHASKFAELLGE----  115
+
+Query  70   IVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVAEEF  129
+                    ++ADT  NL      E     E     A +A++  Y+ I      +   E  
+Sbjct  116  -------VVVADTKTNLQMRVDAE-KGACEGKKELATLAKKLNYDAIHDTVHEMCKDEAR  167
+
+Query  130  HEKRFLDFAR  139
+            H   F     
+Sbjct  168  HGSAFRGLLN  177
+
+
+ Score = 46.0 bits (107),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 14/31 (45%), Positives = 18/31 (58%), Gaps = 0/31 (0%)
+
+Query  153  TKWRCRNCGYVHEGTGAPELCPACAHPKAHF  183
+             K++C  CGY++ G  APE CP C   K  F
+Sbjct  2    KKFKCVVCGYIYTGEDAPEKCPVCGAGKDKF  32
+
+
+ Score = 44.8 bits (104),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 24/78 (31%), Positives = 33/78 (42%), Gaps = 1/78 (1%)
+
+Query  64   EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASI  123
+            EG   E       G+  +    L A+  GE  E   MY + AR A  EGY E+A  +  I
+Sbjct  40   EGWADEHKIGVAKGVDKEVLEGLRANFTGECTEVG-MYLAMARQADREGYPEVAEAYKRI  98
+
+Query  124  AVAEEFHEKRFLDFARNI  141
+            A  E  H  +F +    +
+Sbjct  99   AFEEAEHASKFAELLGEV  116
+
+
+> sp|Q58156|Y746_METJA Uncharacterized protein MJ0746 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0746 PE=4 SV=1
+Length=141
+
+ Score = 40.6 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 29/136 (21%), Positives = 48/136 (35%), Gaps = 13/136 (10%)
+
+Query  4    KGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFL  63
+            KG+  EK +   F GE +    Y     QA+++G  +++++    A +E +HA       
+Sbjct  15   KGTELEKEVQANFEGECKEVGLYLAMARQAQREGLPEVAEVLIRIAMEEAQHAAHF----  70
+
+Query  64   EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASI  123
+                    A     I  +   N+     GE     E   + A  A+E G +     F   
+Sbjct  71   --------AEMNGLISENLKENIEMMLKGECMANKEKK-AAATKAKELGIDPAHDFFDES  121
+
+Query  124  AVAEEFHEKRFLDFAR  139
+            +  E  H K       
+Sbjct  122  SRDEARHAKMLKGILD  137
+
+
+
+Lambda      K        H        a         alpha
+   0.307    0.123    0.330    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0365    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10889729641
+Results from round 3
+
+
+Query= D1LKM
+
+Length=190
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P24931|RUBY_DESVH Rubrerythrin OS=Desulfovibrio vulgaris (st...  237     6e-78
+  sp|P51591|RUBY_CLOPE Rubrerythrin OS=Clostridium perfringens (s...  230     4e-75
+  sp|Q97FZ9|RUBY1_CLOAB Rubrerythrin-1 OS=Clostridium acetobutyli...  228     3e-74
+  sp|Q9AGG3|RUBY_PORGI Rubrerythrin OS=Porphyromonas gingivalis (...  223     5e-72
+  sp|Q58144|RUBY_METJA Putative rubrerythrin OS=Methanocaldococcu...  213     2e-68
+  sp|Q97ET8|RUBY2_CLOAB Rubrerythrin-2 OS=Clostridium acetobutyli...  188     8e-59
+  sp|P30820|NIGY_DESVH Nigerythrin OS=Desulfovibrio vulgaris (str...  174     4e-53
+  sp|Q97D83|RRBR2_CLOAB Reverse rubrerythrin-2 OS=Clostridium ace...  115     2e-30
+  sp|Q97D82|RRBR1_CLOAB Reverse rubrerythrin-1 OS=Clostridium ace...  115     2e-30
+  sp|P48329|YCX8_CYAPA Uncharacterized protein in petA-psaM inter...  109     3e-28
+  sp|Q58156|Y746_METJA Uncharacterized protein MJ0746 OS=Methanoc...  105     4e-27
+  sp|Q58147|Y737_METJA Uncharacterized protein MJ0737 OS=Methanoc...  57.5    3e-10
+
+Sequences not found previously or not previously below threshold:
+
+  sp|O07572|YHJR_BACSU Uncharacterized protein YhjR OS=Bacillus s...  41.3    0.001
+  sp|P45430|BFR_MYCPA Bacterioferritin OS=Mycobacterium paratuber...  40.9    0.002
+
+
+> sp|P24931|RUBY_DESVH Rubrerythrin OS=Desulfovibrio vulgaris (strain 
+Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=rbr PE=1 SV=1
+Length=191
+
+ Score = 237 bits (605),  Expect = 6e-78, Method: Composition-based stats.
+ Identities = 190/190 (100%), Positives = 190/190 (100%), Gaps = 0/190 (0%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF
+Sbjct  2    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  61
+
+Query  61   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  120
+            KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF
+Sbjct  62   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  121
+
+Query  121  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  180
+            ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK
+Sbjct  122  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  181
+
+Query  181  AHFELLGINW  190
+            AHFELLGINW
+Sbjct  182  AHFELLGINW  191
+
+
+> sp|P51591|RUBY_CLOPE Rubrerythrin OS=Clostridium perfringens 
+(strain 13 / Type A) OX=195102 GN=rbr PE=3 SV=2
+Length=195
+
+ Score = 230 bits (587),  Expect = 4e-75, Method: Composition-based stats.
+ Identities = 98/194 (51%), Positives = 135/194 (70%), Gaps = 4/194 (2%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKG++T +N++ +FAGE QAR RY YF   A+K+G+VQIS+IF ETA+ E+EHAKR +
+Sbjct  2    KSLKGTKTAENLMKSFAGECQARTRYTYFSSTARKEGYVQISNIFLETAENEKEHAKRFY  61
+
+Query  61   KFL----EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEI  116
+            KFL    +G  +EI AA+P  +  DT  NL  +A GEH E + +YPSFA +A EEG+ E+
+Sbjct  62   KFLKDDLQGEAVEINAAYPVELPTDTLTNLKFAAEGEHDELSNLYPSFADVADEEGFPEV  121
+
+Query  117  ARVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPAC  176
+            A  F  IA AE  H  RF+  A+NI+EG+VF +++   W+C NCG++ EG  AP  CPAC
+Sbjct  122  AAAFRMIAKAETAHYNRFMKLAKNIEEGKVFKKDEVVLWKCGNCGFIWEGAEAPLKCPAC  181
+
+Query  177  AHPKAHFELLGINW  190
+             HP+A+FE+    +
+Sbjct  182  LHPQAYFEVFKETY  195
+
+
+> sp|Q97FZ9|RUBY1_CLOAB Rubrerythrin-1 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 / VKM 
+B-1787) OX=272562 GN=rbr1 PE=1 SV=1
+Length=195
+
+ Score = 228 bits (582),  Expect = 3e-74, Method: Composition-based stats.
+ Identities = 99/194 (51%), Positives = 138/194 (71%), Gaps = 4/194 (2%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KSLKG++T +N++ AFAGESQARNRY ++   AKK+G+VQIS+IF ETA+ ER HAKR F
+Sbjct  2    KSLKGTKTAENLMKAFAGESQARNRYTFYSNTAKKEGYVQISNIFLETAENERMHAKRFF  61
+
+Query  61   KFLEGG----DLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEI  116
+            KFL  G     +EI  A     + DT  NLIA+A GE+ E+T++YPSFA+ A +EG++ +
+Sbjct  62   KFLSEGLDDEAVEINGASYPTTLGDTKKNLIAAAKGENEEWTDLYPSFAKTAEDEGFKGV  121
+
+Query  117  ARVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPAC  176
+            A  F  IA  E+ HEKR+    +NI+E +VF +++   W+C  CGY+ EG  AP++CPAC
+Sbjct  122  AAAFRLIAAVEKEHEKRYNALLKNIEENKVFEKDEVKFWKCIKCGYIFEGKTAPKVCPAC  181
+
+Query  177  AHPKAHFELLGINW  190
+             HP+A+FE+L  N+
+Sbjct  182  LHPQAYFEILSENY  195
+
+
+> sp|Q9AGG3|RUBY_PORGI Rubrerythrin OS=Porphyromonas gingivalis 
+(strain ATCC BAA-308 / W83) OX=242619 GN=rbr PE=2 SV=1
+Length=200
+
+ Score = 223 bits (567),  Expect = 5e-72, Method: Composition-based stats.
+ Identities = 110/190 (58%), Positives = 144/190 (76%), Gaps = 0/190 (0%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            KS+KGS+TEK++L AFAGESQAR+RY +F   AKK+G+ QI+ +F ETA+QE+EHAKR F
+Sbjct  11   KSIKGSKTEKHLLMAFAGESQARSRYTFFASVAKKEGYEQIAGVFMETAEQEKEHAKRFF  70
+
+Query  61   KFLEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVF  120
+             FLEGG LEI A+FPAGII  T  NL A+AAGE+ E+T++YP+FA  A EEG++EIA VF
+Sbjct  71   SFLEGGMLEITASFPAGIIGSTAENLRAAAAGENEEWTDLYPAFAETAEEEGFKEIAAVF  130
+
+Query  121  ASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHPK  180
+              IA  E  HE+R+L    ++++G VF R +   W+CRNCGYV     AP+LCPACAHP+
+Sbjct  131  RQIAKVEAEHERRYLALLAHVEDGSVFERTEEIAWQCRNCGYVITSKKAPKLCPACAHPQ  190
+
+Query  181  AHFELLGINW  190
+            A+FE +  N+
+Sbjct  191  AYFEPMKTNY  200
+
+
+> sp|Q58144|RUBY_METJA Putative rubrerythrin OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 
+/ NBRC 100440) OX=243232 GN=MJ0734 PE=3 SV=1
+Length=204
+
+ Score = 213 bits (543),  Expect = 2e-68, Method: Composition-based stats.
+ Identities = 79/193 (41%), Positives = 118/193 (61%), Gaps = 9/193 (5%)
+
+Query  7    RTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFL---  63
+             T KN+  A+ GES ARNRY  +   AK++G+ QI++IF  TA+ EREHAK L+  +   
+Sbjct  12   ETLKNLTKAYIGESLARNRYTCYAKIAKQEGYEQIAEIFLLTAENEREHAKWLYYLITEL  71
+
+Query  64   ------EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIA  117
+                  +   +++       ++ +T  NL AS  GEH E+TEMYP FA IA +EG +EIA
+Sbjct  72   KKKYNIDDKAIKVDGVEVPIVLGNTAENLKASIEGEHFEHTEMYPKFADIAEKEGLKEIA  131
+
+Query  118  RVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACA  177
+                +I +AE+ HE+RF    + ++EG VF +++  +W CR CG+VH G   PE CP+C+
+Sbjct  132  DRLRAIGIAEKHHEERFKKLLKEVEEGTVFKKDKPVEWVCRKCGFVHLGKEPPEKCPSCS  191
+
+Query  178  HPKAHFELLGINW  190
+            HP+ +FE+    +
+Sbjct  192  HPRKYFEVKCEKY  204
+
+
+> sp|Q97ET8|RUBY2_CLOAB Rubrerythrin-2 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 / VKM 
+B-1787) OX=272562 GN=rbr2 PE=2 SV=1
+Length=184
+
+ Score = 188 bits (478),  Expect = 8e-59, Method: Composition-based stats.
+ Identities = 55/187 (29%), Positives = 80/187 (43%), Gaps = 6/187 (3%)
+
+Query  2    SLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFK  61
+            S+K + T   + +A+ GES A  RY  +G +A+   +  I  +F   A  E  HAK  F 
+Sbjct  2    SVKNAMTADFLRSAYGGESMAHMRYLIWGEEAENSNYPNIGRLFKAIAYSEHIHAKNHFN  61
+
+Query  62   FLEGGDLEIVAAFPAGIIADTHA--NLIASAAGEHHEYTEMYPSFARIAREEGYEEIARV  119
+             L+  DL   +     +   T+   NL  +  GE HE  +MYP +   AR +  +E  R 
+Sbjct  62   VLKE-DLYDSSVVAGAVFGSTNLIDNLQGAINGELHEIKQMYPVYLETARYQEEKEAERT  120
+
+Query  120  FASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACAHP  179
+            F     AE+ H K F D   + KE +         + C  CG+        E CP C   
+Sbjct  121  FHYALEAEKIHAKLFQDAQDSAKENK--DINIGKVYICPVCGFTTLDENI-EQCPICGVK  177
+
+Query  180  KAHFELL  186
+            K  F+  
+Sbjct  178  KDKFQAF  184
+
+
+> sp|P30820|NIGY_DESVH Nigerythrin OS=Desulfovibrio vulgaris (strain 
+Hildenborough / ATCC 29579 / DSM 644 / NCIMB 8303) OX=882 
+GN=ngr PE=1 SV=3
+Length=202
+
+ Score = 174 bits (441),  Expect = 4e-53, Method: Composition-based stats.
+ Identities = 63/189 (33%), Positives = 91/189 (48%), Gaps = 12/189 (6%)
+
+Query  1    KSLKGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLF  60
+            K+  GS T +N+  A AGE+ A  +Y  F   A++ G+ QI+ +F  TA  E  H    +
+Sbjct  23   KTAVGS-TLENLKAAIAGETGAHAKYTAFAKAAREQGYEQIARLFEATAAAELIHIGLEY  81
+
+Query  61   KF---LEGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIA  117
+                 +E G  +   A P+    D   NLI+ A GE +E ++MYP+F R A+EEG  +  
+Sbjct  82   ALVAEMEPGYEKPTVAAPSAYSCDL--NLISGANGEIYETSDMYPAFIRKAQEEGNSKAV  139
+
+Query  118  RVFASIAVAEEFHEKRFLDFARNIKEGRVFLREQATKWRCRNCGYVHEGTGAPELCPACA  177
+             VF    +AE  H +R+L    +I        +      C  CGY+H+G    E CP C 
+Sbjct  140  HVFTRAKLAESVHAERYLAAYNDIDA-----PDDDKFHLCPICGYIHKGEDF-EKCPICF  193
+
+Query  178  HPKAHFELL  186
+             PK  F   
+Sbjct  194  RPKDTFTAY  202
+
+
+> sp|Q97D83|RRBR2_CLOAB Reverse rubrerythrin-2 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 
+/ VKM B-1787) OX=272562 GN=rbr3B PE=1 SV=1
+Length=181
+
+ Score = 115 bits (287),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 27/133 (20%), Positives = 47/133 (35%), Gaps = 12/133 (9%)
+
+Query  7    RTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFLEGG  66
+               + +   F GE      Y     QA ++G+ ++++ +   A +E EHA +  + L   
+Sbjct  57   EVLEGLRANFTGECTEVGMYLAMARQADREGYPEVAEAYKRIAFEEAEHASKFAELLGE-  115
+
+Query  67   DLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVA  126
+                       ++ADT  NL      E     E     A +A++  Y+ I      +   
+Sbjct  116  ----------VVVADTKTNLQMRVDAE-KGACEGKKELATLAKKLNYDAIHDTVHEMCKD  164
+
+Query  127  EEFHEKRFLDFAR  139
+            E  H   F     
+Sbjct  165  EARHGSAFRGLLN  177
+
+
+ Score = 49.4 bits (116),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 14/31 (45%), Positives = 18/31 (58%), Gaps = 0/31 (0%)
+
+Query  153  TKWRCRNCGYVHEGTGAPELCPACAHPKAHF  183
+             K++C  CGY++ G  APE CP C   K  F
+Sbjct  2    KKFKCVVCGYIYTGEDAPEKCPVCGAGKDKF  32
+
+
+ Score = 40.6 bits (93),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 24/78 (31%), Positives = 33/78 (42%), Gaps = 1/78 (1%)
+
+Query  64   EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASI  123
+            EG   E       G+  +    L A+  GE  E   MY + AR A  EGY E+A  +  I
+Sbjct  40   EGWADEHKIGIAKGVDKEVLEGLRANFTGECTEVG-MYLAMARQADREGYPEVAEAYKRI  98
+
+Query  124  AVAEEFHEKRFLDFARNI  141
+            A  E  H  +F +    +
+Sbjct  99   AFEEAEHASKFAELLGEV  116
+
+
+> sp|Q97D82|RRBR1_CLOAB Reverse rubrerythrin-1 OS=Clostridium acetobutylicum 
+(strain ATCC 824 / DSM 792 / JCM 1419 / LMG 5710 
+/ VKM B-1787) OX=272562 GN=rbr3A PE=1 SV=1
+Length=181
+
+ Score = 115 bits (287),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 27/133 (20%), Positives = 47/133 (35%), Gaps = 12/133 (9%)
+
+Query  7    RTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFLEGG  66
+               + +   F GE      Y     QA ++G+ ++++ +   A +E EHA +  + L   
+Sbjct  57   EVLEGLRANFTGECTEVGMYLAMARQADREGYPEVAEAYKRIAFEEAEHASKFAELLGE-  115
+
+Query  67   DLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVA  126
+                       ++ADT  NL      E     E     A +A++  Y+ I      +   
+Sbjct  116  ----------VVVADTKTNLQMRVDAE-KGACEGKKELATLAKKLNYDAIHDTVHEMCKD  164
+
+Query  127  EEFHEKRFLDFAR  139
+            E  H   F     
+Sbjct  165  EARHGSAFRGLLN  177
+
+
+ Score = 49.4 bits (116),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 14/31 (45%), Positives = 18/31 (58%), Gaps = 0/31 (0%)
+
+Query  153  TKWRCRNCGYVHEGTGAPELCPACAHPKAHF  183
+             K++C  CGY++ G  APE CP C   K  F
+Sbjct  2    KKFKCVVCGYIYTGEDAPEKCPVCGAGKDKF  32
+
+
+ Score = 40.9 bits (94),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 24/78 (31%), Positives = 33/78 (42%), Gaps = 1/78 (1%)
+
+Query  64   EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASI  123
+            EG   E       G+  +    L A+  GE  E   MY + AR A  EGY E+A  +  I
+Sbjct  40   EGWADEHKIGVAKGVDKEVLEGLRANFTGECTEVG-MYLAMARQADREGYPEVAEAYKRI  98
+
+Query  124  AVAEEFHEKRFLDFARNI  141
+            A  E  H  +F +    +
+Sbjct  99   AFEEAEHASKFAELLGEV  116
+
+
+> sp|P48329|YCX8_CYAPA Uncharacterized protein in petA-psaM intergenic 
+region OS=Cyanophora paradoxa OX=2762 PE=1 SV=1
+Length=180
+
+ Score = 109 bits (272),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 32/135 (24%), Positives = 51/135 (38%), Gaps = 16/135 (12%)
+
+Query  25   RYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFLEGGDLEIVAA-----------  73
+             Y  F   A++ G  +I  +F   A +E  HA+ L K     +++  A            
+Sbjct  44   MYPTFAEIARRSGQPEIGAMFDAIAKEEGMHAQLLTKLYSELEVKDSAETLEAKRLVSTI  103
+
+Query  74   -----FPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVAEE  128
+                   A         L  +   E  E  + YP+FA++A E+G  E+A  F +I  +E 
+Sbjct  104  ESQIDAVASDSRGLRRALETALEVETIESQKTYPAFAKLAAEQGNMEVATAFEAIVKSET  163
+
+Query  129  FHEKRFLDFARNIKE  143
+             H         N+ E
+Sbjct  164  KHANWVKRALENLLE  178
+
+
+ Score = 48.3 bits (113),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 22/62 (35%), Positives = 31/62 (50%), Gaps = 0/62 (0%)
+
+Query  81   DTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVAEEFHEKRFLDFARN  140
+            +T AN  +S   E +E   MYP+FA IAR  G  EI  +F +IA  E  H +        
+Sbjct  25   NTDANAASSIEVEMYECDCMYPTFAEIARRSGQPEIGAMFDAIAKEEGMHAQLLTKLYSE  84
+
+Query  141  IK  142
+            ++
+Sbjct  85   LE  86
+
+
+> sp|Q58156|Y746_METJA Uncharacterized protein MJ0746 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0746 PE=4 SV=1
+Length=141
+
+ Score = 105 bits (262),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 29/136 (21%), Positives = 48/136 (35%), Gaps = 13/136 (10%)
+
+Query  4    KGSRTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFL  63
+            KG+  EK +   F GE +    Y     QA+++G  +++++    A +E +HA       
+Sbjct  15   KGTELEKEVQANFEGECKEVGLYLAMARQAQREGLPEVAEVLIRIAMEEAQHAAHF----  70
+
+Query  64   EGGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASI  123
+                    A     I  +   N+     GE     E   + A  A+E G +     F   
+Sbjct  71   --------AEMNGLISENLKENIEMMLKGECMANKEKK-AAATKAKELGIDPAHDFFDES  121
+
+Query  124  AVAEEFHEKRFLDFAR  139
+            +  E  H K       
+Sbjct  122  SRDEARHAKMLKGILD  137
+
+
+> sp|Q58147|Y737_METJA Uncharacterized protein MJ0737 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0737 PE=4 SV=1
+Length=61
+
+ Score = 57.5 bits (137),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 13/33 (39%), Positives = 17/33 (52%), Gaps = 0/33 (0%)
+
+Query  155  WRCRNCGYVHEGTGAPELCPACAHPKAHFELLG  187
+            W+C NCGYV E    PE CP C      +++  
+Sbjct  4    WKCSNCGYVFEAEKPPERCPNCGEKCTFYDVSC  36
+
+
+> sp|O07572|YHJR_BACSU Uncharacterized protein YhjR OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yhjR PE=4 SV=1
+Length=145
+
+ Score = 41.3 bits (95),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 23/133 (17%), Positives = 35/133 (26%), Gaps = 6/133 (5%)
+
+Query  8    TEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFKFLEGGD  67
+              +N+  A  GE  A   Y      A  D   ++     E    E  H +          
+Sbjct  18   LIRNLQKAINGEFSAIQCYRKLAELAHSD---EVRKQIEEIRRDEIRHLREFSTLYGSIT  74
+
+Query  68   LEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIAVAE  127
+             +           +   N          +  E    + R A E    +   VF   A  E
+Sbjct  75   GK---HIMPKQTEECPDNFTRGLDAAFKDEQETVDFYLRAAEETSNLKAKGVFTRAARDE  131
+
+Query  128  EFHEKRFLDFARN  140
+            + H   FL +   
+Sbjct  132  QNHAVWFLYYLME  144
+
+
+> sp|P45430|BFR_MYCPA Bacterioferritin OS=Mycobacterium paratuberculosis 
+(strain ATCC BAA-968 / K-10) OX=262316 GN=bfr PE=1 
+SV=2
+Length=159
+
+ Score = 40.9 bits (94),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 25/126 (20%), Positives = 41/126 (33%), Gaps = 3/126 (2%)
+
+Query  7    RTEKNILTAFAGESQARNRYNYFGGQAKKDGFVQISDIFAETADQEREHAKRLFK--FLE  64
+               + +      E  A N+Y          GF ++++     +  E  HA+ +     L 
+Sbjct  6    EVLRLLNEQLTSELTAINQYFLHSKMQDNWGFTELAEHTRAESFDEMRHAEAITDRILLL  65
+
+Query  65   GGDLEIVAAFPAGIIADTHANLIASAAGEHHEYTEMYPSFARIAREEGYEEIARVFASIA  124
+             G       F   I         A  A E+     + P+   + RE+     A +F  I 
+Sbjct  66   DGLPNYQRLFSLRIGQTLREQFEADLAIEYEVMDRLKPAII-LCREKQDSTTATLFEQIV  124
+
+Query  125  VAEEFH  130
+              EE H
+Sbjct  125  ADEEKH  130
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.122    0.319    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0367    0.140     1.90     42.6     43.6 
+
+Effective search space used: 10889729641
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 6, 2018  6:13 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
