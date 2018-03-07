@@ -1,3 +1,4 @@
+""" This predicts topology from an input file using a trained model """
 #####################################################
 #import my functions from the all_parsing_codes file#
 #####################################################
@@ -6,26 +7,9 @@ import numpy as np
 from sklearn import svm
 from sklearn.model_selection import cross_val_score
 from sklearn.externals import joblib
-#tempfile = './11_proteins.txt'
-#tempfile = '../data/train_test_sets/34_proteins.3line.txt'
+
 unknown = './twoseq.txt'
-
-
-##########################################################################################
-#Split my dataset into 70% and 30%. 70% being the training set and 30% being the test set#
-##########################################################################################
-#input is the file used , windowsize
-
-#X_train, Y_train, X_test, Y_test = all_parsing_codes.parse_with_train_test(tempfile, 11)
-
-#print (X_train,'###', Y_train,'###')
-#####################################
-#fit the model with the training set#
-#####################################
-
-#clf = svm.SVC(kernel='linear', cache_size=3000)
-#clf.fit(X_train, Y_train)
-
+#unknown_fasta = './2protein.fasta'
 
 ################
 # Import model #
@@ -33,19 +17,39 @@ unknown = './twoseq.txt'
 
 model = joblib.load('../src/small_models/RFC_predictor_smallmodel.pkl')
 
-##########################
-# Specify the windowsize #
-##########################
+######################################################################
+# Specify the windowsize, must be 7 since I trained my model with it #
+######################################################################
 
 sliding_window = 7
 
-# This takes every sequence in a dicionary one at a time, predicts and then goes to the next one, also creates a file for it #
-
 topology_dict={1:'G', 2:'I', 3:'H', 4:'E', 5:'B', 6:'T', 7:'S', 8:'C'}
+
+#### Specify the path and filename for results, default is the following:
+
 output=open("../results/prediction_results/Prediction.txt",'w')
+
+############################################################################################
+# If you want to use a file that has three lines: ID, seq, topology, but want to leave the #
+# topology out and receive the predicted topology, use this and comment the other one out #
+############################################################################################
+
 dictionary = all_parsing_codes.fasta_parsing_from_3lines(unknown)
+
+#################################################################################################
+# If you want to use a file that has two lines: ID, seq. OR any fasta file with the same format,#
+# use this and comment the above one out
+#################################################################################################
+
+#dictionary = all_parsing_codes.fasta_parser_onlyseq(unknown_fasta)
+
+##################################################################################################
+# This takes every sequence in a dicionary one at a time, predicts and then goes to the next one,#
+#also creates a file for it #
+##################################################################################################
+
 for identification in dictionary:
-    #print(identification)
+    
     
     sw_of_unknown_topo_seq = all_parsing_codes.encode_protein((dictionary[identification]), sliding_window)
     sw_of_unknown_topo_seq = np.array(sw_of_unknown_topo_seq)
@@ -59,6 +63,8 @@ for identification in dictionary:
 
 
     list_in_string="".join(list_of_ss)
+
+# it also prints it on the terminal screen
 
     output.write(identification + '\n' + dictionary[identification] + '\n' + list_in_string + '\n')
     print(identification + '\n' + dictionary[identification] + '\n' + list_in_string + '\n')
