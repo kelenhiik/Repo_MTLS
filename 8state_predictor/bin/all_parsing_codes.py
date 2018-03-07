@@ -11,6 +11,8 @@ def parse_unknown_file(filename, sliding_window):
     """ Parses an unknown file which only has an ID and sequence """
 
     all_unknown_topo_seq_set = []
+    id_seq = []
+    seq_of_query = []
     dictionary = fasta_parser_onlyseq(filename)
 
     for identification in dictionary:
@@ -23,11 +25,14 @@ def parse_unknown_file(filename, sliding_window):
 
 
         all_unknown_topo_seq_set.extend(sw_of_unknown_topo_seq)
+        id_seq.append(identification)
+        seq_of_query.append(dictionary[identification])
 
 
-
+    id_seq1 = "".join(id_seq)
+    seq_of_query1 = "".join(seq_of_query)
     all_unknown_topo_seq_set = np.array(all_unknown_topo_seq_set)
-    return all_unknown_topo_seq_set
+    return all_unknown_topo_seq_set, id_seq1, seq_of_query1
 
 
 ################################################################################

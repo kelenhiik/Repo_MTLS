@@ -1,0 +1,981 @@
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    5.1s finished
+100 2 9 0.549535911307
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.2s finished
+100 2 11 0.546193561789
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.1s finished
+100 2 13 0.551999626923
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.8s finished
+100 2 15 0.548176869608
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.9s finished
+100 2 17 0.544352699458
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.0s finished
+100 2 19 0.545230365761
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.0s finished
+100 2 21 0.543077353475
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.5s finished
+100 2 23 0.540386808546
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.0s finished
+100 2 25 0.539168669372
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.8s finished
+100 2 27 0.539169266212
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.5s finished
+100 2 29 0.535883086245
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.5s finished
+100 2 31 0.533957271695
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.1s finished
+100 2 33 0.533957069515
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.5s finished
+100 2 35 0.535061774722
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    5.0s finished
+100 3 9 0.551944189019
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.4s finished
+100 3 11 0.55415236951
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.1s finished
+100 3 13 0.54979091686
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.7s finished
+100 3 15 0.551546653813
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.7s finished
+100 3 17 0.546901569308
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.9s finished
+100 3 19 0.549337561221
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.9s finished
+100 3 21 0.543842808518
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.6s finished
+100 3 23 0.544607158741
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.2s finished
+100 3 25 0.540472145722
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.5s finished
+100 3 27 0.538460806204
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.1s finished
+100 3 29 0.543616441067
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.4s finished
+100 3 31 0.54064179493
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.8s finished
+100 3 33 0.534892120739
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.4s finished
+100 3 35 0.537101425134
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    4.9s finished
+100 4 9 0.552737375097
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.0s finished
+100 4 11 0.555115979589
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.9s finished
+100 4 13 0.554266280119
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.6s finished
+100 4 15 0.555200654973
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.7s finished
+100 4 17 0.554605243793
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.0s finished
+100 4 19 0.547015063574
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.7s finished
+100 4 21 0.54877086061
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.3s finished
+100 4 23 0.546504455357
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.8s finished
+100 4 25 0.542822357448
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.5s finished
+100 4 27 0.54185976078
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.1s finished
+100 4 29 0.542850853774
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.4s finished
+100 4 31 0.541944724899
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.8s finished
+100 4 33 0.541916394731
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.2s finished
+100 4 35 0.5385738262
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    5.0s finished
+100 5 9 0.550669899751
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.1s finished
+100 5 11 0.5524539212
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.8s finished
+100 5 13 0.55460644478
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.6s finished
+100 5 15 0.552623298331
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.6s finished
+100 5 17 0.550838737789
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.8s finished
+100 5 19 0.551008367656
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.8s finished
+100 5 21 0.547780761637
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.2s finished
+100 5 23 0.546051549803
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.8s finished
+100 5 25 0.540018818914
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.4s finished
+100 5 27 0.541038658652
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.1s finished
+100 5 29 0.539537590377
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.2s finished
+100 5 31 0.542850485584
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.5s finished
+100 5 33 0.540556777771
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.9s finished
+100 5 35 0.539480506243
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    4.7s finished
+100 6 9 0.550527906923
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    5.9s finished
+100 6 11 0.554351326078
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.7s finished
+100 6 13 0.551292367841
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.0s finished
+100 6 15 0.554889352271
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.1s finished
+100 6 17 0.55216996676
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.4s finished
+100 6 19 0.553643352263
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.3s finished
+100 6 21 0.548658030803
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.9s finished
+100 6 23 0.545003425624
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.5s finished
+100 6 25 0.544578850213
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.0s finished
+100 6 27 0.543417884156
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.3s finished
+100 6 29 0.546957611195
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.6s finished
+100 6 31 0.539820079073
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.1s finished
+100 6 33 0.540783542219
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.6s finished
+100 6 35 0.540188886881
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    4.7s finished
+100 7 9 0.549707026254
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    5.6s finished
+100 7 11 0.552312633493
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.5s finished
+100 7 13 0.557126199874
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.1s finished
+100 7 15 0.554125163363
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.2s finished
+100 7 17 0.552453131763
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.2s finished
+100 7 19 0.552254543476
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.3s finished
+100 7 21 0.551093842134
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.0s finished
+100 7 23 0.547581629311
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.7s finished
+100 7 25 0.543785777424
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.9s finished
+100 7 27 0.547241399582
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.5s finished
+100 7 29 0.543587514176
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.7s finished
+100 7 31 0.5428228557
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.2s finished
+100 7 33 0.538602762992
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.9s finished
+100 7 35 0.53608162647
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    4.6s finished
+100 8 9 0.554153541672
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    5.7s finished
+100 8 11 0.555258193846
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    6.4s finished
+100 8 13 0.556220585968
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.0s finished
+100 8 15 0.554181664941
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.0s finished
+100 8 17 0.550923487762
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.1s finished
+100 8 19 0.550498965349
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.1s finished
+100 8 21 0.551745391423
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.7s finished
+100 8 23 0.547865018164
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.3s finished
+100 8 25 0.545768661525
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.9s finished
+100 8 27 0.545117066521
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.5s finished
+100 8 29 0.543757606125
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.6s finished
+100 8 31 0.54435196772
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.2s finished
+100 8 33 0.54214262485
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.8s finished
+100 8 35 0.536875255173
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.3s finished
+150 2 9 0.549450708895
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.8s finished
+150 2 11 0.551915021277
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.1s finished
+150 2 13 0.552679638735
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.9s finished
+150 2 15 0.549280710734
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.0s finished
+150 2 17 0.547864510337
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.6s finished
+150 2 19 0.547694256976
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.6s finished
+150 2 21 0.543728666899
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.4s finished
+150 2 23 0.54032989776
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.1s finished
+150 2 25 0.538885554993
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.1s finished
+150 2 27 0.539423537795
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.0s finished
+150 2 29 0.536987829945
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.1s finished
+150 2 31 0.535712859428
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.8s finished
+150 2 33 0.533617318727
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.8s finished
+150 2 35 0.534013373769
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.2s finished
+150 3 9 0.551037896512
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.7s finished
+150 3 11 0.552990748791
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.0s finished
+150 3 13 0.552453064335
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.8s finished
+150 3 15 0.551801274386
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.8s finished
+150 3 17 0.548685836211
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.6s finished
+150 3 19 0.549394002642
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.4s finished
+150 3 21 0.544720320802
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.7s finished
+150 3 23 0.546958030027
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.2s finished
+150 3 25 0.540613702939
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.1s finished
+150 3 27 0.541434708777
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.6s finished
+150 3 29 0.542397798921
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.3s finished
+150 3 31 0.541689567631
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.9s finished
+150 3 33 0.534919651912
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.8s finished
+150 3 35 0.53732774437
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.5s finished
+150 4 9 0.553813509311
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.7s finished
+150 4 11 0.554718632095
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.3s finished
+150 4 13 0.554577929328
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.0s finished
+150 4 15 0.552311418148
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.0s finished
+150 4 17 0.553868653369
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.6s finished
+150 4 19 0.548062665422
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.5s finished
+150 4 21 0.548515850201
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.5s finished
+150 4 23 0.548147160243
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.3s finished
+150 4 25 0.545881551508
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.5s finished
+150 4 27 0.54409723414
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.3s finished
+150 4 29 0.543643871175
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.4s finished
+150 4 31 0.544323748254
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.1s finished
+150 4 33 0.543813390401
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.0s finished
+150 4 35 0.537922057983
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.8s finished
+150 5 9 0.552114319626
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.4s finished
+150 5 11 0.552255188458
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.7s finished
+150 5 13 0.554492457259
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.7s finished
+150 5 15 0.554605438793
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.7s finished
+150 5 17 0.551433287218
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.3s finished
+150 5 19 0.552821429298
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.5s finished
+150 5 21 0.548884865087
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.3s finished
+150 5 23 0.548288654881
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.2s finished
+150 5 25 0.541123175101
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.2s finished
+150 5 27 0.544550560929
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.0s finished
+150 5 29 0.543927178249
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.4s finished
+150 5 31 0.542454238
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.3s finished
+150 5 33 0.542284160439
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.7s finished
+150 5 35 0.538828894449
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.8s finished
+150 6 9 0.550500053249
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.2s finished
+150 6 11 0.554832311601
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.9s finished
+150 6 13 0.553388413966
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.5s finished
+150 6 15 0.554633788241
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.0s finished
+150 6 17 0.550867522941
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.7s finished
+150 6 19 0.555711150005
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.5s finished
+150 6 21 0.549762500089
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.4s finished
+150 6 23 0.549110628256
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.2s finished
+150 6 25 0.545938859468
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.0s finished
+150 6 27 0.546136504297
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.8s finished
+150 6 29 0.548231729646
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.2s finished
+150 6 31 0.545173053038
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.1s finished
+150 6 33 0.54200100495
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.1s finished
+150 6 35 0.542284268738
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.9s finished
+150 7 9 0.551434909534
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.4s finished
+150 7 11 0.554578246991
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.7s finished
+150 7 13 0.557070088187
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.5s finished
+150 7 15 0.554946034364
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.9s finished
+150 7 17 0.554662436189
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.5s finished
+150 7 19 0.555455311623
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.4s finished
+150 7 21 0.549252649977
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.3s finished
+150 7 23 0.547581304377
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.1s finished
+150 7 25 0.544720566262
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.1s finished
+150 7 27 0.545598299987
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.7s finished
+150 7 29 0.547665582711
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.4s finished
+150 7 31 0.543190676728
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.1s finished
+150 7 33 0.540245590595
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.2s finished
+150 7 35 0.539593933068
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    7.7s finished
+150 8 9 0.553417179862
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.3s finished
+150 8 11 0.555739684836
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.6s finished
+150 8 13 0.557750155356
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.6s finished
+150 8 15 0.55279355892
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.6s finished
+150 8 17 0.554747405132
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.5s finished
+150 8 19 0.551886515419
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.5s finished
+150 8 21 0.551971688994
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.7s finished
+150 8 23 0.548431083364
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.7s finished
+150 8 25 0.546023724961
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.4s finished
+150 8 27 0.543870676598
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.4s finished
+150 8 29 0.546193198479
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.7s finished
+150 8 31 0.549478807942
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.3s finished
+150 8 33 0.544153762195
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.3s finished
+150 8 35 0.540953658315
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.0s finished
+200 2 9 0.548940712028
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.2s finished
+200 2 11 0.551490210044
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.0s finished
+200 2 13 0.554265618199
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.1s finished
+200 2 15 0.54828932401
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.5s finished
+200 2 17 0.546533310259
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.9s finished
+200 2 19 0.547580690642
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.0s finished
+200 2 21 0.54412520329
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.1s finished
+200 2 23 0.539791621203
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.0s finished
+200 2 25 0.537979154028
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.4s finished
+200 2 27 0.538743980869
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.5s finished
+200 2 29 0.536053394903
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.9s finished
+200 2 31 0.536024241512
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.3s finished
+200 2 33 0.535175073883
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.9s finished
+200 2 35 0.533277303224
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.2s finished
+200 3 9 0.553360312436
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.0s finished
+200 3 11 0.552480862682
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.8s finished
+200 3 13 0.551858240486
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.3s finished
+200 3 15 0.55307616541
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.3s finished
+200 3 17 0.548997391626
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.7s finished
+200 3 19 0.548968878491
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.8s finished
+200 3 21 0.544550438193
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.2s finished
+200 3 23 0.547495957552
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.1s finished
+200 3 25 0.541349903447
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.7s finished
+200 3 27 0.540670060122
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.3s finished
+200 3 29 0.541831351052
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.0s finished
+200 3 31 0.539706575201
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.6s finished
+200 3 33 0.535373195348
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.6s finished
+200 3 35 0.535316614296
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.7s finished
+200 4 9 0.553898141323
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.9s finished
+200 4 11 0.557409802904
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.9s finished
+200 4 13 0.557778122269
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.0s finished
+200 4 15 0.553642714467
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.1s finished
+200 4 17 0.55270769929
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.7s finished
+200 4 19 0.549280754045
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.5s finished
+200 4 21 0.549563615718
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.8s finished
+200 4 23 0.548940155998
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.0s finished
+200 4 25 0.54613646331
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.2s finished
+200 4 27 0.543898566403
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.2s finished
+200 4 29 0.543700476282
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.6s finished
+200 4 31 0.5431907249
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.9s finished
+200 4 33 0.54236945431
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.9s finished
+200 4 35 0.536789258504
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.9s finished
+200 5 9 0.553445245309
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.8s finished
+200 5 11 0.551999975808
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.9s finished
+200 5 13 0.555229038065
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.3s finished
+200 5 15 0.554095718768
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.3s finished
+200 5 17 0.552339473909
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.8s finished
+200 5 19 0.552623283881
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.9s finished
+200 5 21 0.551008914098
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.5s finished
+200 5 23 0.550441149605
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.0s finished
+200 5 25 0.543162113091
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.3s finished
+200 5 27 0.545541834455
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.3s finished
+200 5 29 0.545116818726
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.6s finished
+200 5 31 0.542057660737
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.7s finished
+200 5 33 0.542737383656
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.0s finished
+200 5 35 0.540670093735
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.3s finished
+200 6 9 0.553785313876
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.3s finished
+200 6 11 0.55763645435
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.2s finished
+200 6 13 0.553756006399
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.4s finished
+200 6 15 0.552339252455
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.4s finished
+200 6 17 0.552849795697
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.0s finished
+200 6 19 0.5572970043
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.0s finished
+200 6 21 0.549932274381
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.5s finished
+200 6 23 0.549365537692
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.4s finished
+200 6 25 0.548006532034
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.3s finished
+200 6 27 0.546476348923
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.3s finished
+200 6 29 0.54843052737
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.9s finished
+200 6 31 0.546220979875
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.2s finished
+200 6 33 0.545230180324
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.1s finished
+200 6 35 0.54171768125
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    9.4s finished
+200 7 9 0.55551301661
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.6s finished
+200 7 11 0.556277212808
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.2s finished
+200 7 13 0.55766474838
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.5s finished
+200 7 15 0.556305593576
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.0s finished
+200 7 17 0.556050200417
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.0s finished
+200 7 19 0.557296361746
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.6s finished
+200 7 21 0.551886967852
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.8s finished
+200 7 23 0.548487580135
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.9s finished
+200 7 25 0.545853709936
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.8s finished
+200 7 27 0.547212951436
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.0s finished
+200 7 29 0.5510083196
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.0s finished
+200 7 31 0.545144785437
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.2s finished
+200 7 33 0.544267583594
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.2s finished
+200 7 35 0.543190936717
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:    8.9s finished
+200 8 9 0.552935185943
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   10.7s finished
+200 8 11 0.556673881572
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.4s finished
+200 8 13 0.557353541949
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.7s finished
+200 8 15 0.552170036591
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.9s finished
+200 8 17 0.555738818358
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.0s finished
+200 8 19 0.554039501161
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.9s finished
+200 8 21 0.553331212037
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.8s finished
+200 8 23 0.54857261655
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.9s finished
+200 8 25 0.548572823566
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.3s finished
+200 8 27 0.548034272644
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.1s finished
+200 8 29 0.548515501206
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.4s finished
+200 8 31 0.548685867501
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.2s finished
+200 8 33 0.544805285007
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.0s finished
+200 8 35 0.541916476528
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.6s finished
+250 2 9 0.551121729591
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.0s finished
+250 2 11 0.549988744706
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.2s finished
+250 2 13 0.553302896269
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.6s finished
+250 2 15 0.548742345097
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.6s finished
+250 2 17 0.546391721747
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.7s finished
+250 2 19 0.547439092511
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.1s finished
+250 2 21 0.544635101513
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.7s finished
+250 2 23 0.541972494329
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.9s finished
+250 2 25 0.538347097872
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.3s finished
+250 2 27 0.539819903352
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.8s finished
+250 2 29 0.536619732045
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.0s finished
+250 2 31 0.535457627566
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.4s finished
+250 2 33 0.534155455629
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.1s finished
+250 2 35 0.532059231503
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   12.0s finished
+250 3 9 0.551972324345
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.5s finished
+250 3 11 0.551602965325
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.5s finished
+250 3 13 0.553925629093
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.0s finished
+250 3 15 0.551886541804
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.3s finished
+250 3 17 0.549025950462
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.1s finished
+250 3 19 0.552537412346
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.0s finished
+250 3 21 0.5442950715
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.2s finished
+250 3 23 0.547779315079
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.2s finished
+250 3 25 0.544097246124
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.7s finished
+250 3 27 0.541547868417
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.1s finished
+250 3 29 0.543077517162
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.3s finished
+250 3 31 0.54024480117
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.6s finished
+250 3 33 0.537185741905
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.0s finished
+250 3 35 0.536364533893
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.9s finished
+250 4 9 0.556475697657
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   14.1s finished
+250 4 11 0.55641837046
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.5s finished
+250 4 13 0.557495036685
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.9s finished
+250 4 15 0.554209246573
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.0s finished
+250 4 17 0.553019384692
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.8s finished
+250 4 19 0.549875522525
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.5s finished
+250 4 21 0.552622857901
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.0s finished
+250 4 23 0.548543595514
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.2s finished
+250 4 25 0.545201640841
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.8s finished
+250 4 27 0.546447992278
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.7s finished
+250 4 29 0.542850791183
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.4s finished
+250 4 31 0.542709048651
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.6s finished
+250 4 33 0.540868275333
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.0s finished
+250 4 35 0.537129298094
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.3s finished
+250 5 9 0.553416773039
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.7s finished
+250 5 11 0.555058712598
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.7s finished
+250 5 13 0.554180942777
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.0s finished
+250 5 15 0.554152174601
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.0s finished
+250 5 17 0.554718617615
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.9s finished
+250 5 19 0.553246199709
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.5s finished
+250 5 21 0.550839021815
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.9s finished
+250 5 23 0.549393145789
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.1s finished
+250 5 25 0.54392685567
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.4s finished
+250 5 27 0.546645969238
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.8s finished
+250 5 29 0.545881400002
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.1s finished
+250 5 31 0.543020262291
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.2s finished
+250 5 33 0.54168942079
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.6s finished
+250 5 35 0.537639480213
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.2s finished
+250 6 9 0.55270831072
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.3s finished
+250 6 11 0.558599645578
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.7s finished
+250 6 13 0.552226475565
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.9s finished
+250 6 15 0.550838391185
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   17.0s finished
+250 6 17 0.554577546566
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.7s finished
+250 6 19 0.557353753802
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.4s finished
+250 6 21 0.549960455403
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.7s finished
+250 6 23 0.549479002924
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.0s finished
+250 6 25 0.548799231784
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.4s finished
+250 6 27 0.547495964774
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.5s finished
+250 6 29 0.54891205437
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.1s finished
+250 6 31 0.547835253479
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.2s finished
+250 6 33 0.544182210237
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.4s finished
+250 6 35 0.541604437422
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.1s finished
+250 7 9 0.552850255486
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.3s finished
+250 7 11 0.556560637714
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.6s finished
+250 7 13 0.556531493991
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.7s finished
+250 7 15 0.555285797277
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.9s finished
+250 7 17 0.557296532599
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.7s finished
+250 7 19 0.556644973764
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.3s finished
+250 7 21 0.553416084715
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.7s finished
+250 7 23 0.551319942326
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.8s finished
+250 7 25 0.548855483053
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.2s finished
+250 7 27 0.546929543388
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.4s finished
+250 7 29 0.549138525308
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.7s finished
+250 7 31 0.547042522427
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.1s finished
+250 7 33 0.542652676975
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.4s finished
+250 7 35 0.542001488856
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   11.0s finished
+250 8 9 0.55208575602
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.2s finished
+250 8 11 0.556022065177
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.2s finished
+250 8 13 0.557778228091
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.6s finished
+250 8 15 0.55446419927
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.7s finished
+250 8 17 0.555936942128
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.6s finished
+250 8 19 0.554464139162
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.2s finished
+250 8 21 0.553189274554
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.5s finished
+250 8 23 0.550045275146
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   21.8s finished
+250 8 25 0.54817609218
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.0s finished
+250 8 27 0.550413411538
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.3s finished
+250 8 29 0.549393730754
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.8s finished
+250 8 31 0.549705601312
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.8s finished
+250 8 33 0.544096880313
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.2s finished
+250 8 35 0.543474489226
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.8s finished
+300 2 9 0.551547039051
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.5s finished
+300 2 11 0.549564113963
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.9s finished
+300 2 13 0.552226292647
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.7s finished
+300 2 15 0.549252120522
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.6s finished
+300 2 17 0.54913916549
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.2s finished
+300 2 19 0.546985748894
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.6s finished
+300 2 21 0.544748451237
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.3s finished
+300 2 23 0.541632695356
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.8s finished
+300 2 25 0.538488833232
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   28.4s finished
+300 2 27 0.539989930356
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.7s finished
+300 2 29 0.534552020949
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   30.3s finished
+300 2 31 0.534522925381
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   31.9s finished
+300 2 33 0.533362144558
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   33.5s finished
+300 2 35 0.532257564644
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.7s finished
+300 3 9 0.55183052645
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.5s finished
+300 3 11 0.552141169666
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.9s finished
+300 3 13 0.552934629895
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.4s finished
+300 3 15 0.551659656975
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.6s finished
+300 3 17 0.550612006997
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.1s finished
+300 3 19 0.5507532104
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.7s finished
+300 3 21 0.544436833287
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.3s finished
+300 3 23 0.545626521886
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.6s finished
+300 3 25 0.542114395741
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   28.2s finished
+300 3 27 0.541264903184
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.7s finished
+300 3 29 0.541972722967
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   30.3s finished
+300 3 31 0.53922495429
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   31.5s finished
+300 3 33 0.53520318028
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   33.4s finished
+300 3 35 0.533730466351
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.6s finished
+300 4 9 0.554379567239
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.4s finished
+300 4 11 0.555455533003
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.8s finished
+300 4 13 0.556446659799
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.3s finished
+300 4 15 0.555568709464
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.5s finished
+300 4 17 0.554039284514
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.9s finished
+300 4 19 0.552424452538
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.5s finished
+300 4 21 0.550894854301
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.1s finished
+300 4 23 0.548034087268
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.6s finished
+300 4 25 0.545484969476
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   28.3s finished
+300 4 27 0.547297559423
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.4s finished
+300 4 29 0.54253902885
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   30.0s finished
+300 4 31 0.541037967815
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   31.5s finished
+300 4 33 0.54044334134
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   33.0s finished
+300 4 35 0.538092323274
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.5s finished
+300 5 9 0.55531465926
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.2s finished
+300 5 11 0.55299103522
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.7s finished
+300 5 13 0.555625362634
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.2s finished
+300 5 15 0.553840460398
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.4s finished
+300 5 17 0.555710151154
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.6s finished
+300 5 19 0.553472302292
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.4s finished
+300 5 21 0.550952219947
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.9s finished
+300 5 23 0.549875091603
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.4s finished
+300 5 25 0.544039769794
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   28.0s finished
+300 5 27 0.548996746638
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.2s finished
+300 5 29 0.54449348897
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.7s finished
+300 5 31 0.54420965724
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   31.1s finished
+300 5 33 0.54392716136
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   32.8s finished
+300 5 35 0.538347372206
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.4s finished
+300 6 9 0.553983057337
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   16.0s finished
+300 6 11 0.557976792353
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.5s finished
+300 6 13 0.554237564774
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.0s finished
+300 6 15 0.552792803083
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   20.3s finished
+300 6 17 0.551659839929
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.4s finished
+300 6 19 0.557013314654
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.1s finished
+300 6 21 0.552509594817
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.7s finished
+300 6 23 0.549138939242
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   26.2s finished
+300 6 25 0.549025635214
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.5s finished
+300 6 27 0.548345500636
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.1s finished
+300 6 29 0.5492236218
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.7s finished
+300 6 31 0.545229790562
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   31.0s finished
+300 6 33 0.544748547447
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   32.6s finished
+300 6 35 0.539621986506
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.3s finished
+300 7 9 0.554946520643
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.8s finished
+300 7 11 0.556503984507
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.4s finished
+300 7 13 0.557947978371
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.9s finished
+300 7 15 0.555767256917
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.9s finished
+300 7 17 0.557438048883
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.3s finished
+300 7 19 0.557069806668
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.9s finished
+300 7 21 0.553330932836
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.7s finished
+300 7 23 0.55044182595
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.9s finished
+300 7 25 0.549478983693
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.5s finished
+300 7 27 0.54865722206
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   28.8s finished
+300 7 29 0.550951517156
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.5s finished
+300 7 31 0.547807149491
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   30.9s finished
+300 7 33 0.545484784087
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   32.7s finished
+300 7 35 0.542001484013
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   13.0s finished
+300 8 9 0.552963672601
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   15.7s finished
+300 8 11 0.557919782936
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   18.3s finished
+300 8 13 0.557523080448
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.9s finished
+300 8 15 0.55474735943
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   19.9s finished
+300 8 17 0.55653155657
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   23.3s finished
+300 8 19 0.555370306554
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   22.9s finished
+300 8 21 0.555058635613
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   24.4s finished
+300 8 23 0.55143321504
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   25.9s finished
+300 8 25 0.548969177021
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   27.5s finished
+300 8 27 0.551064980028
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.0s finished
+300 8 29 0.549478644334
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   29.4s finished
+300 8 31 0.548968413987
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   30.9s finished
+300 8 33 0.547750799615
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:   32.5s finished
+300 8 35 0.543615870735
+
