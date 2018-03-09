@@ -4,9 +4,17 @@ import re
 def pssm_parsing(filename):
     """ Sliding windows for PSSM profile """
     profile = open(filename, 'r')
-    for line in profile:
-        print(line)
-    #re.compile[" + \d + [A-Z]"]
+    profile2=profile.readlines()
+    for position in (profile2[2]):
+        if position == ' ':
+            pass
+        else:
+            print(position)
+        
+    
+    #print (profile)
+    #re.compile[" + \d + [A-Z]"] #Used to indicate a set of characters, separated by "-"
+    profile.close()
 
 
 
