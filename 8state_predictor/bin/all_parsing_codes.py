@@ -41,6 +41,62 @@ def parse_unknown_file(filename, sliding_window):
 ################################################################################
 
 
+def protein_w_pssm(filename, sliding_window):
+
+    seq_profile_train = []
+    topologies = []
+    dictionary = fasta_parser(filename)
+
+    sorted_keys = sorted(dictionary.keys(), key=lambda x: x[3:])
+
+    for identification in sorted_keys:
+        #print (identification)
+        pssm_array = pssm_format('../data/PSSM/' + identification + '.fasta.pssm')
+        #print (pssm_array)
+        sequence = dictionary[identification][0]
+
+        pssm_set = []
+        pad = int(sliding_window//2)
+        for i in range (len(sequence)):
+            #print (i)
+                if i < pad:
+                    number_of_pads = pad-i
+                    temp_encoded_window = [0]*(20*number_of_pads)
+                    for lists in pssm_array[:i+pad+1]:       # Go through each pssm list in sliding window
+                        temp_encoded_window.extend(lists)  # Extend (not append)
+                    pssm_set.append(temp_encoded_window) # Save to pssm training set
+                    #print (pssm_set)
+
+                elif i > (len(sequence)-pad-1):
+                    #print(i)
+                    number_of_pads = pad - (len(sequence)- 1 - i)
+                    temp_encoded_window = []
+                    for lists in pssm_array[i-pad:]:       # Go through each pssm list in sliding window
+                        temp_encoded_window.extend(lists)  # Extend (not append)
+                    temp_encoded_window.extend([0]*(20*number_of_pads))
+                    pssm_set.append(temp_encoded_window) # Save to pssm training set
+                else:
+                    temp_window = pssm_array[i-pad:i+pad+1] # Extract sliding window
+                    temp_encoded_window = []
+                    for lists in temp_window:       # Go through each pssm list in sliding window
+                        temp_encoded_window.extend(lists)  # Extend (not append)
+                    # print(temp_encoded_window)
+                    pssm_set.append(temp_encoded_window) # Save to training set
+        seq_profile_train.extend(pssm_set)
+        topology_set = topology_in_numbers((dictionary[identification])[1])
+        topologies.extend(topology_set)
+    seq_profile_train = np.array(seq_profile_train)
+    topologies = np.array(topologies)
+    return seq_profile_train, topologies
+
+
+def pssm_format(filename):
+    """ PSSM into SVM format """
+    format_pssm = (np.genfromtxt(filename, skip_header = 3, skip_footer = 5, autostrip = True, usecols = range(22,42)))/100
+
+    return format_pssm
+
+
 def parse_with_all_codes(filename, sliding_window):
     """ Parses the three line txt file and also sorts the headings for easier splitting later """
 
@@ -237,4 +293,5 @@ def topology_in_numbers(my_topo):
 
 if __name__ == "__main__":
     #print(parse_with_all_codes("dssp_8_state.3line.txt", 3))
-    print(fasta_parser_onlyseq('250_270_set.3line.txt'))
+    #print(fasta_parser_onlyseq('250_270_set.3line.txt'))
+    print(protein_w_pssm("twoseq.txt", 3))
