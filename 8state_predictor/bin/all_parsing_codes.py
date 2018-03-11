@@ -42,7 +42,7 @@ def parse_unknown_file(filename, sliding_window):
 
 
 def protein_w_pssm(filename, sliding_window):
-
+    """ Input for SVM for protein and it's PSSM """
     seq_profile_train = []
     topologies = []
     dictionary = fasta_parser(filename)
@@ -57,31 +57,31 @@ def protein_w_pssm(filename, sliding_window):
 
         pssm_set = []
         pad = int(sliding_window//2)
-        for i in range (len(sequence)):
+        for i in range(len(sequence)):
             #print (i)
-                if i < pad:
-                    number_of_pads = pad-i
-                    temp_encoded_window = [0]*(20*number_of_pads)
-                    for lists in pssm_array[:i+pad+1]:       # Go through each pssm list in sliding window
-                        temp_encoded_window.extend(lists)  # Extend (not append)
-                    pssm_set.append(temp_encoded_window) # Save to pssm training set
-                    #print (pssm_set)
+            if i < pad:
+                number_of_pads = pad-i
+                temp_encoded_window = [0]*(20*number_of_pads)
+                for lists in pssm_array[:i+pad+1]:
+                    temp_encoded_window.extend(lists)  # Extend (not append)
+                pssm_set.append(temp_encoded_window) # Save to pssm training set
+                #print (pssm_set)
 
-                elif i > (len(sequence)-pad-1):
-                    #print(i)
-                    number_of_pads = pad - (len(sequence)- 1 - i)
-                    temp_encoded_window = []
-                    for lists in pssm_array[i-pad:]:       # Go through each pssm list in sliding window
-                        temp_encoded_window.extend(lists)  # Extend (not append)
-                    temp_encoded_window.extend([0]*(20*number_of_pads))
-                    pssm_set.append(temp_encoded_window) # Save to pssm training set
-                else:
-                    temp_window = pssm_array[i-pad:i+pad+1] # Extract sliding window
-                    temp_encoded_window = []
-                    for lists in temp_window:       # Go through each pssm list in sliding window
-                        temp_encoded_window.extend(lists)  # Extend (not append)
-                    # print(temp_encoded_window)
-                    pssm_set.append(temp_encoded_window) # Save to training set
+            elif i > (len(sequence)-pad-1):
+                #print(i)
+                number_of_pads = pad - (len(sequence)- 1 - i)
+                temp_encoded_window = []
+                for lists in pssm_array[i-pad:]:
+                    temp_encoded_window.extend(lists)  # Extend (not append)
+                temp_encoded_window.extend([0]*(20*number_of_pads))
+                pssm_set.append(temp_encoded_window) # Save to pssm training set
+            else:
+                temp_window = pssm_array[i-pad:i+pad+1] # Extract sliding window
+                temp_encoded_window = []
+                for lists in temp_window:       # Go through each pssm list in sliding window
+                    temp_encoded_window.extend(lists)  # Extend (not append)
+                # print(temp_encoded_window)
+                pssm_set.append(temp_encoded_window) # Save to training set
         seq_profile_train.extend(pssm_set)
         topology_set = topology_in_numbers((dictionary[identification])[1])
         topologies.extend(topology_set)
@@ -92,7 +92,7 @@ def protein_w_pssm(filename, sliding_window):
 
 def pssm_format(filename):
     """ PSSM into SVM format """
-    format_pssm = (np.genfromtxt(filename, skip_header = 3, skip_footer = 5, autostrip = True, usecols = range(22,42)))/100
+    format_pssm = (np.genfromtxt(filename, skip_header=3, skip_footer=5, autostrip=True, usecols=range(22, 42)))/100
 
     return format_pssm
 
