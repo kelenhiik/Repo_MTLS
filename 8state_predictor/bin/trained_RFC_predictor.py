@@ -2,11 +2,12 @@
 #####################################################
 #import my functions from the all_parsing_codes file#
 #####################################################
-import all_parsing_codes
+
 import numpy as np
 from sklearn import svm
 from sklearn.model_selection import cross_val_score
 from sklearn.externals import joblib
+import all_parsing_codes
 
 unknown = './twoseq.txt'
 #unknown_fasta = './2protein.fasta'
@@ -15,19 +16,19 @@ unknown = './twoseq.txt'
 # Import model #
 ################
 
-model = joblib.load('../src/small_models/RFC_predictor_smallmodel.pkl')
+MODEL = joblib.load('../src/small_models/RFC_predictor_smallmodel.pkl')
 
 ######################################################################
 # Specify the windowsize, must be 7 since I trained my model with it #
 ######################################################################
 
-sliding_window = 7
+SLIDING_WINDOW = 7
 
-topology_dict={1:'G', 2:'I', 3:'H', 4:'E', 5:'B', 6:'T', 7:'S', 8:'C'}
+TOPOLOGY_DICT = {1:'G', 2:'I', 3:'H', 4:'E', 5:'B', 6:'T', 7:'S', 8:'C'}
 
 #### Specify the path and filename for results, default is the following:
 
-output=open("../results/prediction_results/Prediction.txt",'w')
+output = open("../results/prediction_results/Prediction.txt",'w')
 
 ############################################################################################
 # If you want to use a file that has three lines: ID, seq, topology, but want to leave the #
@@ -51,18 +52,18 @@ dictionary = all_parsing_codes.fasta_parsing_from_3lines(unknown)
 for identification in dictionary:
     
     
-    sw_of_unknown_topo_seq = all_parsing_codes.encode_protein((dictionary[identification]), sliding_window)
+    sw_of_unknown_topo_seq = all_parsing_codes.encode_protein((dictionary[identification]), SLIDING_WINDOW)
     sw_of_unknown_topo_seq = np.array(sw_of_unknown_topo_seq)
-    prediction=model.predict(sw_of_unknown_topo_seq)
-    prediction_states=prediction.tolist()
-    list_of_ss=[]
+    prediction = MODEL.predict(sw_of_unknown_topo_seq)
+    prediction_states = prediction.tolist()
+    list_of_ss = []
 
     for number in prediction_states:
 
-        list_of_ss.extend(topology_dict[number])
+        list_of_ss.extend(TOPOLOGY_DICT[number])
 
 
-    list_in_string="".join(list_of_ss)
+    list_in_string = "".join(list_of_ss)
 
 # it also prints it on the terminal screen
 

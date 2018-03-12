@@ -21,7 +21,7 @@ X_train, Y_train, X_test, Y_test = all_parsing_codes.parse_with_train_test(tempf
 #####################################
 
 clf = svm.SVC(kernel='linear', cache_size=3000)
-clf.fit(X_train, Y_train) 
+clf.fit(X_train, Y_train)
 
 #########################################################################
 #use the testing set's feature to see if predicting works for the labels#
@@ -45,7 +45,7 @@ for number in prediction_states:
 
 ##############################################################
 #write the output into a txt.file, in case this is also necessary#
-##############################################################    
+##############################################################
 list_in_string="".join(list_of_ss)
 
 output=open("prediction.txt",'w')

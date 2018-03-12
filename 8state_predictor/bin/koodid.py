@@ -2,35 +2,35 @@
 
 
 def scores2(filename):
-    """ This works for the SVM file format. It takes a txt file from the crossvalidation output and gives the values in the printout.
+    """ This works for the SVM file format. It takes a txt file from the 
+    crossvalidation output and gives the values in the printout.
     The last value is the highest. Not perfect, but gets the job done for me """
-    
-    emptylist=[]
-    values=[]
-    filename1= open(filename, 'r')
+
+    emptylist = []
+    values = []
+    filename1 = open(filename, 'r')
     for line in filename1:
         #print (line)
         if line.startswith("["):
             pass
-            
         else: 
-            pla=line.rstrip()
-            pla=pla.split()
+            pla = line.rstrip()
+            pla = pla.split()
             emptylist.extend(pla)
     #for element in emptylist:
             #print (pla)
         #values.extend(element)
     values.extend(emptylist[4::5])
-    values2=sorted(values)
+    values2 = sorted(values)
     print(values2)
 
 
 def scores(filename):
     """ This works for random forest and decision tree, since it is hardcoded in the way I see the 
     file. Does what the last function does. """
-    emptylist=[]
-    values=[]
-    filename1= open(filename, 'r')
+    emptylist = []
+    values = []
+    filename1 = open(filename, 'r')
     for line in filename1:
         #print (line)
         if line.startswith("["):
@@ -46,21 +46,21 @@ def scores(filename):
         #print (element)
 
         
-    sorting=sorted(values)
-    print (sorting)           
+    sorting = sorted(values)
+    print(sorting)           
     #sorted_keys = sorted(emptylist[])
     #print (sorted_keys)
 
 def protein_nr(filename):
     """ This takes a 3.line.txt and collects the ID's of the proteins so it gives the amount of proteins I have in a file. """
     
-    emptylist=[]
-    values=[]
-    filename1= open(filename, 'r')
+    emptylist = []
+    values = []
+    filename1 = open(filename, 'r')
     for line in filename1:
         #print (line)
         if line.startswith(">"):
-            pla=line.rstrip()
+            pla = line.rstrip()
             emptylist.append(pla)
             
         else: 
