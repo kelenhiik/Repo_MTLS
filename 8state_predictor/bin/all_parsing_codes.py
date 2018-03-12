@@ -36,65 +36,135 @@ def parse_unknown_file(filename, sliding_window):
 
 
 ################################################################################
-# This function takes a filename and a sliding window and returns all sequences in binary with
-# appropriate sliding windows. The format for SVM training.
+# Takes a fasta file and sliding windows. The outputs are pssm feature array and
+# topology array, but in sets of 70% for train and 30% for test.
 ################################################################################
 
 
-def protein_w_pssm(filename, sliding_window):
-    """ Input for SVM for protein and it's PSSM """
-    seq_profile_train = []
-    topologies = []
+def protein_w_pssm_train(filename, sliding_window):
+    """ Input for SVM for protein and it's PSSM: 70% training, 30% testing """
+
+    pssm_training_set = []
+    train_topologies = []
+
+    pssm_test_set = []
+    test_topologies = []
+
     dictionary = fasta_parser(filename)
 
     sorted_keys = sorted(dictionary.keys(), key=lambda x: x[3:])
+    keys_train = sorted_keys[:int(0.7 * len(dictionary))]
 
-    for identification in sorted_keys:
-        #print (identification)
+    # Train set:
+    for identification in keys_train:
         pssm_array = pssm_format('../data/PSSM/' + identification + '.fasta.pssm')
-        #print (pssm_array)
-        sequence = dictionary[identification][0]
-
-        pssm_set = []
-        pad = int(sliding_window//2)
-        for i in range(len(sequence)):
-            #print (i)
-            if i < pad:
-                number_of_pads = pad-i
-                temp_encoded_window = [0]*(20*number_of_pads)
-                for lists in pssm_array[:i+pad+1]:
-                    temp_encoded_window.extend(lists)  # Extend (not append)
-                pssm_set.append(temp_encoded_window) # Save to pssm training set
-                #print (pssm_set)
-
-            elif i > (len(sequence)-pad-1):
-                #print(i)
-                number_of_pads = pad - (len(sequence)- 1 - i)
-                temp_encoded_window = []
-                for lists in pssm_array[i-pad:]:
-                    temp_encoded_window.extend(lists)  # Extend (not append)
-                temp_encoded_window.extend([0]*(20*number_of_pads))
-                pssm_set.append(temp_encoded_window) # Save to pssm training set
-            else:
-                temp_window = pssm_array[i-pad:i+pad+1] # Extract sliding window
-                temp_encoded_window = []
-                for lists in temp_window:       # Go through each pssm list in sliding window
-                    temp_encoded_window.extend(lists)  # Extend (not append)
-                # print(temp_encoded_window)
-                pssm_set.append(temp_encoded_window) # Save to training set
-        seq_profile_train.extend(pssm_set)
+        pssm_feature_set = slide_pssm_windows(pssm_array, sliding_window)
+        pssm_training_set.extend(pssm_feature_set)
         topology_set = topology_in_numbers((dictionary[identification])[1])
-        topologies.extend(topology_set)
-    seq_profile_train = np.array(seq_profile_train)
-    topologies = np.array(topologies)
-    return seq_profile_train, topologies
+        train_topologies.extend(topology_set)
+
+    # Test set:
+    for identification in set(dictionary) - set(keys_train):
+        pssm_array = pssm_format('../data/PSSM/' + identification + '.fasta.pssm')
+        pssm_feature_set = slide_pssm_windows(pssm_array, sliding_window)
+        pssm_test_set.extend(pssm_feature_set)
+        topology_set = topology_in_numbers((dictionary[identification])[1])
+        test_topologies.extend(topology_set)
+
+    pssm_training_set = np.array(pssm_training_set)
+    train_topologies = np.array(train_topologies)
+    pssm_test_set = np.array(pssm_test_set)
+    test_topologies = np.array(test_topologies)
+
+    return pssm_training_set, train_topologies, pssm_test_set, test_topologies
+
+
+################################################################################
+# Takes a fasta file and sliding windows. The outputs are pssm feature array and
+# topology array
+################################################################################
+
+
+def pssm_svm(filename, sliding_window):
+    """ Creates SVM training inputs """
+    dictionary = fasta_parser(filename)
+    all_pssm = []
+    pssm_topologies = []
+    sorted_keys = sorted(dictionary.keys(), key=lambda x: x[3:])
+    for identification in sorted_keys:
+        pssm_array = pssm_format('../data/PSSM/' + identification + '.fasta.pssm')
+        feature_set = slide_pssm_windows(pssm_array, sliding_window)
+        all_pssm.extend(feature_set)
+        topology_set = topology_in_numbers((dictionary[identification])[1])
+        pssm_topologies.extend(topology_set)
+        #print (topology_set)
+        #print (identification)
+    #print(pssm_topologies)
+
+    all_pssm = np.array(all_pssm)
+    pssm_topologies = np.array(pssm_topologies)
+    return all_pssm, pssm_topologies
+
+
+################################################################################
+# Takes a 1D numpy array and creates sliding window features
+################################################################################
+
+
+def slide_pssm_windows(pssm_array, sliding_window):
+    """ Takes in an array format pssm and creates söiding window features """
+    pssm_set = []
+    pad = int(sliding_window//2)
+    for i in range(len(pssm_array)):
+        #print (i)
+        if i < pad:
+            number_of_pads = pad-i
+            temp_encoded_window = [0]*(20*number_of_pads)
+            for lists in pssm_array[:i+pad+1]:
+                #print (lists) works
+                temp_encoded_window.extend(lists)  # Extend (not append)
+            pssm_set.append(temp_encoded_window) # Save to pssm training set
+
+        elif i > (len(pssm_array)-pad-1):
+            #print(i)
+            number_of_pads = pad - (len(pssm_array)- 1 - i)
+            temp_encoded_window = []
+            for lists in pssm_array[i-pad:]:
+                temp_encoded_window.extend(lists)  # Extend (not append)
+            temp_encoded_window.extend([0]*(20*number_of_pads))
+            pssm_set.append(temp_encoded_window) # Save to pssm training set
+
+        else:
+            temp_window = pssm_array[i-pad:i+pad+1] # Extract sliding window
+            temp_encoded_window = []
+            for lists in temp_window:       # Go through each pssm list in sliding window
+                temp_encoded_window.extend(lists)  # Extend (not append)
+                #print(temp_encoded_window)
+            pssm_set.append(temp_encoded_window) # Save to training set
+
+    return pssm_set
+
+################################################################################
+# Takes a file that is in a PSSM profile format and returns necessary lines in
+# SVM format
+################################################################################
 
 
 def pssm_format(filename):
-    """ PSSM into SVM format """
-    format_pssm = (np.genfromtxt(filename, skip_header=3, skip_footer=5, autostrip=True, usecols=range(22, 42)))/100
+    """ PSSM into array format """
+    format_pssm = (np.genfromtxt(filename,
+                                 skip_header=3,
+                                 skip_footer=5,
+                                 autostrip=True,
+                                 usecols=range(22, 42)))/100
 
     return format_pssm
+
+
+################################################################################
+# This function takes a filename and a sliding window and returns all sequences in binary with
+# appropriate sliding windows. The format for SVM training.
+################################################################################
 
 
 def parse_with_all_codes(filename, sliding_window):
@@ -294,4 +364,4 @@ def topology_in_numbers(my_topo):
 if __name__ == "__main__":
     #print(parse_with_all_codes("dssp_8_state.3line.txt", 3))
     #print(fasta_parser_onlyseq('250_270_set.3line.txt'))
-    print(protein_w_pssm("twoseq.txt", 3))
+    print(protein_w_pssm_train("twoseq.txt", 3))
