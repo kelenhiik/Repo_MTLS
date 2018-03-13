@@ -49,16 +49,16 @@ for identification in dictionary:
     
     sw_of_unknown_topo_seq = all_parsing_codes.encode_protein((dictionary[identification]), sliding_window)
     sw_of_unknown_topo_seq = np.array(sw_of_unknown_topo_seq)
-    prediction=model.predict(sw_of_unknown_topo_seq)
-    prediction_states=prediction.tolist()
-    list_of_ss=[]
+    prediction = model.predict(sw_of_unknown_topo_seq)
+    prediction_states = prediction.tolist()
+    list_of_ss = []
 
     for number in prediction_states:
 
         list_of_ss.extend(topology_dict[number])
 
 
-    list_in_string="".join(list_of_ss)
+    list_in_string = "".join(list_of_ss)
 
     output.write(identification + '\n' + dictionary[identification] + '\n' + list_in_string + '\n')
     print(identification + '\n' + dictionary[identification] + '\n' + list_in_string + '\n')

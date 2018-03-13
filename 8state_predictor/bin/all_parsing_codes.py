@@ -112,7 +112,7 @@ def pssm_svm(filename, sliding_window):
 
 
 def slide_pssm_windows(pssm_array, sliding_window):
-    """ Takes in an array format pssm and creates söiding window features """
+    """ Takes in an array format pssm and creates sliding window features """
     pssm_set = []
     pad = int(sliding_window//2)
     for i in range(len(pssm_array)):
@@ -364,4 +364,5 @@ def topology_in_numbers(my_topo):
 if __name__ == "__main__":
     #print(parse_with_all_codes("dssp_8_state.3line.txt", 3))
     #print(fasta_parser_onlyseq('250_270_set.3line.txt'))
-    print(protein_w_pssm_train("twoseq.txt", 3))
+    print(pssm_svm("../data/training_sets/twoseq.txt", 3))
+    

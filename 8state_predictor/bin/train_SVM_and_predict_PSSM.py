@@ -15,15 +15,15 @@ tempfile = '../data/train_test_sets/34_proteins.3line.txt'
 ##########################################################################################
 
 X_train, Y_train, X_test, Y_test = all_parsing_codes.protein_w_pssm_train(tempfile, 11)
-#print (X_test)
+print (X_train, Y_train)
 #print (X_train.shape)
 
 #####################################
 #fit the model with the training set#
 #####################################
 
-clf = svm.SVC(kernel='linear', cache_size=3000)
-clf.fit(X_train, Y_train)
+#clf = svm.SVC(kernel='linear', cache_size=3000)
+#clf.fit(X_train, Y_train)
 
 #########################################################################
 #use the testing set's feature to see if predicting works for the labels#
@@ -31,7 +31,7 @@ clf.fit(X_train, Y_train)
 
 #scoring=clf.score(X_test, Y_test)
 #print (scoring)
-prediction = clf.predict(X_test)
+#prediction = clf.predict(X_test)
 #############################################################################
 #Retranslate the output to secondary structure elements as described by DSSP#
 #############################################################################
@@ -42,9 +42,9 @@ prediction_states=prediction.tolist()
 list_of_ss=[]
 
 
-for number in prediction_states:
+#for number in prediction_states:
 
-    list_of_ss.extend(topology_dict[number])
+#    list_of_ss.extend(topology_dict[number])
 
 ##############################################################
 #write the output into a txt.file, in case this is also necessary#
@@ -57,4 +57,4 @@ for number in prediction_states:
 
 #when using these files, the output ss is in the length 14914. So this is giving the ss to all the proteins it is predicting it for....
 
-print(list_of_ss)
+#print(list_of_ss)

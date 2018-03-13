@@ -1,9 +1,9 @@
 """ This script trains a model using a random forest classifier """
-import all_parsing_codes
 import numpy as np
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestClassifier as RFC
-from sklearn.externals import joblib
+import pickle
+import all_parsing_codes
 
 #######################################
 # Enter the path to your training set #
@@ -39,6 +39,8 @@ RFC_predictor_model.fit(X_train, Y_train)
 ##################
 # Save the model #
 ##################
-location = '../src/small_models/RFC_predictor_smallmodel.pkl'
-joblib.dump(RFC_predictor_model, location)
+location = '../src/small_models/RFC_predictor_smallmodel_new.pkl'
+out_location = open(location, 'wb')
+pickle.dump(RFC_predictor_model, out_location)
+out_location.close()
 

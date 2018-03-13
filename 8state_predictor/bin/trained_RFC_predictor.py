@@ -5,18 +5,20 @@
 
 import numpy as np
 from sklearn import svm
+import pickle
 from sklearn.model_selection import cross_val_score
 from sklearn.externals import joblib
 import all_parsing_codes
 
-unknown = './twoseq.txt'
+unknown = '../data/training_sets/twoseq.txt'
 #unknown_fasta = './2protein.fasta'
 
 ################
 # Import model #
 ################
-
-MODEL = joblib.load('../src/small_models/RFC_predictor_smallmodel.pkl')
+MODEL_PATH = '../src/small_models/RFC_predictor_smallmodel_new.pkl'
+UNPICKLE_MODEL = open(MODEL_PATH, 'rb')
+MODEL = pickle.load(UNPICKLE_MODEL)
 
 ######################################################################
 # Specify the windowsize, must be 7 since I trained my model with it #
@@ -28,7 +30,7 @@ TOPOLOGY_DICT = {1:'G', 2:'I', 3:'H', 4:'E', 5:'B', 6:'T', 7:'S', 8:'C'}
 
 #### Specify the path and filename for results, default is the following:
 
-output = open("../results/prediction_results/Prediction.txt",'w')
+output = open("../results/prediction_results/Prediction_new_model.txt",'w')
 
 ############################################################################################
 # If you want to use a file that has three lines: ID, seq, topology, but want to leave the #
