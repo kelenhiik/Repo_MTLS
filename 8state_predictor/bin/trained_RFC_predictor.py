@@ -30,11 +30,11 @@ TOPOLOGY_DICT = {1:'G', 2:'I', 3:'H', 4:'E', 5:'B', 6:'T', 7:'S', 8:'C'}
 
 #### Specify the path and filename for results, default is the following:
 
-output = open("../results/prediction_results/Prediction_new_model.txt",'w')
+output = open("../results/prediction_results/Prediction_new_model.txt", 'w')
 
 ############################################################################################
-# If you want to use a file that has three lines: ID, seq, topology, but want to leave the #
-# topology out and receive the predicted topology, use this and comment the other one out #
+# If you want to use a file that has three lines: ID, seq, topology, but want to leave the
+# topology out and receive the predicted topology, use this and comment the other one out
 ############################################################################################
 
 dictionary = all_parsing_codes.fasta_parsing_from_3lines(unknown)

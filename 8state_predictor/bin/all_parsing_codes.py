@@ -364,5 +364,4 @@ def topology_in_numbers(my_topo):
 if __name__ == "__main__":
     #print(parse_with_all_codes("dssp_8_state.3line.txt", 3))
     #print(fasta_parser_onlyseq('250_270_set.3line.txt'))
-    print(pssm_svm("../data/training_sets/twoseq.txt", 3))
-    
+    print(protein_w_pssm_train("twoseq.txt", 3))
