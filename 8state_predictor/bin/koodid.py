@@ -74,5 +74,5 @@ def protein_nr(filename):
 
 if __name__ == "__main__": 
     #print(scores("randomforest_second_set_of_ws.txt"))
-    print(protein_nr("103_738_from_8statefile.txt"))
+    print(protein_nr("../data/train_test_sets/103_738_from_8statefile.txt"))
 
