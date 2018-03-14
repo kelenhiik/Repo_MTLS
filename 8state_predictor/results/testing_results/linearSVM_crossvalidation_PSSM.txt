@@ -1,0 +1,144 @@
+C-score: 0.1
+ window size: 9
+ cross-validation score: 0.540860160095
+ standard deviation: 0.0100397079144
+C-score: 0.1
+ window size: 10
+ cross-validation score: 0.544038887759
+ standard deviation: 0.00814416903227
+C-score: 0.1
+ window size: 11
+ cross-validation score: 0.544038887759
+ standard deviation: 0.00814416903227
+C-score: 0.1
+ window size: 12
+ cross-validation score: 0.544946633301
+ standard deviation: 0.00360940913247
+C-score: 0.1
+ window size: 13
+ cross-validation score: 0.544946633301
+ standard deviation: 0.00360940913247
+C-score: 0.1
+ window size: 14
+ cross-validation score: 0.546365862374
+ standard deviation: 0.00405032174162
+C-score: 0.1
+ window size: 15
+ cross-validation score: 0.546365862374
+ standard deviation: 0.00405032174162
+C-score: 0.1
+ window size: 16
+ cross-validation score: 0.546507793913
+ standard deviation: 0.00552429902693
+C-score: 0.1
+ window size: 17
+ cross-validation score: 0.546507793913
+ standard deviation: 0.00552429902693
+C-score: 1
+ window size: 9
+ cross-validation score: 0.541683256726
+ standard deviation: 0.00958898589061
+C-score: 1
+ window size: 10
+ cross-validation score: 0.54523097197
+ standard deviation: 0.00782475199853
+C-score: 1
+ window size: 11
+ cross-validation score: 0.54523097197
+ standard deviation: 0.00782475199853
+C-score: 1
+ window size: 12
+ cross-validation score: 0.545940155956
+ standard deviation: 0.00417074304844
+C-score: 1
+ window size: 13
+ cross-validation score: 0.545940155956
+ standard deviation: 0.00417074304844
+C-score: 1
+ window size: 14
+ cross-validation score: 0.546564695258
+ standard deviation: 0.00488207852595
+C-score: 1
+ window size: 15
+ cross-validation score: 0.546564695258
+ standard deviation: 0.00488207852595
+C-score: 1
+ window size: 16
+ cross-validation score: 0.546521975884
+ standard deviation: 0.00618245854846
+C-score: 1
+ window size: 17
+ cross-validation score: 0.546521975884
+ standard deviation: 0.00618245854846
+C-score: 10
+ window size: 9
+ cross-validation score: 0.541853648913
+ standard deviation: 0.0102270468843
+C-score: 10
+ window size: 10
+ cross-validation score: 0.545628389975
+ standard deviation: 0.00815337689841
+C-score: 10
+ window size: 11
+ cross-validation score: 0.545628389975
+ standard deviation: 0.00815337689841
+C-score: 10
+ window size: 12
+ cross-validation score: 0.546238291676
+ standard deviation: 0.00473502259265
+C-score: 10
+ window size: 13
+ cross-validation score: 0.546238291676
+ standard deviation: 0.00473502259265
+C-score: 10
+ window size: 14
+ cross-validation score: 0.547018847812
+ standard deviation: 0.00506828499591
+C-score: 10
+ window size: 15
+ cross-validation score: 0.547018847812
+ standard deviation: 0.00506828499591
+C-score: 10
+ window size: 16
+ cross-validation score: 0.547061282533
+ standard deviation: 0.00638806818167
+C-score: 10
+ window size: 17
+ cross-validation score: 0.547061282533
+ standard deviation: 0.00638806818167
+C-score: 100
+ window size: 9
+ cross-validation score: 0.527845638069
+ standard deviation: 0.00871174931559
+C-score: 100
+ window size: 10
+ cross-validation score: 0.526853044771
+ standard deviation: 0.0134538338343
+C-score: 100
+ window size: 11
+ cross-validation score: 0.526853044771
+ standard deviation: 0.0134538338343
+C-score: 100
+ window size: 12
+ cross-validation score: 0.52125958265
+ standard deviation: 0.0111701833671
+C-score: 100
+ window size: 13
+ cross-validation score: 0.52125958265
+ standard deviation: 0.0111701833671
+C-score: 100
+ window size: 14
+ cross-validation score: 0.519812989798
+ standard deviation: 0.00740053814606
+C-score: 100
+ window size: 15
+ cross-validation score: 0.519812989798
+ standard deviation: 0.00740053814606
+C-score: 100
+ window size: 16
+ cross-validation score: 0.513693094055
+ standard deviation: 0.0219286126768
+C-score: 100
+ window size: 17
+ cross-validation score: 0.513693094055
+ standard deviation: 0.0219286126768

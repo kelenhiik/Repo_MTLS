@@ -72,16 +72,19 @@ def protein_nr(filename):
     print(len(emptylist))
     
 def format_svm(filename):
+    #OUTPUT = open("../data/testing_sets/protein_names.txt", 'w')
     viewing = open(filename, 'r')
-    text = viewing.readlines()
-    for lines in text[9::9]:
-        print(text[0:9])
-        new = lines.split('N')
-        print (new)
+    lists=[]
+    for lines in viewing:
+        headings = lines[:4]
+        lists.append(headings)
+    print(lists[1:53])
+        #OUTPUT.write(headings + '\n')
+    #OUTPUT.close()
     
 
 
 if __name__ == "__main__": 
     #print(scores("randomforest_second_set_of_ws.txt"))
-    print(format_svm("../results/testing_results/RFC_crossvalidation.txt"))
+    print(format_svm("../data/testing_sets/cullpdb.25_d180308_chains4177"))
 

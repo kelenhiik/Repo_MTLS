@@ -1,0 +1,216 @@
+Min_samples_split: 2
+ window size: 9
+ cross-validation score: 0.42350359762
+ standard deviation: 0.0250562950498
+Min_samples_split: 2
+ window size: 11
+ cross-validation score: 0.423574412019
+ standard deviation: 0.0255421166333
+Min_samples_split: 2
+ window size: 13
+ cross-validation score: 0.416307928814
+ standard deviation: 0.031137683196
+Min_samples_split: 2
+ window size: 15
+ cross-validation score: 0.41793969599
+ standard deviation: 0.0267239765589
+Min_samples_split: 2
+ window size: 17
+ cross-validation score: 0.406459273439
+ standard deviation: 0.0265734901455
+Min_samples_split: 2
+ window size: 19
+ cross-validation score: 0.410447310356
+ standard deviation: 0.0276694934759
+Min_samples_split: 3
+ window size: 9
+ cross-validation score: 0.421586800501
+ standard deviation: 0.025406985892
+Min_samples_split: 3
+ window size: 11
+ cross-validation score: 0.419841781773
+ standard deviation: 0.0283834917115
+Min_samples_split: 3
+ window size: 13
+ cross-validation score: 0.416463916047
+ standard deviation: 0.0303393235301
+Min_samples_split: 3
+ window size: 15
+ cross-validation score: 0.409850667289
+ standard deviation: 0.0272830604952
+Min_samples_split: 3
+ window size: 17
+ cross-validation score: 0.409510424959
+ standard deviation: 0.0279643982606
+Min_samples_split: 3
+ window size: 19
+ cross-validation score: 0.410830191659
+ standard deviation: 0.0296060909186
+Min_samples_split: 4
+ window size: 9
+ cross-validation score: 0.420309833507
+ standard deviation: 0.0268666813529
+Min_samples_split: 4
+ window size: 11
+ cross-validation score: 0.415612672431
+ standard deviation: 0.0254839554218
+Min_samples_split: 4
+ window size: 13
+ cross-validation score: 0.420168552767
+ standard deviation: 0.027859713129
+Min_samples_split: 4
+ window size: 15
+ cross-validation score: 0.412632182407
+ standard deviation: 0.028052604418
+Min_samples_split: 4
+ window size: 17
+ cross-validation score: 0.405692552398
+ standard deviation: 0.0296227197431
+Min_samples_split: 4
+ window size: 19
+ cross-validation score: 0.406714202727
+ standard deviation: 0.0298240581966
+Min_samples_split: 5
+ window size: 9
+ cross-validation score: 0.422310857159
+ standard deviation: 0.0248473598307
+Min_samples_split: 5
+ window size: 11
+ cross-validation score: 0.414988356717
+ standard deviation: 0.0250574027997
+Min_samples_split: 5
+ window size: 13
+ cross-validation score: 0.415768442096
+ standard deviation: 0.0296788942328
+Min_samples_split: 5
+ window size: 15
+ cross-validation score: 0.415782864593
+ standard deviation: 0.0264452857646
+Min_samples_split: 5
+ window size: 17
+ cross-validation score: 0.406742637987
+ standard deviation: 0.0291429026
+Min_samples_split: 5
+ window size: 19
+ cross-validation score: 0.408700911458
+ standard deviation: 0.0281288800749
+Min_samples_split: 6
+ window size: 9
+ cross-validation score: 0.421218272785
+ standard deviation: 0.023641806819
+Min_samples_split: 6
+ window size: 11
+ cross-validation score: 0.418025268853
+ standard deviation: 0.0266345106513
+Min_samples_split: 6
+ window size: 13
+ cross-validation score: 0.412830707094
+ standard deviation: 0.0297551729655
+Min_samples_split: 6
+ window size: 15
+ cross-validation score: 0.40922621984
+ standard deviation: 0.0270642432637
+Min_samples_split: 6
+ window size: 17
+ cross-validation score: 0.405167621717
+ standard deviation: 0.0262693023649
+Min_samples_split: 6
+ window size: 19
+ cross-validation score: 0.40610386475
+ standard deviation: 0.0274935524664
+Min_samples_split: 7
+ window size: 9
+ cross-validation score: 0.419799024972
+ standard deviation: 0.0245650605312
+Min_samples_split: 7
+ window size: 11
+ cross-validation score: 0.414917135628
+ standard deviation: 0.0259095993134
+Min_samples_split: 7
+ window size: 13
+ cross-validation score: 0.412277407019
+ standard deviation: 0.0271692779496
+Min_samples_split: 7
+ window size: 15
+ cross-validation score: 0.411624789609
+ standard deviation: 0.0239680883657
+Min_samples_split: 7
+ window size: 17
+ cross-validation score: 0.404273493139
+ standard deviation: 0.0273329415736
+Min_samples_split: 7
+ window size: 19
+ cross-validation score: 0.403535662998
+ standard deviation: 0.0282406346494
+Min_samples_split: 8
+ window size: 9
+ cross-validation score: 0.420039901016
+ standard deviation: 0.0250826910764
+Min_samples_split: 8
+ window size: 11
+ cross-validation score: 0.414619248885
+ standard deviation: 0.0243090432464
+Min_samples_split: 8
+ window size: 13
+ cross-validation score: 0.411255821344
+ standard deviation: 0.0277947005052
+Min_samples_split: 8
+ window size: 15
+ cross-validation score: 0.408928206204
+ standard deviation: 0.0242878983654
+Min_samples_split: 8
+ window size: 17
+ cross-validation score: 0.403393138648
+ standard deviation: 0.0276521901267
+Min_samples_split: 8
+ window size: 19
+ cross-validation score: 0.405423092463
+ standard deviation: 0.0259065978997
+Min_samples_split: 9
+ window size: 9
+ cross-validation score: 0.418819465529
+ standard deviation: 0.0273558324688
+Min_samples_split: 9
+ window size: 11
+ cross-validation score: 0.414051280362
+ standard deviation: 0.0263194425774
+Min_samples_split: 9
+ window size: 13
+ cross-validation score: 0.412121557556
+ standard deviation: 0.029380128706
+Min_samples_split: 9
+ window size: 15
+ cross-validation score: 0.409382572665
+ standard deviation: 0.0263270169124
+Min_samples_split: 9
+ window size: 17
+ cross-validation score: 0.401988307875
+ standard deviation: 0.0290730923418
+Min_samples_split: 9
+ window size: 19
+ cross-validation score: 0.40413110899
+ standard deviation: 0.025542763593
+Min_samples_split: 10
+ window size: 9
+ cross-validation score: 0.419345060354
+ standard deviation: 0.0235814186431
+Min_samples_split: 10
+ window size: 11
+ cross-validation score: 0.411978868251
+ standard deviation: 0.0266829074314
+Min_samples_split: 10
+ window size: 13
+ cross-validation score: 0.412447726692
+ standard deviation: 0.0268687264503
+Min_samples_split: 10
+ window size: 15
+ cross-validation score: 0.409566925063
+ standard deviation: 0.0244864550511
+Min_samples_split: 10
+ window size: 17
+ cross-validation score: 0.403577606452
+ standard deviation: 0.0281840676795
+Min_samples_split: 10
+ window size: 19
+ cross-validation score: 0.402783001881
+ standard deviation: 0.0285117884239
