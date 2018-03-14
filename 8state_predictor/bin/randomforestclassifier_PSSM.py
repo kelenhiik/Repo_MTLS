@@ -9,14 +9,14 @@ from sklearn.metrics import classification_report
 import all_parsing_codes
 
 TEMPFILE = '../data/train_test_sets/randomized109_proteins.3line.txt'
-OUTPUT = open("../results/testing_results/RFC_metrics.txt", 'w')
-OUTPUT2 = open("../results/testing_results/RFC_crossvalidation.txt", 'w')
+OUTPUT = open("../results/testing_results/RFC_metrics_PSSM.txt", 'w')
+OUTPUT2 = open("../results/testing_results/RFC_crossvalidation_PSSM.txt", 'w')
 
 
 for n_estimators1 in (10, 100, 200, 300, 350):
     for win_len in range(5,22,2):
         for min_samples_split1 in range(2,9):
-            X_TRAIN, Y_TRAIN, X_TEST, Y_TEST = all_parsing_codes.parse_with_train_test(TEMPFILE, 
+            X_TRAIN, Y_TRAIN, X_TEST, Y_TEST = all_parsing_codes.protein_w_pssm_train(TEMPFILE, 
                                                                                        win_len)
             MODEL = RFC(n_estimators=n_estimators1, min_samples_split = min_samples_split1, 
                         n_jobs=-1)
@@ -51,7 +51,7 @@ TOPOLOGY_DICT = {'G':1, 'I':2, 'H':3, 'E':4, 'B':5, 'T':6, 'S':7, 'C':8}
 for n_estimators1 in (10, 100, 200, 300, 350):
     for win_len in range(5,22,2):
         for min_samples_split1 in range(2,9):
-            X_TRAIN, Y_TRAIN, X_TEST, Y_TEST = all_parsing_codes.parse_with_train_test(TEMPFILE, 
+            X_TRAIN, Y_TRAIN, X_TEST, Y_TEST = all_parsing_codes.protein_w_pssm_train(TEMPFILE, 
                                                                                        win_len)
             MODEL = RFC(n_estimators=n_estimators1, min_samples_split = min_samples_split1, 
                         n_jobs=-1)

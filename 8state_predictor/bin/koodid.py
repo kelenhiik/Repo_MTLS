@@ -70,9 +70,18 @@ def protein_nr(filename):
         #values.extend(element)
 
     print(len(emptylist))
+    
+def format_svm(filename):
+    viewing = open(filename, 'r')
+    text = viewing.readlines()
+    for lines in text[9::9]:
+        print(text[0:9])
+        new = lines.split('N')
+        print (new)
+    
 
 
 if __name__ == "__main__": 
     #print(scores("randomforest_second_set_of_ws.txt"))
-    print(protein_nr("../data/train_test_sets/103_738_from_8statefile.txt"))
+    print(format_svm("../results/testing_results/RFC_crossvalidation.txt"))
 
