@@ -7,10 +7,10 @@ from sklearn.metrics import classification_report
 import all_parsing_codes
 
 TEMPFILE = '../data/train_test_sets/randomized109_proteins.3line.txt'
-OUTPUT = open("../results/testing_results/linearSVM_metrics_PSSM.txt", 'w')
-OUTPUT2 = open("../results/testing_results/linearSVM_crossvalidation_PSSM.txt", 'w')
+#OUTPUT = open("../results/testing_results/linearSVM_metrics_PSSM.txt", 'w')
+OUTPUT2 = open("../results/testing_results/linearSVM_crossvalidation_PSSM_new.txt", 'w')
 
-
+"""
 for c_score in (0.1, 1, 10, 100):
     for win_len in range(5,22,2):
         X_TRAIN, Y_TRAIN, X_TEST, Y_TEST = all_parsing_codes.protein_w_pssm_train(TEMPFILE, 
@@ -37,14 +37,14 @@ for c_score in (0.1, 1, 10, 100):
       
                  
 OUTPUT.close()
-
+"""
 
 
 
 TOPOLOGY_DICT = {'G':1, 'I':2, 'H':3, 'E':4, 'B':5, 'T':6, 'S':7, 'C':8}
 
 for c_score in (0.1, 1, 10, 100):
-    for win_len in range(9,18):
+    for win_len in range(17,26,2):
         X_TRAIN, Y_TRAIN, X_TEST, Y_TEST = all_parsing_codes.protein_w_pssm_train(TEMPFILE, 
                                                                                    win_len)
         MODEL = svm.LinearSVC(C=c_score)

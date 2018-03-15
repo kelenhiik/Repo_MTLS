@@ -9,9 +9,9 @@ from sklearn.metrics import classification_report
 import all_parsing_codes
 
 TEMPFILE = '../data/train_test_sets/randomized109_proteins.3line.txt'
-OUTPUT = open("../results/testing_results/decisiontree_metrics.txt", 'w')
-OUTPUT2 = open("../results/testing_results/decisiontree_crossvalidation.txt", 'w')
-
+#OUTPUT = open("../results/testing_results/decisiontree_metrics.txt", 'w')
+OUTPUT2 = open("../results/testing_results/decisiontree_crossvalidation_new.txt", 'w')
+"""
 for min_samples_split1 in range(2, 11):
     for win_len in range(5,22,2):
         X_TRAIN, Y_TRAIN, X_TEST, Y_TEST = all_parsing_codes.parse_with_train_test(TEMPFILE, 
@@ -39,12 +39,12 @@ for min_samples_split1 in range(2, 11):
                  
 OUTPUT.close()
 
-
+"""
 
 TOPOLOGY_DICT = {'G':1, 'I':2, 'H':3, 'E':4, 'B':5, 'T':6, 'S':7, 'C':8}
 
 for min_samples_split1 in range(2, 11):
-    for win_len in range(9, 20, 2):
+    for win_len in range(3, 8, 2):
         X_TRAIN, Y_TRAIN, X_TEST, Y_TEST = all_parsing_codes.parse_with_train_test(TEMPFILE, 
                                                                                    win_len)
         MODEL = tree.DecisionTreeClassifier(min_samples_split=min_samples_split1)
