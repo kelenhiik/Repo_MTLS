@@ -77,8 +77,9 @@ def format_svm(filename):
     lists=[]
     for lines in viewing:
         headings = lines[:4]
-        lists.append(headings)
-    print(lists[1:53])
+        if headings not in lists:
+            lists.append(headings)
+    print(lists[1:120])
         #OUTPUT.write(headings + '\n')
     #OUTPUT.close()
     
@@ -86,5 +87,5 @@ def format_svm(filename):
 
 if __name__ == "__main__": 
     #print(scores("randomforest_second_set_of_ws.txt"))
-    print(format_svm("../data/testing_sets/cullpdb.25_d180308_chains4177"))
+    print(protein_nr("../data/testing_sets/dataset_of_50.txt"))
 
