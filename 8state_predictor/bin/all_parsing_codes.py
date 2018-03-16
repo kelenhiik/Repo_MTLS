@@ -244,29 +244,54 @@ def parse_with_train_test(filename, sliding_window):
 ################################################################################
 # Takes a file with ID, seq, topology and assigns ID as key, seq and topology as values.
 ################################################################################
-
+from re import sub
 
 def fasta_parser(filename):
     """ This creates a dictionary of a 3line txt file """
 
-    list1 = [line.upper().rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
+    list1 = [line.rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
+    ID_list = []
+    sequence_list = []
+    topology_list = []
+    for line in list1[::3]:
+        ID_list.append(line.upper())
+    for line in list1[1::3]:
+        lines = sub("[a-z]",'C',line)
+        sequence_list.append(lines.upper())
+    for line in list1[2::3]:
+        topology_list.append(line.upper())
 
-    dict1 = dict(zip(list1[::3], zip(list1[1::3], list1[2::3])))
+    dict1 = dict(zip(ID_list, zip(sequence_list, topology_list)))
     return dict1
 
 
 def fasta_parser_onlyseq(filename):
     """ Parses a file with only ID and sequence in two lines """
-    list1 = [line.upper().rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
+    list1 = [line.rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
+    ID_list = []
+    sequence_list = []
+    for line in list1[::2]:
+        ID_list.append(line.upper())
+    for line in list1[1::2]:
+        lines = sub("[a-z]",'C',line)
+        sequence_list.append(lines.upper())
 
-    dict2 = dict(zip(list1[::2], list1[1::2]))
+
+    dict2 = dict(zip(ID_list, sequence_list))
     return dict2
 
 
 def fasta_parsing_from_3lines(filename):
     """ Takes a file with three lines: ID, seq, topo. Output dictionary ID:(sequence) """
-    list1 = [line.upper().rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
-    dict3 = dict(zip(list1[::3], list1[1::3]))
+    list1 = [line.rstrip() for line in (open(filename, 'r')) if len(line.strip()) != 0]
+    ID_list = []
+    sequence_list = []
+    for line in list1[::3]:
+        ID_list.append(line.upper())
+    for line in list1[1::3]:
+        lines = sub("[a-z]",'C',line)
+        sequence_list.append(lines.upper())
+    dict3 = dict(zip(ID_list, sequence_list))
     return dict3
 
 ################################################################################
@@ -364,4 +389,4 @@ def topology_in_numbers(my_topo):
 if __name__ == "__main__":
     #print(parse_with_all_codes("dssp_8_state.3line.txt", 3))
     #print(fasta_parser_onlyseq('250_270_set.3line.txt'))
-    print(protein_w_pssm_train("twoseq.txt", 3))
+    print(fasta_parsing_from_3lines("../data/training_sets/twoseq.txt"))
