@@ -8,12 +8,12 @@ import all_parsing_codes
 
 # Enter 3line.txt file for parsing
 
-FILE_FOR_PARSING = '../data/train_test_sets/dssp_8_state.3line.txt'
+FILE_FOR_PARSING = '../data/testing_sets/dataset_of_50.txt'
 DICTIONARY_OF_ID_SEQ = all_parsing_codes.fasta_parsing_from_3lines(FILE_FOR_PARSING)
 
 # Enter a directory for fasta file output
 
-DIRECTORY_FOR_FASTAS = '../data/FASTA/'
+DIRECTORY_FOR_FASTAS = '../data/FASTA/53_external_proteins/'
 
 for identification in DICTIONARY_OF_ID_SEQ:
 
@@ -22,3 +22,4 @@ for identification in DICTIONARY_OF_ID_SEQ:
     file_writing = open(DIRECTORY_FOR_FASTAS + filename_to_be, 'w')
     file_writing.write(identification + '\n' + sequence)
     file_writing.close()
+    #D1G5A
