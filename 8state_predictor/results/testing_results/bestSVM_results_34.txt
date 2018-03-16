@@ -1,0 +1,94 @@
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  3.5min finished
+10 ovo rbf 9 0.484166641119
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.5min finished
+10 ovo rbf 11 0.485355549869
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.5min finished
+10 ovo rbf 13 0.491700353489
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.2min finished
+10 ovo rbf 15 0.493484921295
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.8min finished
+10 ovo rbf 17 0.49153079818
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.4min finished
+10 ovo rbf 19 0.493881630949
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  3.5min finished
+10 ovo sigmoid 9 0.473262265885
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  4.0min finished
+10 ovo sigmoid 11 0.476377730549
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  4.6min finished
+10 ovo sigmoid 13 0.483373873978
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.3min finished
+10 ovo sigmoid 15 0.479379522872
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.0min finished
+10 ovo sigmoid 17 0.480824732123
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.6min finished
+10 ovo sigmoid 19 0.478416950057
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  7.4min finished
+10 ovr linear 9 0.472809268872
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 10.6min finished
+10 ovr linear 11 0.466804459041
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 13.3min finished
+10 ovr linear 13 0.47079795094
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 17.2min finished
+10 ovr linear 15 0.472526520201
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 20.6min finished
+10 ovr linear 17 0.476293172959
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 25.1min finished
+10 ovr linear 19 0.470118545611
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  3.2min finished
+10 ovr poly 9 0.383560879535
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  3.9min finished
+10 ovr poly 11 0.383560879535
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  4.6min finished
+10 ovr poly 13 0.383560879535
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.4min finished
+10 ovr poly 15 0.383560879535
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.0min finished
+10 ovr poly 17 0.383560879535
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.7min finished
+10 ovr poly 19 0.383560879535
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  3.6min finished
+10 ovr rbf 9 0.484166641119
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  4.1min finished
+10 ovr rbf 11 0.485355549869
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.7min finished
+10 ovr rbf 13 0.491700353489
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.3min finished
+10 ovr rbf 15 0.493484921295
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.0min finished
+10 ovr rbf 17 0.49153079818
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.5min finished
+10 ovr rbf 19 0.493881630949
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  3.5min finished
+10 ovr sigmoid 9 0.473262265885
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  4.0min finished
+10 ovr sigmoid 11 0.476377730549
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  4.7min finished
+10 ovr sigmoid 13 0.483373873978
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.3min finished
+10 ovr sigmoid 15 0.479379522872
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  5.9min finished
+10 ovr sigmoid 17 0.480824732123
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.5min finished
+10 ovr sigmoid 19 0.478416950057
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 39.5min finished
+ovo linear 19 0.470118545611
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 30.0min finished
+ovo linear 21 0.470514487504
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 34.4min finished
+ovo linear 23 0.467964881195
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 38.8min finished
+ovo linear 25 0.467937056433
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 45.8min finished
+ovo linear 27 0.460034704514
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 54.6min finished
+ovo linear 29 0.46145028865
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 61.8min finished
+ovo linear 31 0.459297753079
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 67.1min finished
+ovo linear 33 0.457712591945
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed: 73.7min finished
+ovo linear 35 0.457626542194
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.3min finished
+ovo rbf 19 0.493881630949
+[Parallel(n_jobs=-1)]: Done   3 out of   3 | elapsed:  6.9min finished
+ovo rbf 21 0.489632642406
