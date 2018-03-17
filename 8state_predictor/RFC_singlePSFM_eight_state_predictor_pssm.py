@@ -40,6 +40,9 @@ DATE = (time.strftime("%d_%m_%Y"))
 RESULT_NAME = (NAME + "_Prediction_PSFM_" + str(DATE) + ".txt")
 OUTPUT = open("./results/prediction_results/" + RESULT_NAME, 'w')
 
+# PS! If you do not change the default name and run the script multiple times
+# during one day, the files will be over-written each run.
+
 
 ################################################
 # Retrieve the amino acid sequence from the PSSM

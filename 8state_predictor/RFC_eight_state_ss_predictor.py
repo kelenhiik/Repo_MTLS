@@ -1,4 +1,4 @@
-""" This is the final 8-state secondary structure from protein amino acid sequence predictor """
+""" This is the final predictor of 8-state secondary structures from proteins' amino acid sequences """
 
 #####################################################
 # Importing all libraries and scripts
