@@ -71,6 +71,60 @@ def protein_nr(filename):
 
     print(len(emptylist))
 
+
+def structure_count(filename):
+
+    emptylist = []
+    values = []
+
+    filename1 = open(filename, 'r')
+    for line in filename1:
+        emptylist.extend(line.split())
+    values.extend(emptylist[2::3])
+    values = "".join(values)
+    #print(emptylist[0::3])
+    Hs = 0
+    Gs = 0
+    Is = 0
+    Es = 0
+    Bs = 0
+    Ts = 0
+    Ss = 0
+    Cs = 0
+    #print(values)
+    #x=len(sequence)
+    for i in range(len(values)):
+        #print(i)
+        if values[i] =="H":
+            #print (i)
+            Hs = Hs + 1
+        if values[i] =="G":
+            #print (i)
+            Gs = Gs + 1
+        if values[i] =="I":
+            #print (i)
+            Is = Is + 1
+        if values[i] =="E":
+            #print (i)
+            Es = Es + 1
+        if values[i] =="B":
+            #print (i)
+            Bs = Bs + 1
+        if values[i] =="T":
+            #print (i)
+            Ts = Ts + 1
+        if values[i] =="S":
+            #print (i)
+            Ss = Ss + 1
+        if values[i] =="C":
+            #print (i)
+            Cs = Cs + 1
+    print('H',Hs, 'G', Gs, 'I', Is, 'E', Es, 'B', Bs, 'T', Ts, 'S', Ss, 'C', Cs)
+    #for element in values:
+        #print(element[0])
+        #if element is in 'H':
+            #print (element)
+
 def format_svm(filename):
     #OUTPUT = open("../data/testing_sets/protein_names.txt", 'w')
     viewing = open(filename, 'r')
@@ -87,4 +141,4 @@ def format_svm(filename):
 
 if __name__ == "__main__":
     #print(scores("randomforest_second_set_of_ws.txt"))
-    print(protein_nr("../data/testing_sets/dataset_of_50.txt"))
+    print(structure_count("../data/train_test_sets/randomized109_proteins.3line.txt"))
