@@ -1,9 +1,10 @@
 """ This script trains a model using Random forests and predicts
     the 8 state secondary structure from the amino acid sequence of a protein"""
-import numpy as np
-from sklearn.ensemble import RandomForestClassifier as RFC
+
 import pickle
 import gzip
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier as RFC
 from bin import all_parsing_codes
 
 ################################################################################
@@ -32,21 +33,21 @@ X_TRAIN, Y_TRAIN = all_parsing_codes.parse_with_all_codes(TEMPFILE, SLIDING_WIND
 # Create a model with the before-mentioned parameters #
 #######################################################
 
-RFC_predictor_model = RFC(n_estimators=N_ESTIMATORS,
+RFC_PREDICTOR_MODEL = RFC(n_estimators=N_ESTIMATORS,
                           min_samples_split=MIN_SAMPLES_SPLIT,
                           n_jobs=-1)
 
-RFC_predictor_model.fit(X_TRAIN, Y_TRAIN)
+RFC_PREDICTOR_MODEL.fit(X_TRAIN, Y_TRAIN)
 
 ################################################################
 # Save the model for future usage
 # Saved model path used in the project:
 # './src/small_models/8SS_RFC_sequence_predictor_109model.pklz'
 ################################################################
-location = './src/small_models/8SS_RFC_sequence_predictor_109model.pklz'
-out_location = gzip.open(location, 'wb')
-pickle.dump(RFC_predictor_model, out_location, protocol=pickle.HIGHEST_PROTOCOL)
-out_location.close()
+LOCATION = './src/small_models/8SS_RFC_sequence_predictor_109model.pklz'
+OUT_LOCATION = gzip.open(LOCATION, 'wb')
+pickle.dump(RFC_PREDICTOR_MODEL, OUT_LOCATION, protocol=pickle.HIGHEST_PROTOCOL)
+OUT_LOCATION.close()
 
 ############################################################
 # The fasta file of proteins for which topology is predicted
@@ -72,7 +73,7 @@ TOPOLOGY_DICT = {1:'G', 2:'I', 3:'H', 4:'E', 5:'B', 6:'T', 7:'S', 8:'C'}
 # Specify the path and filename for results, used in the project:
 # "./results/prediction_results/Prediction_from_external_dataset_seqs.txt"
 ###########################################################################
-output = open("./results/prediction_results/Prediction_from_external_dataset_seqs.txt", 'w')
+OUTPUT = open("./results/prediction_results/Prediction_from_external_dataset_seqs.txt", 'w')
 
 ############################################################################################
 # If you want to use a file that has three lines: ID, seq, topology, but want to leave the
@@ -80,24 +81,25 @@ output = open("./results/prediction_results/Prediction_from_external_dataset_seq
 # This one is used in the project
 ############################################################################################
 
-dictionary = all_parsing_codes.fasta_parsing_from_3lines(UNKNOWN)
+DICTIONARY = all_parsing_codes.fasta_parsing_from_3lines(UNKNOWN)
 
 #################################################################################################
 # If you want to use a file that has two lines: ID, seq. OR any fasta file with the same format,
 # use this and comment the above one out
 #################################################################################################
 
-#dictionary = all_parsing_codes.fasta_parser_onlyseq(unknown_fasta)
+#DICTIONARY = all_parsing_codes.fasta_parser_onlyseq(unknown_fasta)
 
 ###########################################################
 # Predicts the topology and writes it to the specified path
 # Also prints it out on the screen
 ###########################################################
 
-for identification in dictionary:
+for identification in DICTIONARY:
 
 
-    sw_of_unknown_topo_seq = all_parsing_codes.encode_protein((dictionary[identification]), SLIDING_WINDOW)
+    sw_of_unknown_topo_seq = all_parsing_codes.encode_protein((DICTIONARY[identification]),
+                                                              SLIDING_WINDOW)
     sw_of_unknown_topo_seq = np.array(sw_of_unknown_topo_seq)
     prediction = MODEL.predict(sw_of_unknown_topo_seq)
     prediction_states = prediction.tolist()
@@ -110,6 +112,6 @@ for identification in dictionary:
 
     list_in_string = "".join(list_of_ss)
 
-    output.write(identification + '\n' + dictionary[identification] + '\n' + list_in_string + '\n')
-    print(identification + '\n' + dictionary[identification] + '\n' + list_in_string + '\n')
-output.close()
+    OUTPUT.write(identification + '\n' + DICTIONARY[identification] + '\n' + list_in_string + '\n')
+    print(identification + '\n' + DICTIONARY[identification] + '\n' + list_in_string + '\n')
+OUTPUT.close()

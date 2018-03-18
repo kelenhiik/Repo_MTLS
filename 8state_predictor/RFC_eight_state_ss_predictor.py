@@ -1,4 +1,4 @@
-""" This is the final predictor of 8-state secondary structures from proteins' amino acid sequences """
+""" This is the predictor of 8-state secondary structures from proteins' amino acid sequences """
 
 #####################################################
 # Importing all libraries and scripts
@@ -83,4 +83,5 @@ for identification in DICTIONARY:
     OUTPUT.write(identification + '\n' + DICTIONARY[identification] + '\n' + list_in_string + '\n')
     print(identification + '\n' + DICTIONARY[identification] + '\n' + list_in_string + '\n')
 OUTPUT.close()
-print ("Your prediction can be found in ./results/prediction_results/ under the filename: " + RESULT_NAME + "!")
+print("Your prediction can be found in ./results/prediction_results/ under the filename: "
+      + RESULT_NAME + "!")

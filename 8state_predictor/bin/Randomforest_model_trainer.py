@@ -10,7 +10,7 @@ import all_parsing_codes
 # Enter the path to your training set #
 #######################################
 
-tempfile = '../data/training_sets/11_proteins.3line.txt'
+tempfile = '../data/train_test_sets/randomized109_proteins.3line.txt'
 
 #############################################
 # Enter parameter values you wish to change #
@@ -39,7 +39,7 @@ RFC_predictor_model.fit(X_train, Y_train)
 ##################
 # Save the model #
 ##################
-location = '../src/small_models/8SS_RFC_PSFM_predictor_smallmodel.pklz'
+location = '../src/small_models/8SS_RFC_PSFM_predictor_model.pklz'
 out_location = gzip.open(location, 'wb')
 pickle.dump(RFC_predictor_model, out_location, protocol=-1)
 out_location.close()

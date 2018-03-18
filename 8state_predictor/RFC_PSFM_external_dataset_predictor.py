@@ -1,14 +1,13 @@
-""" This predicts topology from an input file using a RFC PSFM trained model, the input is a fasta file,
+""" Predicts topology from an input file using a RFC PSFM trained model, the input is a fasta file,
 where all the proteins must have a PSSM-profile in the designated folder """
 #####################################################
 #import my functions from the all_parsing_codes file#
 #####################################################
 
-import numpy as np
 import pickle
 import gzip
+import numpy as np
 from bin import all_parsing_codes
-
 
 #################################################################################
 # Input file, which is a fasta file. All the proteins must have a PSSM profile in
@@ -79,4 +78,5 @@ for identification in DICTIONARY:
     OUTPUT.write(identification + '\n' + DICTIONARY[identification] + '\n' + list_in_string + '\n')
     print(identification + '\n' + DICTIONARY[identification] + '\n' + list_in_string + '\n')
 OUTPUT.close()
-print ("Your prediction can be found in ./results/prediction_results/ under the filename: " + "PSFM_Prediction_external_dataset.txt" + "!")
+print("Your prediction can be found in ./results/prediction_results/ under the filename: "
+      + "PSFM_Prediction_external_dataset.txt" + "!")

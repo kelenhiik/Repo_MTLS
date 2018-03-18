@@ -6,8 +6,8 @@
 
 import time
 import pickle
-import numpy as np
 import gzip
+import numpy as np
 from bin import all_parsing_codes
 
 #UNKNOWN = './data/PSSM/' #here is the place where the query has to be added in PSSM format
@@ -18,7 +18,8 @@ NAME = '>D169L' # Enter the name of the protein, suggested name would be in fast
 # Import model #
 ################
 
-MODEL_PATH = './src/small_models/8SS_RFC_PSFM_predictor_smallmodel.pklz' #here is where the trained model is going to be imported
+MODEL_PATH = './src/small_models/8SS_RFC_PSFM_predictor_smallmodel.pklz'
+#here is where the trained model is going to be imported
 UNPICKLE_MODEL = gzip.open(MODEL_PATH, 'rb')
 MODEL = pickle.load(UNPICKLE_MODEL)
 
@@ -48,32 +49,34 @@ OUTPUT = open("./results/prediction_results/" + RESULT_NAME, 'w')
 # Retrieve the amino acid sequence from the PSSM
 ################################################
 
-format_pssm = (np.genfromtxt(UNKNOWN,
+FORMAT_PSSM = (np.genfromtxt(UNKNOWN,
                              skip_header=3,
                              skip_footer=5,
                              autostrip=True,
                              dtype=str,
                              usecols=1))
-PSSM_AA_SEQUENCE = "".join(format_pssm)
+PSSM_AA_SEQUENCE = "".join(FORMAT_PSSM)
 
 
 
-################################################################################################################
-# Formats the PSSM profile into an input for the model. Predicts the topology and writes it into the output file
-################################################################################################################
+#############################################################
+# Formats the PSSM profile into an input for the model.
+# Predicts the topology and writes it into the output file
+#############################################################
 
-pssm_array = all_parsing_codes.pssm_format(UNKNOWN)
-sw_of_unknown_topo_pssm = all_parsing_codes.slide_pssm_windows(pssm_array, SLIDING_WINDOW)
-prediction = MODEL.predict(sw_of_unknown_topo_pssm)
-prediction_states = prediction.tolist()
-list_of_ss = []
+PSSM_ARRAY = all_parsing_codes.pssm_format(UNKNOWN)
+SW_OF_ARRAY = all_parsing_codes.slide_pssm_windows(PSSM_ARRAY, SLIDING_WINDOW)
+PREDICTION = MODEL.predict(SW_OF_ARRAY)
+PREDICTION_STATES = PREDICTION.tolist()
+LIST_OF_SS = []
 
-for number in prediction_states:
+for number in PREDICTION_STATES:
 
-    list_of_ss.extend(TOPOLOGY_DICT[number])
+    LIST_OF_SS.extend(TOPOLOGY_DICT[number])
 
-list_in_string = "".join(list_of_ss)
-OUTPUT.write(NAME + '\n' + PSSM_AA_SEQUENCE + '\n' + list_in_string + '\n')
-print(NAME + '\n' + PSSM_AA_SEQUENCE + '\n' + list_in_string + '\n')
+LIST_IN_STRING = "".join(LIST_OF_SS)
+OUTPUT.write(NAME + '\n' + PSSM_AA_SEQUENCE + '\n' + LIST_IN_STRING + '\n')
+print(NAME + '\n' + PSSM_AA_SEQUENCE + '\n' + LIST_IN_STRING + '\n')
 OUTPUT.close()
-print ("Your prediction can be found in ./results/prediction_results/ under the filename: " + RESULT_NAME + "!")
+print("Your prediction can be found in ./results/prediction_results/ under the filename: "
+      + RESULT_NAME + "!")

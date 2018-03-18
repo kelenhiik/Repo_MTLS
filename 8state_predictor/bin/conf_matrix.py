@@ -11,16 +11,15 @@ from sklearn.metrics import confusion_matrix
 import all_parsing_codes
 
 
-# Split the data into a training set and a test set
 TEMPFILE = '../data/train_test_sets/randomized109_proteins.3line.txt'
+TEMPFILE2 = '../data/testing_sets/dataset_of_50.txt'
 win_len = 7
 class_names = ['G', 'I', 'H', 'E', 'B', 'T', 'S', 'C']
-X_train, y_train, X_test, y_test = all_parsing_codes.protein_w_pssm_train(TEMPFILE, 
-                                                                                   win_len)
+X_train, y_train = all_parsing_codes.pssm_svm(TEMPFILE, win_len)
+X_test, y_test = all_parsing_codes.pssm_svm(TEMPFILE2, win_len)
+#X_train, y_train, X_test, y_test = all_parsing_codes.protein_w_pssm_train(TEMPFILE,win_len)
 
-# Run classifier, using a model that is too regularized (C too low) to see
-# the impact on the results
-classifier_model = RFC(n_estimators = 350, min_samples_split = 2, n_jobs = -1, class_weight = 'balanced')
+classifier_model = RFC(n_estimators = 350, min_samples_split = 2, n_jobs = -1)
 y_pred = classifier_model.fit(X_train, y_train).predict(X_test)
 
 def plot_confusion_matrix(cm, classes,
@@ -56,7 +55,7 @@ def plot_confusion_matrix(cm, classes,
     plt.tight_layout()
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-    
+
     # Compute confusion matrix
 cnf_matrix = confusion_matrix(y_test, y_pred)
 np.set_printoptions(precision=2)
@@ -64,11 +63,11 @@ np.set_printoptions(precision=2)
 # Plot non-normalized confusion matrix
 plt.figure()
 plot_confusion_matrix(cnf_matrix, classes=class_names,
-                      title='Non-normalized confusion matrix for balanced PSFM Random forests ')
-
+                      title='Non-normalized confusion matrix for balanced PSFM Random forests on external dataset')
+plt.savefig('./extprot_non_norm_psfm.png')
 # Plot normalized confusion matrix
 plt.figure()
 plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
-                      title='Normalized confusion matrix for balanced PSFM Random forests')
-
+                      title='Normalized confusion matrix for balanced PSFM Random forests on external dataset')
+plt.savefig('./extprot_norm_psfm.png')
 plt.show()
