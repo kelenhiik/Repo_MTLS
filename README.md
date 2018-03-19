@@ -5,3 +5,5 @@ A bit unorganized. For a more organized view, check the predictor folder, where 
 __update__: the predictor/bin folder is even worse now....
 
 READ my diary if you need to make sense of what I am doing. https://kelenhiik.github.io/
+
+FOR THE PREDICTOR ENTER THE PREDICTOR FOLDER AND BARE THROUGH THE INSTRUCTIONS!
