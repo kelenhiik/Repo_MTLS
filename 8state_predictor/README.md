@@ -3,7 +3,6 @@ It creates folders for:
 bin - scripts/binaries
 src - source codes
 data - has folders for training and testing sets
-#just a try
 results - contains folders with results from training/testing and prediction results.
 
 __```A. RFC_eight_state_ss_predictor.py```__
