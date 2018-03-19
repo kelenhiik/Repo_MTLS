@@ -8,17 +8,34 @@ results - contains folders with results from training/testing and prediction res
 __```A. RFC_eight_state_ss_predictor.py```__
 Topology prediction using random forests based on sequence information. Input already provided in fasta format. Also prints the predictions out on the screen and gives directions to the .txt file.
 
+The default is to name the prediction results according to the date at that day, so running it multiple times in one day, without specifically changing the output filename INSIDE the script will result in __over-running__ previous prediction results. If there is a wish to change the input, then it should also be done INSIDE the script AND depending on the structure of the input:
+
+```
+>ID
+sequence
+topology
+
+OR
+
+>ID
+sequence
+
+```
+The script must also be told to use the correct parser for these files. 
+
 
 __```B. RFC_PSFM_external_dataset_predictor.py```__
 
 
-Topology prediction using random forests based on PSFM information. The input is the same as the previous one and already provided, however prediction is made using information from PSSM profiles of input proteins that have to be in the designated folder. Also prints the predictions out on the screen and gives directions to the .txt file.
+Topology prediction using random forests based on PSFM information. The input is the same as the previous one and already provided, however prediction is made using information from PSSM profiles of input proteins that have to be in the designated folder. 
+The output name on this one is hardcoded, but easy to change if you follow the inside-script instructions. In order to change the input on this one, it has to be a fasta format file like the previous predictor AND it has to have the right PSSM profiles in the PSSM directory. THIS is, however, only a problem if you do not want to run the predictor on my provided example .txt file and wish to use your own PSSM profile, fear not, because for that we have:
+
 
 
 __```C. RFC_singlePSFM_eight_state_predictor_pssm.py```__
 
  
-Topology prediction using random forests based on PSFM information. The input is one PSSM profile, which is already provided, but can be easily changed in the script. Also prints the prediction out on the screen and gives directions to the .txt file.
+Topology prediction using random forests based on PSFM information. The input is one PSSM profile, which is already provided, but can be easily changed in the script. Also prints the prediction out on the screen and gives directions to the .txt file. Here the prediction result is also named according to the date, so caution is advised.
 
 __```D. RFC_train_predict.py```__
 
